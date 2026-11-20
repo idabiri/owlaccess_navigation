@@ -18,7 +18,7 @@ app/server/reportsCore.ts,ksu_marietta_integration/app/server/reportsCore.ts,104
 app/src/App.tsx,ksu_marietta_integration/app/src/App.tsx,2362,f4a863fdcdf9b183e00e53311401418f84ab53b33dc9c935496854768f6549e1,app
 app/src/app/AppState.tsx,ksu_marietta_integration/app/src/app/AppState.tsx,2260,ea271cd82f62da095e67e48b12b72dde97991eed598e4602f434c18206b239be,app
 app/src/app/Shell.tsx,ksu_marietta_integration/app/src/app/Shell.tsx,2540,d728b658519eb75e7cca2b1d28ff440789020512006fb71e30f5d9575dbc40bd,app
-app/src/app/Sos.tsx,ksu_marietta_integration/app/src/app/Sos.tsx,4179,18e4f259f96b49d7cc29a8c599db7daf9829c4c7d5486789f6be059fcaf0aaf5,app
+app/src/app/Sos.tsx,ksu_marietta_integration/app/src/app/Sos.tsx,4017,a1067e1bd729288d68b2bc23c5eca86f8c3c5f8529b24cd509318fe42691c51a,app
 app/src/app/TripFields.tsx,ksu_marietta_integration/app/src/app/TripFields.tsx,4204,47e3cc5f2968dcbe26a1347358429e7bd0af3874df4d68a8845c8462459b26d0,app
 app/src/app/TripSteps.tsx,ksu_marietta_integration/app/src/app/TripSteps.tsx,886,f3fbbaf13dcec52c06a5c439710192b29fe9ad12f4ab8ffa5f90f0cf3ac57d8c,app
 app/src/app/dataFacts.ts,ksu_marietta_integration/app/src/app/dataFacts.ts,1716,20d8d3647f45279f360780ec157f1bfd7c27c34d215e292bd015378c51108e9b,app
@@ -140,7 +140,7 @@ data/reference/ksu_maps/marietta-parking-map.pdf,maps/marietta-parking-map.pdf,9
 docs/app/DEMO.md,ksu_marietta_integration/DEMO.md,8154,4d8f3fbbec096d72b8cb76102103f6a4736777c4b9de274c16c5e88809d20db5,doc
 docs/app/DEPLOY.md,ksu_marietta_integration/DEPLOY.md,3702,84a654df4579e26f2aa08669f80cc52c7f707443302c3d653aaf139b98d2e967,doc
 docs/app/DESIGN_LOG.md,ksu_marietta_integration/DESIGN_LOG.md,1462,2598c9f49437c8937e26b05acd5ceac3179d022dccbfad5b4ff01fc4a6148c71,doc
-docs/app/DESIGN_LOG_brand_restyle.md,DESIGN_LOG.md,3873,fb6284b0a132ba5142a47a42a1cbdf533631a5ea1afd3fcc380fcf90061b8fe2,doc
+docs/app/DESIGN_LOG_brand_restyle.md,DESIGN_LOG.md,3849,84adc7e5efa1f881401d42225a3a8f16e0bd0ce160b280f5a014bc9c1e0f4039,doc
 docs/app/design-studio/studio.html,ksu_marietta_integration/design-studio/studio.html,18951,3f5615075693531af3290f53b776904b8175e1fc421326de57f2c5f3279aec30,doc
 docs/brand/owl-logo-original.svg,Owl Navigation Pin Logo,3384,ec9273263771601a101a185bc5b7649ba89ffc5b77a7c48316dce03001e6584d,original
 docs/indoor/accessibility_assumptions.md,indoor-mapping/documentation/accessibility_assumptions.md,3675,87196b5c3e852e20dcd032b961899d6663ea6e2d1d615f02219fe9210a0306ce,doc

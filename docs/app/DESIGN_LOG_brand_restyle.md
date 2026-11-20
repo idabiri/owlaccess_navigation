@@ -23,6 +23,6 @@
 
 ## 2026-11-20 · SOS emergency button (studio feedback)
 - A red SOS button in the sticky site header on every page, so it never covers the map, the step panel or the Start bar.
-- It opens an Emergency help screen: "In an immediate emergency, call 911.", Call 911 (tel:911) listed first, Call KSU Campus Police 470-578-6666 (tel:+14705786666), a note that nothing is sent unless the person places the call and no location is shared, and Close / Back to OwlAccess / Escape back to the same page.
+- It opens an Emergency help screen: "In an immediate emergency, call 911.", Call 911 (tel:911) listed first, Call KSU Campus Police 470-578-6666 (tel:+14705786666), a one-line note ("Tapping a button opens your phone's dialer."), and Close / Back to OwlAccess / Escape back to the same page.
 - Keyboard: focus starts on the heading (a stray Enter cannot dial), Tab stays inside, focus returns to SOS. No GPS, forms, backend or APIs.
 - Tests: 157 pass (10 added in tests/sos.test.tsx; the tel: links are inspected, never clicked).

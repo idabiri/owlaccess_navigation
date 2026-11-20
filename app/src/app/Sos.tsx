@@ -63,8 +63,7 @@ function SosDialog({ onClose }: { onClose: () => void }) {
             <span className="sos-call-sub">{police.display}</span>
           </a>
         </div>
-        <p className="sos-note">Tapping a button opens your phone's dialer. Nothing is sent and no one is contacted unless you place the call.
-          OwlAccess does not share your location. On a computer, dial the number from a phone.</p>
+        <p className="sos-note">Tapping a button opens your phone's dialer.</p>
         <button type="button" className="sos-back" onClick={onClose}>‹ Back to OwlAccess</button>
       </div>
     </div>
