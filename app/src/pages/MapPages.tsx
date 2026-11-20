@@ -26,16 +26,21 @@ function MapPage({ panel, title, intro, allowClear = true }: { panel: Panel; tit
     avoidStairs: trip.requirements.stepFree || trip.requirements.elevatorsOnly,
     avoidObstacles: trip.restrictions.avoidVerifiedObstacles, scenario: trip.restrictions.scenario,
   };
+  const label = (id: string) => data.unified.endpoints_meta.find(m => m.id === id)?.label ?? id;
   return (
     <div className={following ? "map-page following" : "map-page"}>
-      <div className="page-head compact">
-        <h1>{title}</h1>
-        <p className="lede-sm">{intro}</p>
-        {following && trip.chosen && (phone
-          ? <div className="back-row"><span className="chip">Following: {trip.chosen.name}</span>
-              <div className="row"><Link to="/suggestions" className="btn btn-ghost">‹ Route options</Link><Link to="/plan" className="btn btn-ghost">New trip</Link></div></div>
-          : <p className="chip-line"><span className="chip">Following: {trip.chosen.name}</span> <Link to="/suggestions">Change route</Link></p>)}
-      </div>
+      {following && trip.chosen
+        ? <div className="page-head compact trip-head">
+            <div>
+              <h1>{title} to {label(trip.goal)}</h1>
+              <p className="trip-from">From {label(trip.start)} &middot; <span className="chip">Following: {trip.chosen.name}</span></p>
+            </div>
+            <div className="back-row"><Link to="/suggestions" className="btn btn-ghost">‹ Route options</Link><Link to="/plan" className="btn btn-ghost">New trip</Link></div>
+          </div>
+        : <div className="page-head compact">
+            <h1>{title}</h1>
+            <p className="lede-sm">{intro}</p>
+          </div>}
       <NavigationApp data={data} reportStore={store} embedded initialPanel={panel} allowClear={allowClear}
         initial={fromTrip ? initial : undefined} strategy={fromTrip ? trip.chosen?.strategy : undefined} autoCalculate={fromTrip} />
     </div>
@@ -48,9 +53,9 @@ export const NavigatePage = () => (
 );
 export const ReportPage = () => (
   <MapPage panel="report" title="Report an accessibility issue"
-    intro={<>Open a floor, press <b>Report an obstacle</b>, then tap the spot (or choose it from the list) and describe it. Reports stay <b>pending</b> and change no route until a reviewer verifies them.</>} />
+    intro={<>Tell us what is in the way. A reviewer checks every report before any route changes.</>} />
 );
 export const ReviewPage = () => (
   <MapPage panel="review" title="Review reports" allowClear={false}
-    intro={<>Pending reports are listed beside the map; <b>Show on map</b> jumps to each one. Only reports you <b>verify</b> affect routing, on every device.</>} />
+    intro={<>Work through the reports waiting beside the map. Only reports you <b>verify</b> change routes, on every device.</>} />
 );

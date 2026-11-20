@@ -13,11 +13,12 @@ const nav = () => screen.getByRole("navigation", { name: "Main" });
 beforeEach(() => { cleanup(); go("/"); });
 
 describe("pages and navigation (jsdom, not a real browser)", () => {
-  it("the landing page links to planning, reporting and the data page", async () => {
+  it("the landing page starts with the trip; 'More trip options' opens /plan", async () => {
     const user = userEvent.setup();
     render(<SiteForTests data={data} />);
-    expect(h1()).toMatch(/your way/);
-    await user.click(within(screen.getByRole("main")).getByRole("link", { name: "Plan a route" }));
+    expect(h1()).toMatch(/Where are you headed/);
+    expect(within(screen.getByRole("main")).getByRole("link", { name: /something in the way/i })).toHaveAttribute("href", "/report");
+    await user.click(within(screen.getByRole("main")).getByRole("link", { name: "More trip options" }));
     expect(window.location.pathname).toBe("/plan");
     expect(h1()).toBe("Plan an accessible route");
     expect(within(nav()).getByRole("link", { name: "Plan a route" })).toHaveAttribute("aria-current", "page");
@@ -29,7 +30,7 @@ describe("pages and navigation (jsdom, not a real browser)", () => {
     expect(h1()).toMatch(/What OwlAccess knows/);
     await act(async () => { window.history.back(); await new Promise(r => setTimeout(r, 20)); });
     await waitFor(() => expect(window.location.pathname).toBe("/"));
-    expect(h1()).toMatch(/your way/);
+    expect(h1()).toMatch(/Where are you headed/);
     cleanup(); go("/nowhere"); render(<SiteForTests data={data} />);
     expect(h1()).toBe("Page not found");
   });
@@ -70,22 +71,41 @@ describe("plan -> suggestions -> navigate (jsdom, not a real browser)", () => {
     expect(screen.getByRole("alert")).toHaveTextContent(/Choose both/);
     expect(window.location.pathname).toBe("/plan");
   });
-  it("requirements are separate from preferences; wheelchair includes step-free and elevators", async () => {
+  it("requirements are one choice, separate from preferences; wheelchair means step-free plus accessible-only links", async () => {
     const user = userEvent.setup();
     go("/plan"); render(<SiteForTests data={data} trip={EMPTY_TRIP} />);
     const req = screen.getByRole("region", { name: /accessibility requirements/i });
-    await user.click(within(req).getByRole("checkbox", { name: /wheelchair accessible/i }));
-    expect(within(req).getByRole("checkbox", { name: /^step-free/i })).toBeChecked();
-    expect(within(req).getByRole("checkbox", { name: /^step-free/i })).toBeDisabled();
-    expect(within(req).getByRole("checkbox", { name: /^use elevators/i })).toBeChecked();
+    expect(within(req).getByRole("radio", { name: /^walking/i })).toBeChecked();
+    await user.click(within(req).getByRole("radio", { name: /^wheelchair/i }));
+    expect(within(req).getByRole("radio", { name: /^wheelchair/i })).toBeChecked();
+    expect(within(req).getByRole("radio", { name: /^wheelchair/i })).toHaveAccessibleName(/step-free/i);
+    expect(within(req).getByRole("radio", { name: /^step-free/i })).toHaveAccessibleName(/elevators/i);
     expect(screen.getByRole("region", { name: /preferences/i })).toHaveTextContent(/Optional/);
+    await user.selectOptions(screen.getByLabelText("Starting location"), "room_102");
+    await user.selectOptions(screen.getByLabelText("Destination"), "room_302");
+    await user.click(screen.getByRole("button", { name: "Show route options" }));
+    expect(screen.getByTestId("trip-requirements")).toHaveTextContent("Wheelchair accessible");
+  });
+  it("the landing form plans a trip straight to the route options, with the chosen mobility", async () => {
+    const user = userEvent.setup();
+    render(<SiteForTests data={data} trip={EMPTY_TRIP} />);
+    const form = screen.getByRole("form", { name: "Find a route" });
+    await user.click(within(form).getByRole("button", { name: "Find routes" }));
+    expect(within(form).getByRole("alert")).toHaveTextContent(/Choose where/);
+    await user.selectOptions(within(form).getByLabelText("From"), "oe_ENT007");
+    await user.selectOptions(within(form).getByLabelText("To"), "room_302");
+    await user.click(within(form).getByRole("radio", { name: /^step-free/i }));
+    await user.click(within(form).getByRole("button", { name: "Find routes" }));
+    expect(window.location.pathname).toBe("/suggestions");
+    expect(screen.getByRole("main")).toHaveTextContent("Academic Building Entrance");
+    expect(screen.getByTestId("trip-requirements")).toHaveTextContent("Step-free");
   });
   it("plan a wheelchair trip, compare real options, choose one, and navigate with it", async () => {
     const user = userEvent.setup();
     go("/plan"); render(<SiteForTests data={data} trip={EMPTY_TRIP} />);
     await user.selectOptions(screen.getByLabelText("Starting location"), "room_102");
     await user.selectOptions(screen.getByLabelText("Destination"), "room_302");
-    await user.click(screen.getByRole("checkbox", { name: /wheelchair accessible/i }));
+    await user.click(screen.getByRole("radio", { name: /^wheelchair/i }));
     await user.click(screen.getByRole("button", { name: "Show route options" }));
     expect(window.location.pathname).toBe("/suggestions");
     const expected = suggestRoutes(data.unified, "room_102", "room_302", { wheelchair: true, avoidStairs: false, applyObstacles: true }).suggestions;

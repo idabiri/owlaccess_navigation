@@ -30,12 +30,13 @@ This repository contains the whole project, not just the app: the original GIS d
 
 ## Features
 
-- **Accessible route planning** (`/plan`). Requirements (wheelchair accessible, step-free, elevators only) are hard rules: a route that breaks them is never offered. Preferences (fastest, shortest, fewest turns, avoid narrow corridors) only rank routes. If no route qualifies, the app says so (`NO_ACCESSIBLE_ROUTE`).
-- **Real route alternatives** (`/suggestions`). Every alternative (fastest, shortest, the other elevator or stairwell, avoid narrow corridors, step-free) is computed by the same routing engine. Nothing is invented. Each option shows distance, time, floor changes, turns, elevators or stairs, and warnings.
+- **Start from where you're headed** (`/`). The landing page is the trip form: from, to, and how you get around (walking, step-free or wheelchair). It goes straight to the route options. Places have plain names (for example "Academic Building Entrance", "Engineering Technology Center Entrance"). The survey codes stay in the data.
+- **Accessible route planning** (`/plan`). One choice, walking, step-free or wheelchair, sets requirements that are hard rules: a route that breaks them is never offered. Preferences (fastest, shortest, fewest turns, avoid narrow corridors) only rank routes. Demo obstacle scenarios are folded into "Demo options". If no route qualifies, the app says so (`NO_ACCESSIBLE_ROUTE`).
+- **Real route alternatives** (`/suggestions`). Every alternative (fastest, shortest, the other elevator or stairwell, avoid narrow corridors, step-free) is computed by the same routing engine. Nothing is invented. Each option shows distance, time, floor changes, turns, elevators or stairs, and warnings. The recommended route leads; each alternative says how it differs (for example "Same time and distance · uses Elevator 2 instead"), caveats shared by every route are shown once, and verified reports are named in words, never by id.
 - **Indoor and outdoor in one route.** Outdoor map, then Floors 1 to 3 of the Academic Building (BLD001), switching automatically at the entrance and at elevators.
 - **Step-by-step navigation** (`/navigate`). Turn-by-turn steps synced with the map, Previous and Next controls, and a **simulated** position marker. On phones, the map appears only after a route is confirmed, and a step panel sits above the bottom tab bar.
-- **Obstacle reporting** (`/report`). Report a blocked hallway, broken elevator, etc. by tapping the floor plan or choosing a place from a list, with full keyboard support. An offline, rule-based helper suggests a category (it is labelled as rules, not AI).
-- **Human review** (`/review`). Reports stay `pending` until a reviewer marks them `verified` or `rejected`, and later `resolved`. **Only verified reports affect routing.** Pending and rejected reports never block a route.
+- **Obstacle reporting** (`/report`). Report a blocked hallway, broken elevator, etc. by tapping the floor plan or choosing a place from a list, with full keyboard support. An offline, rule-based helper suggests a category (it is labelled as rules, not AI). Reporting is a guided flow: Where (floor, then the spot), What's wrong, Send.
+- **Human review** (`/review`). Reports stay `pending` until a reviewer marks them `verified` or `rejected`, and later `resolved`. **Only verified reports affect routing.** Pending and rejected reports never block a route. The reviewer screen is a queue: counts of waiting, route-changing and closed reports, and one readable card per report.
 - **Shared reports on a local network.** During a demo, the laptop's dev server stores reports in one JSON file, and phones on the same Wi-Fi can open `/review`. It answers only private-network addresses.
 - **Data transparency** (`/about`). Every number on the site is computed from the loaded data, and each dataset is labelled real, synthetic, provisional or unknown.
 
@@ -56,7 +57,7 @@ This repository contains the whole project, not just the app: the original GIS d
 │   ├── functions/, migrations/, wrangler.toml   prepared Cloudflare Pages deployment (NOT deployed)
 │   ├── scripts/reset-demo.mjs   empties the shared demo reports (keeps a backup)
 │   ├── data/                    runtime reports file lives here (git-ignored)
-│   └── tests/                   146 automated tests (Vitest + Testing Library, jsdom)
+│   └── tests/                   147 automated tests (Vitest + Testing Library, jsdom)
 ├── data/
 │   ├── outdoor/
 │   │   ├── source/              ORIGINAL GIS data + QGIS project (read-only; never edited)
@@ -164,7 +165,7 @@ Details: [docs/integration/integration_guide_unified.md](docs/integration/integr
 ## Running the tests
 
 ```bash
-# app: 146 tests in 15 files (routing, alternatives, steps, reports, review, shared sync, API, deployment logic, keyboard, phone layout, pages)
+# app: 147 tests in 15 files (routing, alternatives, steps, reports, review, shared sync, API, deployment logic, keyboard, phone layout, pages)
 cd app
 npm test
 npm run build          # type-check + production build

@@ -12,10 +12,23 @@ export async function loadAppData(base = import.meta.env.BASE_URL + "data/"): Pr
   return { unified: withDisplayLabels(unified), outdoorEdges: oe.edges, buildings: b.features, connectors: c.connectors, svgs: { 1: s1, 2: s2, 3: s3 } };
 }
 
-/** Display-only label fixes, applied in memory after loading. The data files are not changed.
- *  oe_ENT008 comes from the malformed source row (feature_id "ENT", feature_type "008"), so its stored label reads "Outdoor ENT".
- *  The ENT008 identity is still a proposed correction (entrance_review.json), so the label says so. */
+/** Plain names for places people pick, applied in memory after loading. The data files (and their ids) are not changed.
+ *  The stored labels are survey codes ("Outdoor ENT007 (provisional)"), which mean nothing to a visitor.
+ *  - ENT007 and ENT008: named by the project owner (Academic Building Entrance; Engineering Technology Center Entrance).
+ *    ENT008 comes from a malformed source row ("ENT" / "008"); the owner confirmed which entrance it is.
+ *  - RMP004: the source row is a ramp at the Academic Building.
+ *  - entrance_1..4: synthetic doors inside the Academic Building, placed from ENT006, ENT007 and RMP004 (entrance_4 is an
+ *    invented entrance with steps). Their side of the building comes from the synthetic floor plan (north is up).
+ *  Positions stay provisional: the pickers group these places under headings that say so. */
+export const DISPLAY_LABELS: Record<string, string> = {
+  oe_ENT007: "Academic Building Entrance",
+  oe_ENT008: "Engineering Technology Center Entrance",
+  oe_RMP004: "Academic Building Ramp",
+  entrance_2: "Academic Building Entrance, inside the door",
+  entrance_3: "Academic Building Ramp entrance, inside",
+  entrance_1: "Academic Building northwest entrance, inside",
+  entrance_4: "Academic Building southwest entrance, inside (has steps)",
+};
 export function withDisplayLabels(unified: UnifiedData): UnifiedData {
-  const fixes: Record<string, string> = { oe_ENT008: "Outdoor ENT008 (provisional, ID pending review)" };
-  return { ...unified, endpoints_meta: unified.endpoints_meta.map(m => (fixes[m.id] ? { ...m, label: fixes[m.id] } : m)) };
+  return { ...unified, endpoints_meta: unified.endpoints_meta.map(m => (DISPLAY_LABELS[m.id] ? { ...m, label: DISPLAY_LABELS[m.id] } : m)) };
 }

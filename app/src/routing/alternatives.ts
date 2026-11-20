@@ -32,7 +32,9 @@ const ALT = "ALT-EXCLUDE-";
 const elevatorName = (nodeId: string) => { const m = nodeId.match(/_elev_(\d+)$/); return m ? `Elevator ${m[1]}` : null; };
 
 /** Run one strategy through the real engine. Internal exclusions are removed from the result's obstacles and warnings. */
-export function routeWithStrategy(d: UnifiedData, start: string, goal: string, trip: TripOptions, strategy: Strategy): RouteResult {
+export function routeWithStrategy(d: UnifiedData, start: string, goal: string, trip: TripOptions, chosen: Strategy): RouteResult {
+  // a trip saved in the browser by an older version may carry an incomplete strategy: fill in the defaults
+  const strategy: Strategy = { ...chosen, cost: chosen.cost === "distance" ? "distance" : "travel_time", excludeEdges: Array.isArray(chosen.excludeEdges) ? chosen.excludeEdges : [] };
   const exclusions: UObstacle[] = strategy.excludeEdges.map((e, i) => ({ obstacle_id: `${ALT}${i}`, status: "verified", verified: true, affected_edge_id: e }));
   const extra = trip.extraObstacles ?? [];
   const data: UnifiedData = { ...d, obstacles: [...d.obstacles, ...extra, ...exclusions] };

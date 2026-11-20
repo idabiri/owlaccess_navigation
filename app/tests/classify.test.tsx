@@ -95,6 +95,8 @@ describe("rule-based classifier: UI (jsdom, not a real browser)", () => {
     expect(saved).toMatchObject({ status: "pending", verified: false, severity: "blocks_everyone", suggestion_accepted: true });
     expect(saved.suggestion?.method).toBe("rule-based");
     expect(JSON.parse(localStorage.getItem(STORAGE_KEY)!)).toHaveLength(1);
-    expect(screen.getByRole("list", { name: /pending obstacle reports/i })).toHaveTextContent(/accepted by reporter/);
+    // the reviewer sees what the rules suggested and that the reporter accepted it (the reporter's own list stays short)
+    await user.click(screen.getByRole("tab", { name: /^reviewer/i }));
+    expect(screen.getByRole("list", { name: /pending obstacle reports/i })).toHaveTextContent(/accepted by the reporter/);
   });
 });

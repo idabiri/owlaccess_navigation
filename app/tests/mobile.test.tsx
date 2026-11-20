@@ -28,7 +28,7 @@ describe("phone layout (simulated phone screen in jsdom, not a real browser)", (
     expect(maps()).toBe(0);
     await user.selectOptions(screen.getByLabelText("Starting location"), "room_102");
     await user.selectOptions(screen.getByLabelText("Destination"), "room_302");
-    await user.click(screen.getByRole("checkbox", { name: /wheelchair accessible/i }));
+    await user.click(screen.getByRole("radio", { name: /^wheelchair/i }));
     await user.click(screen.getByRole("button", { name: "Show route options" }));
 
     // route options: no map, requirements + preferences visible, metrics on each card, a fixed Start navigation bar

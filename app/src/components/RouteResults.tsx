@@ -85,7 +85,7 @@ export function RouteResults({ result, plan, activeInstruction, onInstruction, s
           <button type="button" className="btn-step" onClick={() => onInstruction(activeInstruction - 1)} disabled={activeInstruction <= 0}>‹ Previous step</button>
           <button type="button" className="btn-step primary-step" onClick={() => onInstruction(activeInstruction + 1)} disabled={activeInstruction >= steps.length - 1}>Next step ›</button>
         </div>
-        <p className="sim-note">📍 The position marker on the map is <b>simulated</b> from the step you select: a demo feature. OwlAccess does not detect where you are indoors.</p>
+        <p className="sim-note">The blue &ldquo;You&rdquo; dot is <b>simulated</b> from the step you select (a demo feature). OwlAccess does not track where you are.</p>
       </>}
       {plan.floorTransitions.length > 0 && <ul className="transitions" aria-label="Floor transitions">{plan.floorTransitions.map((t, i) => <li key={i}>{t.via === "elevator" ? "⇅ " : "▤ "}{t.text}</li>)}</ul>}
       <ol className="steps nav-steps" aria-label="Turn-by-turn instructions">

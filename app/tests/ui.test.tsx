@@ -12,7 +12,7 @@ const title = () => screen.getByTestId("map-title").textContent;
 describe("NavigationApp component behaviour (jsdom, not a real browser)", () => {
   it("shows the synthetic-data banner and starts on the outdoor map", async () => {
     await setup();
-    expect(screen.getByRole("note")).toHaveTextContent(/SYNTHETIC/);
+    expect(screen.getByRole("note")).toHaveTextContent(/synthetic/i);
     expect(title()).toBe("Outdoor map");
     expect(screen.getByRole("button", { name: /calculate route/i })).toBeDisabled();
   });

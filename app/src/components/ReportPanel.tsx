@@ -78,7 +78,14 @@ function ReviewForm({ r, onVerify, onReject, onClose }: { r: ObstacleReport; onV
   );
 }
 const floorName = (f: string) => `Floor ${f.split("_F")[1]}`;
+/** "just now", "12 min ago", "3 h ago", else the date: reviewers care how fresh a report is */
+function ago(iso: string) {
+  const t = Date.parse(iso); if (!Number.isFinite(t)) return "";
+  const m = Math.round((Date.now() - t) / 60000);
+  return m < 1 ? "just now" : m < 60 ? `${m} min ago` : m < 24 * 60 ? `${Math.round(m / 60)} h ago` : new Date(t).toLocaleDateString();
+}
 const MIN_TEXT_FOR_SUGGESTION = 6;
+const STEPS = ["Where", "What\u2019s wrong", "Send"];
 
 /** Obstacle reports in the unified side panel.
  *  section "report": report mode, the location list, the form, and the reports still waiting for review (read-only).
@@ -91,19 +98,26 @@ export function ReportPanel({ reports, draft, reportMode, snapError, storageOk, 
   const [reviewing, setReviewing] = useState<string | null>(null);
   const pending = reports.filter(r => r.status === "pending"), verified = reports.filter(r => r.status === "verified");
   const closed = reports.filter(r => r.status === "rejected" || r.status === "resolved");
-  const header = (r: ObstacleReport) => <><strong>{REPORT_CATEGORIES[r.review?.category ?? r.category]}</strong>
-    {(() => { const s = r.review?.severity ?? r.severity; return s && s !== "unclear" ? <> &middot; {SEVERITIES[s]}</> : null; })()} &middot; {floorName(r.floor_id)}, {r.location_label}</>;
   const showOnMap = (r: ObstacleReport) => onShowReport && <button type="button" className="link-btn" onClick={() => onShowReport(r)} aria-label={`Show ${r.report_id} on the map`}>Show on map</button>;
+  const card = (r: ObstacleReport, badge: React.ReactNode, body?: React.ReactNode) => (
+    <>
+      <div className="rc-head">{badge}<span className="rc-what">{REPORT_CATEGORIES[r.review?.category ?? r.category]}</span>
+        {(() => { const sv = r.review?.severity ?? r.severity; return sv && sv !== "unclear" ? <span className="rc-sev">{SEVERITIES[sv]}</span> : null; })()}</div>
+      <div className="rc-where">{floorName(r.floor_id)} &middot; {r.location_label}</div>
+      <blockquote className="rc-quote">{r.description}</blockquote>
+      {body}
+    </>
+  );
   const pendingItem = (r: ObstacleReport, reviewer: boolean) => (
-    <li key={r.report_id}>
-      <span className="badge pending">Pending</span> {header(r)}
-      <div className="detail">{r.description}</div>
-      {r.suggestion && <div className="muted detail">Rule-based suggestion: {REPORT_CATEGORIES[r.suggestion.category]}, {SEVERITIES[r.suggestion.severity]} ({r.suggestion.confidence})
-        {" "}&mdash; {r.suggestion_accepted ? "accepted by reporter" : "changed by reporter"}</div>}
-      <div className="muted">{new Date(r.created_at).toLocaleString()} &middot; {r.report_id} &middot; not verified, does not affect routes</div>
+    <li key={r.report_id} className={reviewing === r.report_id ? "report-card open" : "report-card"}>
+      {card(r, <span className="badge pending">Pending</span>, <>
+        {reviewer && r.suggestion && <div className="rc-meta">Rule-based suggestion: {REPORT_CATEGORIES[r.suggestion.category]}, {SEVERITIES[r.suggestion.severity]} ({r.suggestion.confidence} confidence)
+          {" "}&middot; {r.suggestion_accepted ? "accepted by the reporter" : "changed by the reporter"}</div>}
+        <div className="rc-meta">{ago(r.created_at)} &middot; not verified, does not change routes <span className="rc-ref">ref {r.report_id}</span></div>
+      </>)}
       {reviewer && (reviewing === r.report_id
         ? <ReviewForm r={r} onVerify={onVerify} onReject={onReject} onClose={() => setReviewing(null)} />
-        : <div className="row"><button type="button" onClick={() => setReviewing(r.report_id)}>Review {r.report_id}</button>{showOnMap(r)}</div>)}
+        : <div className="rc-actions"><button type="button" className="primary" onClick={() => setReviewing(r.report_id)} aria-label={`Review ${r.report_id}`}>Review</button>{showOnMap(r)}</div>)}
     </li>
   );
   const [category, setCategory] = useState<ReportCategory>("blocked_hallway");
@@ -121,8 +135,12 @@ export function ReportPanel({ reports, draft, reportMode, snapError, storageOk, 
   if (section === "review") return (
     <section className="panel reports" aria-labelledby="review-h">
       <h2 id="review-h">Review obstacle reports</h2>
-      <p className="map-note">Check each report, then <strong>verify</strong> it (routes will avoid it, for the people its severity applies to) or <strong>reject</strong> it.
-        <span className="muted"> Demo: no sign-in; in real use only trained staff would verify.</span></p>
+      <dl className="review-summary">
+        <div className={pending.length ? "hot" : ""}><dt>Waiting</dt><dd>{pending.length}</dd></div>
+        <div><dt>Changing routes</dt><dd>{verified.length}</dd></div>
+        <div><dt>Closed</dt><dd>{closed.length}</dd></div>
+      </dl>
+      <p className="panel-note">Check a report before you <strong>verify</strong> it: the severity you confirm decides who is rerouted. <strong>Reject</strong> it if nothing is there. <span className="muted">Demo: no sign-in.</span></p>
       {shared && reviewerUrls.length > 0 && <p className="muted" data-testid="reviewer-urls">Review on a phone on the same Wi-Fi: {reviewerUrls.map(u => <code key={u}> {u}</code>)}</p>}
       {routeNotice && <p className="route-notice" role="status">{routeNotice}</p>}
       {syncEl}
@@ -134,30 +152,28 @@ export function ReportPanel({ reports, draft, reportMode, snapError, storageOk, 
           <button type="submit" className="primary" disabled={!code.trim()}>Save passcode</button>
         </form>)}
       <h3>Pending review ({pending.length})</h3>
-      {pending.length === 0 ? <p className="muted">No reports waiting for review.</p> : (
+      {pending.length === 0 ? <p className="empty-note">Nothing waiting. New reports appear here within a few seconds.</p> : (
         <ul className="report-list" aria-label="Pending obstacle reports">{[...pending].reverse().map(r => pendingItem(r, true))}</ul>)}
-      <h3>Verified &ndash; avoided by routes ({verified.length})</h3>
-      {verified.length === 0 ? <p className="muted">None.</p> : (
+      <h3>Verified: routes avoid these ({verified.length})</h3>
+      {verified.length === 0 ? <p className="empty-note">None.</p> : (
         <ul className="report-list" aria-label="Verified obstacle reports">
           {[...verified].reverse().map(r => (
-            <li key={r.report_id}>
-              <span className="badge verified">Verified</span> {header(r)}
-              <div className="detail">{r.description}</div>
-              <div className="muted">Verified by {r.review!.reviewer} {new Date(r.review!.reviewed_at).toLocaleString()}{r.review!.note ? ` · “${r.review!.note}”` : ""} &middot; {BLOCK_EFFECT[r.review!.severity]}</div>
-              <div className="row"><button type="button" onClick={() => onResolve?.(r.report_id, "")}>Mark {r.report_id} resolved (obstacle cleared)</button>{showOnMap(r)}</div>
+            <li key={r.report_id} className="report-card verified">
+              {card(r, <span className="badge verified">Verified</span>,
+                <div className="rc-meta"><b>{BLOCK_EFFECT[r.review!.severity].replace(/^./, c => c.toUpperCase())}.</b> Verified by {r.review!.reviewer}, {ago(r.review!.reviewed_at)}{r.review!.note ? ` \u00b7 \u201c${r.review!.note}\u201d` : ""}</div>)}
+              <div className="rc-actions"><button type="button" onClick={() => onResolve?.(r.report_id, "")} aria-label={`Mark ${r.report_id} resolved (obstacle cleared)`}>Obstacle cleared</button>{showOnMap(r)}</div>
             </li>))}
         </ul>)}
       {closed.length > 0 && <>
         <h3>Closed ({closed.length})</h3>
         <ul className="report-list" aria-label="Closed obstacle reports">
           {[...closed].reverse().map(r => (
-            <li key={r.report_id}>
-              <span className="badge closed">{r.status === "rejected" ? "Rejected" : "Resolved"}</span> {header(r)}
-              <div className="detail">{r.description}</div>
-              <div className="muted">{r.report_id} &middot; {r.status === "rejected" ? "rejected by reviewer, never affected routes" : "obstacle cleared, no longer affects routes"}</div>
+            <li key={r.report_id} className="report-card closed">
+              {card(r, <span className="badge closed">{r.status === "rejected" ? "Rejected" : "Resolved"}</span>,
+                <div className="rc-meta">{r.status === "rejected" ? "Rejected by a reviewer; never affected routes." : "Obstacle cleared; no longer affects routes."} <span className="rc-ref">ref {r.report_id}</span></div>)}
             </li>))}
         </ul></>}
-      {allowClear && reports.length > 0 && <button type="button" onClick={() => { if (window.confirm(`Delete all ${reports.length} demo report(s) ${shared ? "for every device" : "from this browser"}?`)) onClearAll(); }}>Clear demo reports</button>}
+      {allowClear && reports.length > 0 && <button type="button" className="clear-demo" onClick={() => { if (window.confirm(`Delete all ${reports.length} demo report(s) ${shared ? "for every device" : "from this browser"}?`)) onClearAll(); }}>Clear demo reports</button>}
       {!shared && !storageOk && <p className="err">This browser is not saving reports (storage blocked), so they will be lost on reload.</p>}
     </section>
   );
@@ -165,19 +181,26 @@ export function ReportPanel({ reports, draft, reportMode, snapError, storageOk, 
   return (
     <section className="panel reports" aria-labelledby="reports-h">
       <h2 id="reports-h">Report an obstacle</h2>
-      <p className="map-note">New reports are saved as <strong>pending</strong>. They are shown on the map but <strong>never change a route</strong> until a person verifies them.
-        {shared && <> Reports are shared, so a reviewer on another device sees the same list.</>}</p>
+      <ol className="report-steps" aria-label="Reporting steps">
+        {STEPS.map((t, i) => { const now = draft ? 1 : 0; return (
+          <li key={t} className={i < now ? "done" : i === now ? "now" : ""} aria-current={i === now ? "step" : undefined}><span aria-hidden="true">{i < now ? "\u2713" : i + 1}</span>{t}</li>); })}
+      </ol>
       {syncEl}
       {!reportMode && !draft && (floors.length > 0 && onOpenFloor
-        ? <div className="row wrap"><span>Reports are placed on a floor. Open one:</span>{floors.map(f => <button key={f} type="button" onClick={() => onOpenFloor(f)}>Floor {f}</button>)}</div>
-        : onStartReport && <button type="button" className="primary" onClick={onStartReport}>Start a report on {floorLabel}</button>)}
-      {reportMode && !draft && <p className="report-hint" role="status">Tap the spot on the floor plan where the obstacle is{places.length > 0 ? ", or choose it from the list below" : ""}.</p>}
+        ? <div className="choose-floor"><p className="step-q">Which floor is it on?</p>
+            <div className="floor-buttons">{floors.map(f => <button key={f} type="button" className="floor-btn" onClick={() => onOpenFloor(f)}>Floor {f}</button>)}</div>
+            <p className="muted">Reports are placed on the Academic Building&rsquo;s floor plan (synthetic).</p></div>
+        : onStartReport && <div className="choose-floor"><p className="step-q">Is it on {floorLabel}?</p><button type="button" className="primary big" onClick={onStartReport}>Start a report on {floorLabel}</button></div>)}
+      {reportMode && !draft && <p className="report-hint step-q" role="status">Tap the spot on the floor plan where the obstacle is{places.length > 0 ? ", or choose it from the list below" : ""}.</p>}
       {reportMode && !draft && places.length > 0 && onChoosePlace && <PlacePicker places={places} floorLabel={floorLabel} onChoose={onChoosePlace} />}
       {snapError && <p className="err" role="alert">{snapError}</p>}
       {draft && (
         <form className="report-form" onSubmit={submit} aria-label="New obstacle report">
-          <p id="report-location"><strong>Location:</strong> {floorName(draft.floor_id)}, {draft.location_label}
-            <span className="muted">{draft.chosen_from_list ? " (chosen from the list)" : ` (snapped ${draft.snap_distance_m} m from your tap)`}</span></p>
+          <div className="where-card">
+            <p id="report-location"><span className="wc-label">Where</span> <b>{floorName(draft.floor_id)}, {draft.location_label}</b>
+              <span className="muted">{draft.chosen_from_list ? " (chosen from the list)" : ` (snapped ${draft.snap_distance_m} m from your tap)`}</span></p>
+            <button type="button" className="link-btn" onClick={() => { reset(); onCancelDraft(); }}>Change</button>
+          </div>
           <label className="field"><span>Describe it</span>
             {/* focus moves here when a location is chosen, so keyboard and screen-reader users land in the form; the location is read with it */}
             <textarea value={text} onChange={e => setText(e.target.value)} maxLength={MAX_DESCRIPTION} rows={3} required autoFocus aria-describedby="report-location"
@@ -193,7 +216,7 @@ export function ReportPanel({ reports, draft, reportMode, snapError, storageOk, 
                 {matchesSuggestion ? "Suggestion applied" : "Use suggestion"}</button>
             </div>
           )}
-          <label className="field"><span>What is the problem?</span>
+          <div className="two-up"><label className="field"><span>What is the problem?</span>
             <select value={category} onChange={e => setCategory(e.target.value as ReportCategory)}>
               {Object.entries(REPORT_CATEGORIES).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
             </select>
@@ -202,13 +225,14 @@ export function ReportPanel({ reports, draft, reportMode, snapError, storageOk, 
             <select value={severity} onChange={e => setSeverity(e.target.value as Severity)}>
               {Object.entries(SEVERITIES).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
             </select>
-          </label>
-          <div className="row"><button type="submit" className="primary" disabled={!text.trim()}>Submit report</button>
+          </label></div>
+          <div className="row send-row"><button type="submit" className="primary big" disabled={!text.trim()}>Submit report</button>
             <button type="button" onClick={() => { reset(); onCancelDraft(); }}>Cancel</button></div>
         </form>
       )}
+      <p className="report-promise">Every report starts as <strong>pending</strong>: it shows on the map but <strong>changes no route</strong> until a reviewer verifies it.{shared && " Reviewers on other devices see it within seconds."}</p>
       <h3>Waiting for review ({pending.length})</h3>
-      {pending.length === 0 ? <p className="muted">No reports waiting for review.</p> : (
+      {pending.length === 0 ? <p className="empty-note">No reports waiting for review.</p> : (
         <ul className="report-list" aria-label="Pending obstacle reports">{[...pending].reverse().map(r => pendingItem(r, false))}</ul>)}
       {!shared && !storageOk && <p className="err">This browser is not saving reports (storage blocked), so they will be lost on reload.</p>}
     </section>

@@ -16,6 +16,11 @@ function pos(n: UNode): [number, number] {                     // metres, x east
 }
 const heading = (a: UNode, b: UNode) => { const [ax, ay] = pos(a), [bx, by] = pos(b); return (Math.atan2(bx - ax, by - ay) * 180) / Math.PI; };
 const delta = (h1: number, h2: number) => { let d = h2 - h1; while (d > 180) d -= 360; while (d <= -180) d += 360; return d; };
+/** plain names for the Academic Building's (synthetic) doors, matching the place names in data.ts */
+const ENTRANCE_NAME: Record<string, string> = {
+  n_f1_entrance_1: "the northwest entrance", n_f1_entrance_2: "the Academic Building Entrance",
+  n_f1_entrance_3: "the ramp entrance", n_f1_entrance_4: "the southwest entrance (steps)",
+};
 const turnWord = (d: number) => { const a = Math.abs(d), side = d > 0 ? "right" : "left"; return a < 35 ? "" : a < 75 ? `Slightly turn ${side}` : a < 135 ? `Turn ${side}` : `Turn sharply ${side}`; };
 
 export function buildSegments(d: UnifiedData, r: RouteFound): RouteSegment[] {
@@ -63,7 +68,8 @@ export function buildPlan(d: UnifiedData, r: RouteFound, startLabel?: string, go
       prevHeading = null;
     } else if (e.edge_type === "building_connector") {
       const entering = a.domain === "outdoor"; const ent = entering ? b : a;
-      push(entering ? `Enter the Academic Building through ${ent.node_id.split("_").slice(-2).join(" ")} (provisional entrance, unverified).` : "Exit the Academic Building (provisional entrance, unverified).", entering ? "enter" : "exit", i, e.distance, e.travel_time, "Entrance location and accessibility are not field-verified");
+      const door = ENTRANCE_NAME[ent.node_id] ?? ent.node_id.split("_").slice(-2).join(" ");
+      push(entering ? `Enter the Academic Building through ${door} (location not yet field-checked).` : `Leave the Academic Building through ${door} (location not yet field-checked).`, entering ? "enter" : "exit", i, e.distance, e.travel_time, "Entrance location and accessibility are not field-verified");
       prevHeading = null;
     } else if (e.edge_type === "ramp") {
       push(`Use the ramp (${Math.round(e.distance)} m; slope not modeled).`, "ramp", i, e.distance, e.travel_time, "Ramp slope unknown"); prevHeading = null;

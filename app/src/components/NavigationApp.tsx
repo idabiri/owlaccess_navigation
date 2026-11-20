@@ -204,6 +204,10 @@ export function NavigationApp({ data, initial, reportStore, initialPanel = "dire
     return c;
   }, [reports]);
   const pendingCount = reports.filter(r => r.status === "pending").length;
+  /** inside the site, following a route chosen on /suggestions: planning already happened, so planning controls step aside */
+  const following = embedded && !!strategy;
+  /** inside the site, the Report and Review tabs are about reports, not trips: route planning steps aside until Directions is chosen */
+  const planningUi = !following && !(embedded && panel !== "directions");
   const phone = useIsPhone();
   /** on phones the tabs sit in a bar at the bottom of the screen, below the map: a tap also brings the panel into view */
   const choosePanel = (p: Panel) => {
@@ -245,12 +249,12 @@ export function NavigationApp({ data, initial, reportStore, initialPanel = "dire
   const sidePanel = (
     <aside className="side" aria-label="Route planner, reports and review">
       {/* once a route is on screen the planner folds into one line, so the directions sit at the top of the panel */}
-      <details className="planner" open={plannerOpen} onToggle={e => setPlannerOpen((e.currentTarget as HTMLDetailsElement).open)}>
+      {planningUi && <details className="planner" open={plannerOpen} onToggle={e => setPlannerOpen((e.currentTarget as HTMLDetailsElement).open)}>
         <summary>{found && lastQuery
           ? <><b>Route planner</b> <span className="muted">{labelOf(lastQuery.start)} → {labelOf(lastQuery.goal)} · {lastQuery.mode === "wheelchair" ? "Wheelchair" : "Walking"} · change</span></>
           : <b>Route planner</b>}</summary>
         <NavigationPanel state={nav} endpoints={data.unified.endpoints_meta} scenarios={data.unified.scenarios} labelOf={labelOf} onChange={patch} onCalculate={calculate} />
-      </details>
+      </details>}
       <div className="panel-tabs" role="tablist" aria-label="Panels">
         {tabs.map(t => <button key={t.id} type="button" role="tab" id={`tab-${t.id}`} aria-controls={`panel-${t.id}`} aria-selected={panel === t.id}
           className={panel === t.id ? "ptab on" : "ptab"} onClick={() => choosePanel(t.id)}>{t.label}</button>)}
@@ -278,16 +282,16 @@ export function NavigationApp({ data, initial, reportStore, initialPanel = "dire
           <span className="sub">KSU Marietta accessible navigation &middot; student prototype</span></div>
         <span className={`sync ${sync.cls}`} role="status">{sync.text}</span>
       </header>}
-      <div className="banner" role="note">{embedded && <span className={`sync ${sync.cls} inline`}>{sync.text}</span>} <strong>Prototype, not an official KSU service.</strong> Indoor floor plans are <strong>SYNTHETIC / MOCK</strong>. Outdoor entrance locations are provisional and <strong>not field-verified</strong>. Accessibility flags are unverified.</div>
+      <div className="banner" role="note">{embedded && <span className={`sync ${sync.cls} inline`}>{sync.text}</span>} <strong>Prototype, not an official KSU service.</strong> Indoor floor plans are <strong>synthetic</strong>; entrance locations and accessibility details are <strong>not field-checked</strong>. <a href="/about">What&rsquo;s real?</a></div>
       <div className="workspace">
         {sidePanel}
         <main className="stage" aria-label="Campus map">
           <div className="stage-bar">
-            <label className="building-select"><span>Building</span>
+            {planningUi && <label className="building-select"><span>Building</span>
               <select value={building?.id} onChange={e => chooseBuilding(e.target.value)} aria-label="Building">
                 {buildings.map(b => <option key={b.id} value={b.id}>{b.shortName} &mdash; {b.hasIndoor ? `${b.floors.length} floors (synthetic indoor map)` : "outdoor only"}</option>)}
               </select>
-            </label>
+            </label>}
             {building && !building.hasIndoor && <span className="badge closed">No indoor map</span>}
             <div role="tablist" aria-label="Map view" className="view-tabs">
               <button type="button" role="tab" aria-selected={view.kind === "outdoor"} className={view.kind === "outdoor" ? "tab on" : "tab"} onClick={() => setView({ kind: "outdoor" })}>Outdoor</button>
@@ -296,17 +300,17 @@ export function NavigationApp({ data, initial, reportStore, initialPanel = "dire
             <h2 data-testid="map-title">{mapTitle}</h2>
           </div>
           {/* on phones the current step and Previous/Next move to the dock at the bottom of the screen */}
-          <RouteSummary result={result} plan={plan} error={error} mode={nav.mode} activeSegment={seg} onSegment={goSegment} notice={routeNotice}
-            steps={steps} activeStep={ins} onStep={dock ? undefined : goInstruction} />
+          {(result || error || planningUi) && <RouteSummary result={result} plan={plan} error={error} mode={nav.mode} activeSegment={seg} onSegment={goSegment} notice={routeNotice}
+            steps={steps} activeStep={ins} onStep={dock ? undefined : goInstruction} />}
           {building && !building.hasIndoor && view.kind === "outdoor" && (
             <p className="building-note" role="status" data-testid="building-note"><strong>{building.name}</strong> has no indoor map yet. Only its outline and the outdoor paths around it are shown;
               its entrances in the source data are not yet connected to the routing network, so routes cannot go inside it.</p>)}
           {view.kind === "outdoor"
-            ? <OutdoorMap data={data} route={found} activeNodeIds={found ? activeNodes : undefined} startNode={nav.start ? nodeOf(nav.start) : null} goalNode={nav.goal ? nodeOf(nav.goal) : null} pickMode={nav.pick} onPickNode={pickNode}
+            ? <OutdoorMap data={data} route={found} activeNodeIds={found ? activeNodes : undefined} startNode={nav.start ? nodeOf(nav.start) : null} goalNode={nav.goal ? nodeOf(nav.goal) : null} pickMode={planningUi ? nav.pick : null} onPickNode={planningUi ? pickNode : undefined}
                 focusBuildingId={building?.id ?? null} focusRequest={focus} reportCounts={reportCounts}
                 positionNodeId={curStep?.positionNodeId ?? null} focusNodeIds={curStep?.nodeIds} />
             : <IndoorMap floor={view.floor} svgText={data.svgs[view.floor]} nodes={nodes} routeNodeIds={found?.nodes} startRoomId={roomOf(nav.start)} goalRoomId={roomOf(nav.goal)} activeObstacleIds={activeObstacles}
-                onSelectRoom={id => patch(nav.pick === "start" ? { start: id } : { goal: id })}
+                onSelectRoom={!planningUi ? undefined : id => patch(nav.pick === "start" ? { start: id } : { goal: id })}
                 reportMode={reportMode} onToggleReportMode={toggleReportMode} onReportPoint={reportPoint} reports={reports} draft={draft} segmentOf={segmentOf} focusReportId={focusReportId}
                 activeStepNodeIds={curStep?.nodeIds} positionNodeId={curStep?.positionNodeId ?? null}
                 endpointNodeIds={found ? { start: found.nodes[0], goal: found.nodes[found.nodes.length - 1] } : undefined} />}

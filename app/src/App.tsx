@@ -19,7 +19,7 @@ export function App() {
   return (
     <Router>
       {err ? <Shell><div className="page"><h1>Couldn't load the map data</h1><p role="alert">{err}</p></div></Shell>
-        : !data ? <Shell><div className="page"><h1>Loading OwlAccess&hellip;</h1></div></Shell>
+        : !data ? <Shell><div className="page loading" role="status" aria-live="polite"><div><p>Loading the campus map&hellip;</p><div className="ld-line" aria-hidden="true" /></div></div></Shell>
         : <AppStateProvider data={data} store={store}><Pages /></AppStateProvider>}
     </Router>
   );
