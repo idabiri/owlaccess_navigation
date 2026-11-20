@@ -1,0 +1,20 @@
+{
+  "accent": "#1152d4",
+  "routeColor": "#f17300",
+  "pendingColor": "#7a3c67",
+  "verifiedColor": "#b91c1c",
+  "panelSide": "left",
+  "panelWidth": 380,
+  "density": "comfortable",
+  "radius": 7,
+  "fontScale": 1.05,
+  "mapContrast": "standard",
+  "reportCards": "detailed",
+  "mobileMapHeight": 55,
+  "heroLayout": "split",
+  "navStyle": "bar",
+  "cardStyle": "elevated",
+  "planLayout": "single",
+  "suggestionCards": "detailed",
+  "suggestionsMap": "right"
+}

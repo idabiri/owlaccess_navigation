@@ -1,0 +1,98 @@
+[
+ {
+  "id": "O-01",
+  "description": "node ids unique; edge ids unique",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "id": "O-02",
+  "description": "every edge references existing nodes",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "id": "O-03",
+  "description": "edge geometry starts/ends exactly at its nodes",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "id": "O-04",
+  "description": "distance > 0 and equals geodesic length of the stored geometry (+-0.02 m)",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "id": "O-05",
+  "description": "travel_time == distance / speed (footway 1.3, steps 0.5 m/s)",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "id": "O-06",
+  "description": "total edge length equals total source way length (+-0.5%; attach vertices split ways, no length created)",
+  "passed": true,
+  "detail": "source 33120 m, graph 33120 m"
+ },
+ {
+  "id": "O-07",
+  "description": "every source way is covered by edges",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "id": "O-08",
+  "description": "component count equals the raw shared-vertex component count (no proximity joins, none lost)",
+  "passed": true,
+  "detail": "graph 26 vs raw 26"
+ },
+ {
+  "id": "O-09",
+  "description": "entrance links add no component merges",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "id": "O-10",
+  "description": "all 29 steps edges inaccessible and stairs_only; all other footway edges accessible=true with 'unknown' basis",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "id": "O-11",
+  "description": "no outdoor edge is verified or marked synthetic-accessible",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "id": "O-12",
+  "description": "entrance nodes are provisional, unverified, and have exactly one link edge",
+  "passed": true,
+  "detail": "['oe_ENT007', 'oe_RMP004', 'oe_ENT008']"
+ },
+ {
+  "id": "O-13",
+  "description": "no entrance node exists for entrance_4 or for any needs_verification row",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "id": "O-14",
+  "description": "every crossing without a shared vertex is grade-separated (bridge/tunnel/layer) and the two ways share no graph node",
+  "passed": true,
+  "detail": "3 crossings: [('246685626', '777891710', True), ('246685626', '777891712', True), ('246685633', '777891705', True)]"
+ },
+ {
+  "id": "O-15",
+  "description": "walking Dijkstra works inside the largest component",
+  "passed": true,
+  "detail": "4"
+ },
+ {
+  "id": "O-16",
+  "description": "wheelchair graph has fewer or equal edges than walking (steps removed)",
+  "passed": true,
+  "detail": "1281 vs 1310"
+ }
+]

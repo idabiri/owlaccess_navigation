@@ -1,0 +1,30 @@
+{
+ "_note": "Shared by the Python runner (run_e2e.py) and the TypeScript tests (app/tests/e2e.test.ts). All indoor data is SYNTHETIC; outdoor entrance links are provisional.",
+ "outdoor_start": "on_9e09c97887",
+ "scenarios": [
+  {"id":"E2E-01","title":"Outdoor sidewalk -> building entrance","start":"on_9e09c97887","goal":"entrance_2","mode":"walking","scenario":null,
+   "expect":{"found":true,"domains":["indoor","outdoor"],"links_include":["conn_out_entrance_2"],"floors":["BLD001_F1"]}},
+  {"id":"E2E-02","title":"Entrance -> Floor 1 classroom","start":"entrance_2","goal":"room_102","mode":"walking","scenario":null,
+   "expect":{"found":true,"floors":["BLD001_F1"],"uses_stairs":false,"uses_elevator":false}},
+  {"id":"E2E-03","title":"Floor 1 classroom -> Floor 2 classroom","start":"room_102","goal":"room_212","mode":"walking","scenario":null,
+   "expect":{"found":true,"floors":["BLD001_F1","BLD001_F2"]}},
+  {"id":"E2E-04","title":"Floor 2 -> Floor 3 using the elevator (wheelchair)","start":"room_212","goal":"room_312","mode":"wheelchair","scenario":null,
+   "expect":{"found":true,"floors":["BLD001_F2","BLD001_F3"],"uses_stairs":false,"uses_elevator":true}},
+  {"id":"E2E-05","title":"Verified blocked hallway forces a reroute (walking)","start":"room_111","goal":"room_117","mode":"walking","scenario":"SCN-BLOCKED-HALLWAY",
+   "baseline":{"scenario":null},
+   "expect":{"found":true,"applied":["OBS-001"],"links_exclude":["e_f1_051"],"slower_than_baseline":true}},
+  {"id":"E2E-06","title":"Wheelchair mode never uses stairs","start":"room_102","goal":"room_302","mode":"wheelchair","scenario":null,
+   "baseline":{"mode":"walking"},
+   "expect":{"found":true,"uses_stairs":false,"uses_elevator":true,"baseline_uses_stairs":true}},
+  {"id":"E2E-07","title":"Elevator 1 out of service -> elevator 2 used (wheelchair)","start":"room_102","goal":"room_302","mode":"wheelchair","scenario":"SCN-ELEVATOR-1-OUT",
+   "expect":{"found":true,"applied":["OBS-002"],"nodes_exclude":["n_f1_elev_1","n_f2_elev_1","n_f3_elev_1"],"nodes_include":["n_f1_elev_2","n_f3_elev_2"],"uses_stairs":false}},
+  {"id":"E2E-08","title":"Both elevators out -> NO_ACCESSIBLE_ROUTE (wheelchair); walking still has stairs","start":"room_102","goal":"room_302","mode":"wheelchair","scenario":"SCN-NO-ELEVATOR",
+   "baseline":{"mode":"walking"},
+   "expect":{"found":false,"reason":"NO_ACCESSIBLE_ROUTE","applied":["OBS-002","OBS-003"],"baseline_found":true,"baseline_uses_stairs":true}},
+  {"id":"E2E-09","title":"Indoor start (Floor 3) -> outdoor destination","start":"room_302","goal":"on_9e09c97887","mode":"walking","scenario":null,
+   "expect":{"found":true,"domains":["indoor","outdoor"],"floors":["BLD001_F1","BLD001_F2","BLD001_F3"],"links_include":["conn_out_entrance_2"]}},
+  {"id":"E2E-10","title":"Unverified obstacle must NOT change the route","start":"room_102","goal":"room_302","mode":"wheelchair","scenario":"SCN-UNVERIFIED-ONLY",
+   "baseline":{"scenario":null},
+   "expect":{"found":true,"applied":[],"same_as_baseline":true}}
+ ]
+}

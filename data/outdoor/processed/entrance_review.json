@@ -1,0 +1,1019 @@
+{
+ "schema_version": "1.0.0",
+ "description": "Entrance review. Source data is preserved verbatim; proposed corrections are separate and unapproved.",
+ "source_sha256": {
+  "buildings.geojson": "042718194735b61a757d45e180c2ccdf5ff55a2d7b9e2f35a5760ba89cf5fe89",
+  "entrances_ramps.geojson": "063b247ba7db008492b32ebc5983b83f177ceba592fb2dd73b998faab88f35c0",
+  "sidewalks.geojson": "c20de92af25b2715c8586b1e3641036d7f937e9eb172cb31226bef12e40b1c8d"
+ },
+ "thresholds": {
+  "source_supported_max_snap_m": 3.0,
+  "no_snap_beyond_m": 15.0,
+  "note": "auditor-chosen review thresholds, not survey facts"
+ },
+ "status_definitions": {
+  "source_supported": "source row is well-formed and its point lies <= 3 m from its building footprint. Still unverified in the field.",
+  "corrected_pending_review": "a correction (snap to the wall and/or a fixed row identity) is PROPOSED and waits for human review.",
+  "needs_verification": "the source point cannot be placed confidently (building not matched or > 15 m away): no snap is proposed.",
+  "synthetic_demo": "invented for the indoor demo; not a real entrance."
+ },
+ "indoor_to_campus_fit": {
+  "method": "similarity (scale+rotation+translation) fitted to the 25 footprint vertices",
+  "scale": 1.00286,
+  "rotation_deg": 0.007,
+  "max_vertex_residual_m": 0.074,
+  "rms_residual_m": 0.052
+ },
+ "status_counts": {
+  "source_supported": 2,
+  "corrected_pending_review": 9,
+  "needs_verification": 2,
+  "synthetic_demo": 1
+ },
+ "entrances": [
+  {
+   "source_row_index": 0,
+   "source": {
+    "properties": {
+     "fid": 1,
+     "feature_id": "ENT001",
+     "feature_type": "entrance",
+     "building_name": "Engineering Technology Center",
+     "accessible": true,
+     "source": "KSU Accessibility Map",
+     "verified": false,
+     "notes": "Entrance indentified on official map"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -9408985.303563325,
+      4020507.536091653
+     ]
+    },
+    "crs": "EPSG:3857"
+   },
+   "original_coordinates": {
+    "epsg3857": [
+     -9408985.303563325,
+     4020507.536091653
+    ],
+    "lon": -84.52235306,
+    "lat": 33.9382054
+   },
+   "building_polygon": "way/225446894",
+   "building_id": "BLD003",
+   "nearest_boundary_point": {
+    "lon": -84.52235549,
+    "lat": 33.93818127,
+    "wall_side": "SE"
+   },
+   "distance_original_to_boundary_m": 2.69,
+   "original_inside_footprint": true,
+   "proposed_snap": {
+    "lon": -84.52235549,
+    "lat": 33.93818127,
+    "snap_distance_m": 2.69,
+    "method": "nearest point on the building exterior ring (geodesic-local aeqd frame)",
+    "note": "PROPOSED position only; a nearest wall point is not a verified door location."
+   },
+   "nearest_sidewalk_ways_to_original": [
+    {
+     "osm_way": "way/225466117",
+     "highway": "footway",
+     "distance_m": 20.7
+    },
+    {
+     "osm_way": "way/225485340",
+     "highway": "footway",
+     "distance_m": 21.2
+    },
+    {
+     "osm_way": "way/225466100",
+     "highway": "footway",
+     "distance_m": 32.0
+    }
+   ],
+   "feature_id": "ENT001",
+   "feature_type": "entrance",
+   "review_status": "source_supported",
+   "requires_field_verification": true,
+   "supported_by_original_source": true,
+   "source_verified_flag": false,
+   "source_accessible_flag": true,
+   "issues": [],
+   "indoor_entrance_feature": null,
+   "indoor_entrance_comparison": null
+  },
+  {
+   "source_row_index": 1,
+   "source": {
+    "properties": {
+     "fid": 2,
+     "feature_id": "ENT002",
+     "feature_type": "entrance",
+     "building_name": "Design 2",
+     "accessible": true,
+     "source": "KSU Accessiblity Map",
+     "verified": false,
+     "notes": null
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -9408915.68098362,
+      4020461.4124195743
+     ]
+    },
+    "crs": "EPSG:3857"
+   },
+   "original_coordinates": {
+    "epsg3857": [
+     -9408915.68098362,
+     4020461.4124195743
+    ],
+    "lon": -84.52172763,
+    "lat": 33.93786165
+   },
+   "building_polygon": "way/225491447",
+   "building_id": "BLD002",
+   "nearest_boundary_point": {
+    "lon": -84.52164616,
+    "lat": 33.93786073,
+    "wall_side": "W"
+   },
+   "distance_original_to_boundary_m": 7.53,
+   "original_inside_footprint": false,
+   "proposed_snap": {
+    "lon": -84.52164616,
+    "lat": 33.93786073,
+    "snap_distance_m": 7.53,
+    "method": "nearest point on the building exterior ring (geodesic-local aeqd frame)",
+    "note": "PROPOSED position only; a nearest wall point is not a verified door location."
+   },
+   "nearest_sidewalk_ways_to_original": [
+    {
+     "osm_way": "way/225485325",
+     "highway": "footway",
+     "distance_m": 4.7
+    },
+    {
+     "osm_way": "way/1134398604",
+     "highway": "footway",
+     "distance_m": 6.1
+    },
+    {
+     "osm_way": "way/225571231",
+     "highway": "footway",
+     "distance_m": 23.0
+    }
+   ],
+   "feature_id": "ENT002",
+   "feature_type": "entrance",
+   "review_status": "corrected_pending_review",
+   "requires_field_verification": true,
+   "supported_by_original_source": true,
+   "source_verified_flag": false,
+   "source_accessible_flag": true,
+   "issues": [
+    "source_typo: 'Accessiblity'"
+   ],
+   "indoor_entrance_feature": null,
+   "indoor_entrance_comparison": null
+  },
+  {
+   "source_row_index": 2,
+   "source": {
+    "properties": {
+     "fid": 3,
+     "feature_id": "ENT003",
+     "feature_type": "entrance",
+     "building_name": "Design2",
+     "accessible": true,
+     "source": "KSU Accessibility Map",
+     "verified": false,
+     "notes": null
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -9408815.550856948,
+      4020454.4265967836
+     ]
+    },
+    "crs": "EPSG:3857"
+   },
+   "original_coordinates": {
+    "epsg3857": [
+     -9408815.550856948,
+     4020454.4265967836
+    ],
+    "lon": -84.52082815,
+    "lat": 33.93780958
+   },
+   "building_polygon": "way/225491447",
+   "building_id": "BLD002",
+   "nearest_boundary_point": {
+    "lon": -84.52086893,
+    "lat": 33.93781005,
+    "wall_side": "E"
+   },
+   "distance_original_to_boundary_m": 3.77,
+   "original_inside_footprint": false,
+   "proposed_snap": {
+    "lon": -84.52086893,
+    "lat": 33.93781005,
+    "snap_distance_m": 3.77,
+    "method": "nearest point on the building exterior ring (geodesic-local aeqd frame)",
+    "note": "PROPOSED position only; a nearest wall point is not a verified door location."
+   },
+   "nearest_sidewalk_ways_to_original": [
+    {
+     "osm_way": "way/225466097",
+     "highway": "footway",
+     "distance_m": 0.4
+    },
+    {
+     "osm_way": "way/1134398604",
+     "highway": "footway",
+     "distance_m": 14.8
+    },
+    {
+     "osm_way": "way/225466103",
+     "highway": "footway",
+     "distance_m": 17.5
+    }
+   ],
+   "feature_id": "ENT003",
+   "feature_type": "entrance",
+   "review_status": "corrected_pending_review",
+   "requires_field_verification": true,
+   "supported_by_original_source": true,
+   "source_verified_flag": false,
+   "source_accessible_flag": true,
+   "issues": [
+    "name_typo: 'Design2' (matched to 'Design 2' / I2 - Design 2 Building)"
+   ],
+   "indoor_entrance_feature": null,
+   "indoor_entrance_comparison": null
+  },
+  {
+   "source_row_index": 3,
+   "source": {
+    "properties": {
+     "fid": 4,
+     "feature_id": "ENT004",
+     "feature_type": "entrance",
+     "building_name": "Design 2",
+     "accessible": true,
+     "source": "KSU Accessibility Map",
+     "verified": false,
+     "notes": null
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -9408838.57819874,
+      4020459.6012803325
+     ]
+    },
+    "crs": "EPSG:3857"
+   },
+   "original_coordinates": {
+    "epsg3857": [
+     -9408838.57819874,
+     4020459.6012803325
+    ],
+    "lon": -84.52103501,
+    "lat": 33.93784815
+   },
+   "building_polygon": "way/225491447",
+   "building_id": "BLD002",
+   "nearest_boundary_point": {
+    "lon": -84.52103408,
+    "lat": 33.93790567,
+    "wall_side": "NE"
+   },
+   "distance_original_to_boundary_m": 6.38,
+   "original_inside_footprint": true,
+   "proposed_snap": {
+    "lon": -84.52103408,
+    "lat": 33.93790567,
+    "snap_distance_m": 6.38,
+    "method": "nearest point on the building exterior ring (geodesic-local aeqd frame)",
+    "note": "PROPOSED position only; a nearest wall point is not a verified door location."
+   },
+   "nearest_sidewalk_ways_to_original": [
+    {
+     "osm_way": "way/1134398604",
+     "highway": "footway",
+     "distance_m": 10.8
+    },
+    {
+     "osm_way": "way/225466097",
+     "highway": "footway",
+     "distance_m": 19.6
+    },
+    {
+     "osm_way": "way/225571231",
+     "highway": "footway",
+     "distance_m": 21.7
+    }
+   ],
+   "feature_id": "ENT004",
+   "feature_type": "entrance",
+   "review_status": "corrected_pending_review",
+   "requires_field_verification": true,
+   "supported_by_original_source": true,
+   "source_verified_flag": false,
+   "source_accessible_flag": true,
+   "issues": [],
+   "indoor_entrance_feature": null,
+   "indoor_entrance_comparison": null
+  },
+  {
+   "source_row_index": 4,
+   "source": {
+    "properties": {
+     "fid": 5,
+     "feature_id": "ENT005",
+     "feature_type": "entrance",
+     "building_name": "Engineering Technology Center",
+     "accessible": true,
+     "source": "KSU Accessibility Map",
+     "verified": false,
+     "notes": null
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -9408953.829629295,
+      4020557.9543034886
+     ]
+    },
+    "crs": "EPSG:3857"
+   },
+   "original_coordinates": {
+    "epsg3857": [
+     -9408953.829629295,
+     4020557.9543034886
+    ],
+    "lon": -84.52207033,
+    "lat": 33.93858115
+   },
+   "building_polygon": "way/225446894",
+   "building_id": "BLD003",
+   "nearest_boundary_point": {
+    "lon": -84.52216424,
+    "lat": 33.93858649,
+    "wall_side": "NE"
+   },
+   "distance_original_to_boundary_m": 8.7,
+   "original_inside_footprint": false,
+   "proposed_snap": {
+    "lon": -84.52216424,
+    "lat": 33.93858649,
+    "snap_distance_m": 8.7,
+    "method": "nearest point on the building exterior ring (geodesic-local aeqd frame)",
+    "note": "PROPOSED position only; a nearest wall point is not a verified door location."
+   },
+   "nearest_sidewalk_ways_to_original": [
+    {
+     "osm_way": "way/225466117",
+     "highway": "footway",
+     "distance_m": 3.6
+    },
+    {
+     "osm_way": "way/225466100",
+     "highway": "footway",
+     "distance_m": 7.4
+    },
+    {
+     "osm_way": "way/1134398596",
+     "highway": "footway",
+     "distance_m": 16.3
+    }
+   ],
+   "feature_id": "ENT005",
+   "feature_type": "entrance",
+   "review_status": "corrected_pending_review",
+   "requires_field_verification": true,
+   "supported_by_original_source": true,
+   "source_verified_flag": false,
+   "source_accessible_flag": true,
+   "issues": [],
+   "indoor_entrance_feature": null,
+   "indoor_entrance_comparison": null
+  },
+  {
+   "source_row_index": 5,
+   "source": {
+    "properties": {
+     "fid": 6,
+     "feature_id": "ENT006",
+     "feature_type": "entrance",
+     "building_name": "Academic",
+     "accessible": true,
+     "source": "KSU Accessibility Map",
+     "verified": false,
+     "notes": null
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -9408813.090135867,
+      4020577.958563703
+     ]
+    },
+    "crs": "EPSG:3857"
+   },
+   "original_coordinates": {
+    "epsg3857": [
+     -9408813.090135867,
+     4020577.958563703
+    ],
+    "lon": -84.52080604,
+    "lat": 33.93873024
+   },
+   "building_polygon": "way/225446888",
+   "building_id": "BLD001",
+   "nearest_boundary_point": {
+    "lon": -84.52070525,
+    "lat": 33.93872275,
+    "wall_side": "N"
+   },
+   "distance_original_to_boundary_m": 9.36,
+   "original_inside_footprint": false,
+   "proposed_snap": {
+    "lon": -84.52070525,
+    "lat": 33.93872275,
+    "snap_distance_m": 9.36,
+    "method": "nearest point on the building exterior ring (geodesic-local aeqd frame)",
+    "note": "PROPOSED position only; a nearest wall point is not a verified door location."
+   },
+   "nearest_sidewalk_ways_to_original": [
+    {
+     "osm_way": "way/1484121410",
+     "highway": "footway",
+     "distance_m": 4.4
+    },
+    {
+     "osm_way": "way/1484121417",
+     "highway": "footway",
+     "distance_m": 4.6
+    },
+    {
+     "osm_way": "way/1484121418",
+     "highway": "footway",
+     "distance_m": 8.2
+    }
+   ],
+   "feature_id": "ENT006",
+   "feature_type": "entrance",
+   "review_status": "corrected_pending_review",
+   "requires_field_verification": true,
+   "supported_by_original_source": true,
+   "source_verified_flag": false,
+   "source_accessible_flag": true,
+   "issues": [],
+   "indoor_entrance_feature": "entrance_1",
+   "indoor_entrance_comparison": {
+    "indoor_feature": "entrance_1",
+    "indoor_node": "n_f1_entrance_1",
+    "offset_to_proposed_snap_m": 1.67,
+    "note": "indoor entrance position was chosen synthetically along the wall; it is NOT a surveyed door"
+   }
+  },
+  {
+   "source_row_index": 6,
+   "source": {
+    "properties": {
+     "fid": 7,
+     "feature_id": "ENT007",
+     "feature_type": "entrance",
+     "building_name": "Academic",
+     "accessible": true,
+     "source": "KSU Accessibility Map",
+     "verified": false,
+     "notes": null
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -9408758.688549962,
+      4020554.3250878584
+     ]
+    },
+    "crs": "EPSG:3857"
+   },
+   "original_coordinates": {
+    "epsg3857": [
+     -9408758.688549962,
+     4020554.3250878584
+    ],
+    "lon": -84.52031735,
+    "lat": 33.93855411
+   },
+   "building_polygon": "way/225446888",
+   "building_id": "BLD001",
+   "nearest_boundary_point": {
+    "lon": -84.52036528,
+    "lat": 33.93855484,
+    "wall_side": "NE"
+   },
+   "distance_original_to_boundary_m": 4.43,
+   "original_inside_footprint": false,
+   "proposed_snap": {
+    "lon": -84.52036528,
+    "lat": 33.93855484,
+    "snap_distance_m": 4.43,
+    "method": "nearest point on the building exterior ring (geodesic-local aeqd frame)",
+    "note": "PROPOSED position only; a nearest wall point is not a verified door location."
+   },
+   "nearest_sidewalk_ways_to_original": [
+    {
+     "osm_way": "way/225470267",
+     "highway": "footway",
+     "distance_m": 0.1
+    },
+    {
+     "osm_way": "way/1134398595",
+     "highway": "footway",
+     "distance_m": 7.6
+    },
+    {
+     "osm_way": "way/225470238",
+     "highway": "footway",
+     "distance_m": 12.1
+    }
+   ],
+   "feature_id": "ENT007",
+   "feature_type": "entrance",
+   "review_status": "corrected_pending_review",
+   "requires_field_verification": true,
+   "supported_by_original_source": true,
+   "source_verified_flag": false,
+   "source_accessible_flag": true,
+   "issues": [],
+   "indoor_entrance_feature": "entrance_2",
+   "indoor_entrance_comparison": {
+    "indoor_feature": "entrance_2",
+    "indoor_node": "n_f1_entrance_2",
+    "offset_to_proposed_snap_m": 0.12,
+    "note": "indoor entrance position was chosen synthetically along the wall; it is NOT a surveyed door"
+   }
+  },
+  {
+   "source_row_index": 7,
+   "source": {
+    "properties": {
+     "fid": 8,
+     "feature_id": "RMP001",
+     "feature_type": "ramp",
+     "building_name": "Engineering Technology Center",
+     "accessible": true,
+     "source": "KSU Accessibility Map",
+     "verified": false,
+     "notes": null
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -9408958.518487291,
+      4020499.7058474664
+     ]
+    },
+    "crs": "EPSG:3857"
+   },
+   "original_coordinates": {
+    "epsg3857": [
+     -9408958.518487291,
+     4020499.7058474664
+    ],
+    "lon": -84.52211245,
+    "lat": 33.93814704
+   },
+   "building_polygon": "way/225446894",
+   "building_id": "BLD003",
+   "nearest_boundary_point": {
+    "lon": -84.5221983,
+    "lat": 33.9381703,
+    "wall_side": "SE"
+   },
+   "distance_original_to_boundary_m": 8.35,
+   "original_inside_footprint": false,
+   "proposed_snap": {
+    "lon": -84.5221983,
+    "lat": 33.9381703,
+    "snap_distance_m": 8.35,
+    "method": "nearest point on the building exterior ring (geodesic-local aeqd frame)",
+    "note": "PROPOSED position only; a nearest wall point is not a verified door location."
+   },
+   "nearest_sidewalk_ways_to_original": [
+    {
+     "osm_way": "way/225485340",
+     "highway": "footway",
+     "distance_m": 0.0
+    },
+    {
+     "osm_way": "way/225466117",
+     "highway": "footway",
+     "distance_m": 2.3
+    },
+    {
+     "osm_way": "way/225466100",
+     "highway": "footway",
+     "distance_m": 9.5
+    }
+   ],
+   "feature_id": "RMP001",
+   "feature_type": "ramp",
+   "review_status": "corrected_pending_review",
+   "requires_field_verification": true,
+   "supported_by_original_source": true,
+   "source_verified_flag": false,
+   "source_accessible_flag": true,
+   "issues": [],
+   "indoor_entrance_feature": null,
+   "indoor_entrance_comparison": null
+  },
+  {
+   "source_row_index": 8,
+   "source": {
+    "properties": {
+     "fid": 9,
+     "feature_id": "RMP002",
+     "feature_type": "ramp",
+     "building_name": "Design 2",
+     "accessible": true,
+     "source": "KSU Accessibility Map",
+     "verified": false,
+     "notes": null
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -9408857.657999631,
+      4020434.3239233047
+     ]
+    },
+    "crs": "EPSG:3857"
+   },
+   "original_coordinates": {
+    "epsg3857": [
+     -9408857.657999631,
+     4020434.3239233047
+    ],
+    "lon": -84.5212064,
+    "lat": 33.93765976
+   },
+   "building_polygon": "way/225491447",
+   "building_id": "BLD002",
+   "nearest_boundary_point": {
+    "lon": -84.52120554,
+    "lat": 33.93771769,
+    "wall_side": "S"
+   },
+   "distance_original_to_boundary_m": 6.43,
+   "original_inside_footprint": false,
+   "proposed_snap": {
+    "lon": -84.52120554,
+    "lat": 33.93771769,
+    "snap_distance_m": 6.43,
+    "method": "nearest point on the building exterior ring (geodesic-local aeqd frame)",
+    "note": "PROPOSED position only; a nearest wall point is not a verified door location."
+   },
+   "nearest_sidewalk_ways_to_original": [
+    {
+     "osm_way": "way/225571231",
+     "highway": "footway",
+     "distance_m": 0.7
+    },
+    {
+     "osm_way": "way/1134398604",
+     "highway": "footway",
+     "distance_m": 31.9
+    },
+    {
+     "osm_way": "way/225466097",
+     "highway": "footway",
+     "distance_m": 33.8
+    }
+   ],
+   "feature_id": "RMP002",
+   "feature_type": "ramp",
+   "review_status": "corrected_pending_review",
+   "requires_field_verification": true,
+   "supported_by_original_source": true,
+   "source_verified_flag": false,
+   "source_accessible_flag": true,
+   "issues": [],
+   "indoor_entrance_feature": null,
+   "indoor_entrance_comparison": null
+  },
+  {
+   "source_row_index": 9,
+   "source": {
+    "properties": {
+     "fid": 10,
+     "feature_id": "RMP003",
+     "feature_type": "ramp",
+     "building_name": "West Parking Deck",
+     "accessible": true,
+     "source": "KSU Accessibility Map",
+     "verified": false,
+     "notes": null
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -9408949.058585428,
+      4020438.6776544205
+     ]
+    },
+    "crs": "EPSG:3857"
+   },
+   "original_coordinates": {
+    "epsg3857": [
+     -9408949.058585428,
+     4020438.6776544205
+    ],
+    "lon": -84.52202747,
+    "lat": 33.93769221
+   },
+   "building_polygon": null,
+   "building_id": null,
+   "nearest_boundary_point": null,
+   "distance_original_to_boundary_m": null,
+   "original_inside_footprint": false,
+   "proposed_snap": null,
+   "nearest_sidewalk_ways_to_original": [],
+   "rejected_name_match": "way/246651526",
+   "feature_id": "RMP003",
+   "feature_type": "ramp",
+   "review_status": "needs_verification",
+   "requires_field_verification": true,
+   "supported_by_original_source": true,
+   "source_verified_flag": false,
+   "source_accessible_flag": true,
+   "issues": [
+    "the polygon matched by name is 12.5 km away: most likely a same-named building on another campus, so the Marietta building is NOT identified; no snap proposed"
+   ],
+   "indoor_entrance_feature": null,
+   "indoor_entrance_comparison": null
+  },
+  {
+   "source_row_index": 10,
+   "source": {
+    "properties": {
+     "fid": 11,
+     "feature_id": "RMP004",
+     "feature_type": "ramp",
+     "building_name": "Academic",
+     "accessible": true,
+     "source": "KSU Accessibility Map",
+     "verified": false,
+     "notes": null
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -9408766.883765131,
+      4020535.535765256
+     ]
+    },
+    "crs": "EPSG:3857"
+   },
+   "original_coordinates": {
+    "epsg3857": [
+     -9408766.883765131,
+     4020535.535765256
+    ],
+    "lon": -84.52039096,
+    "lat": 33.93841407
+   },
+   "building_polygon": "way/225446888",
+   "building_id": "BLD001",
+   "nearest_boundary_point": {
+    "lon": -84.5204119,
+    "lat": 33.9384262,
+    "wall_side": "E"
+   },
+   "distance_original_to_boundary_m": 2.36,
+   "original_inside_footprint": false,
+   "proposed_snap": {
+    "lon": -84.5204119,
+    "lat": 33.9384262,
+    "snap_distance_m": 2.36,
+    "method": "nearest point on the building exterior ring (geodesic-local aeqd frame)",
+    "note": "PROPOSED position only; a nearest wall point is not a verified door location."
+   },
+   "nearest_sidewalk_ways_to_original": [
+    {
+     "osm_way": "way/335766008",
+     "highway": "footway",
+     "distance_m": 2.7
+    },
+    {
+     "osm_way": "way/1134398595",
+     "highway": "footway",
+     "distance_m": 3.3
+    },
+    {
+     "osm_way": "way/225466137",
+     "highway": "footway",
+     "distance_m": 6.6
+    }
+   ],
+   "feature_id": "RMP004",
+   "feature_type": "ramp",
+   "review_status": "source_supported",
+   "requires_field_verification": true,
+   "supported_by_original_source": true,
+   "source_verified_flag": false,
+   "source_accessible_flag": true,
+   "issues": [],
+   "indoor_entrance_feature": "entrance_3",
+   "indoor_entrance_comparison": {
+    "indoor_feature": "entrance_3",
+    "indoor_node": "n_f1_entrance_3",
+    "offset_to_proposed_snap_m": 1.75,
+    "note": "indoor entrance position was chosen synthetically along the wall; it is NOT a surveyed door"
+   }
+  },
+  {
+   "source_row_index": 11,
+   "source": {
+    "properties": {
+     "fid": 12,
+     "feature_id": "RMP005",
+     "feature_type": "ramp",
+     "building_name": "Science Lab Annex",
+     "accessible": true,
+     "source": "KSU Accessibility Map",
+     "verified": false,
+     "notes": null
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -9408936.686151847,
+      4020607.66135047
+     ]
+    },
+    "crs": "EPSG:3857"
+   },
+   "original_coordinates": {
+    "epsg3857": [
+     -9408936.686151847,
+     4020607.66135047
+    ],
+    "lon": -84.52191632,
+    "lat": 33.93895161
+   },
+   "building_polygon": "way/1134398612",
+   "building_id": null,
+   "nearest_boundary_point": {
+    "lon": -84.5218254,
+    "lat": 33.9387769,
+    "wall_side": "NW"
+   },
+   "distance_original_to_boundary_m": 21.12,
+   "original_inside_footprint": false,
+   "proposed_snap": null,
+   "nearest_sidewalk_ways_to_original": [
+    {
+     "osm_way": "way/225466102",
+     "highway": "footway",
+     "distance_m": 0.3
+    },
+    {
+     "osm_way": "way/225466100",
+     "highway": "footway",
+     "distance_m": 5.2
+    },
+    {
+     "osm_way": "way/225485362",
+     "highway": "footway",
+     "distance_m": 14.7
+    }
+   ],
+   "feature_id": "RMP005",
+   "feature_type": "ramp",
+   "review_status": "needs_verification",
+   "requires_field_verification": true,
+   "supported_by_original_source": true,
+   "source_verified_flag": false,
+   "source_accessible_flag": true,
+   "issues": [
+    "original point is 21.1 m from the footprint (> 15.0 m): no snap proposed"
+   ],
+   "indoor_entrance_feature": null,
+   "indoor_entrance_comparison": null
+  },
+  {
+   "source_row_index": 12,
+   "source": {
+    "properties": {
+     "fid": null,
+     "feature_id": "ENT",
+     "feature_type": "008",
+     "building_name": "Engineering Technology Center",
+     "accessible": true,
+     "source": "KSU Accessibility Map",
+     "verified": false,
+     "notes": null
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -9408982.455123024,
+      4020585.656772269
+     ]
+    },
+    "crs": "EPSG:3857"
+   },
+   "original_coordinates": {
+    "epsg3857": [
+     -9408982.455123024,
+     4020585.656772269
+    ],
+    "lon": -84.52232747,
+    "lat": 33.93878761
+   },
+   "building_polygon": "way/225446894",
+   "building_id": "BLD003",
+   "nearest_boundary_point": {
+    "lon": -84.5223275,
+    "lat": 33.93878727,
+    "wall_side": "NE"
+   },
+   "distance_original_to_boundary_m": 0.04,
+   "original_inside_footprint": false,
+   "proposed_snap": {
+    "lon": -84.5223275,
+    "lat": 33.93878727,
+    "snap_distance_m": 0.04,
+    "method": "nearest point on the building exterior ring (geodesic-local aeqd frame)",
+    "note": "PROPOSED position only; a nearest wall point is not a verified door location."
+   },
+   "nearest_sidewalk_ways_to_original": [
+    {
+     "osm_way": "way/225485333",
+     "highway": "footway",
+     "distance_m": 0.0
+    },
+    {
+     "osm_way": "way/543821135",
+     "highway": "footway",
+     "distance_m": 7.0
+    },
+    {
+     "osm_way": "way/225466117",
+     "highway": "footway",
+     "distance_m": 21.0
+    }
+   ],
+   "proposed_row_correction": {
+    "feature_id": "ENT008",
+    "feature_type": "entrance",
+    "fid": 13,
+    "confidence": "medium",
+    "evidence": [
+     "ENT001-ENT007 are sequential entrances; the ramps use a separate RMP001-RMP005 sequence",
+     "the row's building (Engineering Technology Center), accessible=true, source and verified=false match the neighbouring entrance rows",
+     "feature_type values elsewhere are the words 'entrance'/'ramp', so '008' looks like the numeric part of the id",
+     "fid is null while fid 1-12 are used (hand-added row)"
+    ],
+    "action": "Proposed only. Source file is NOT edited. Confirm with the QGIS author and in the field."
+   },
+   "feature_id": "ENT",
+   "feature_type": "008",
+   "review_status": "corrected_pending_review",
+   "requires_field_verification": true,
+   "supported_by_original_source": true,
+   "source_verified_flag": false,
+   "source_accessible_flag": true,
+   "issues": [
+    "shifted_row: feature_id='ENT', feature_type='008', fid=null"
+   ],
+   "indoor_entrance_feature": null,
+   "indoor_entrance_comparison": null
+  },
+  {
+   "feature_id": "entrance_4 (indoor, synthetic)",
+   "review_status": "synthetic_demo",
+   "requires_field_verification": true,
+   "supported_by_original_source": false,
+   "building_id": "BLD001",
+   "indoor_entrance_feature": "entrance_4",
+   "issues": [
+    "invented for demonstration (standard entrance with steps)",
+    "NOT in any source data",
+    "must never be used as a real outdoor connection"
+   ],
+   "original_coordinates": null,
+   "proposed_snap": null
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+# Python libraries needed to RE-RUN the data pipeline (scripts/indoor, scripts/integration).
+# Not needed for the app or for tests/ (standard library only). Versions were not recorded during development.
+numpy
+pyproj
+shapely>=2.0
+networkx
+jsonschema

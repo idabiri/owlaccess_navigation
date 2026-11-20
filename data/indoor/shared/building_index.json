@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "synthetic": true,
+  "disclaimer": "SYNTHETIC / MOCK DATA. Not official KSU architectural plans. Interior elements and accessibility attributes are generated and NOT field-verified.",
+  "buildings": [
+    {
+      "building_id": "BLD001",
+      "building_name": "H - Academic Building",
+      "path": "buildings/BLD001",
+      "indoor_generated": true,
+      "floors": 3
+    },
+    {
+      "building_id": "BLD002",
+      "building_name": "I2 - Design 2 Building",
+      "path": null,
+      "indoor_generated": false,
+      "reason": "skipped at user request (indoor_mapping=False)"
+    },
+    {
+      "building_id": "BLD003",
+      "building_name": "Q - Engineering Technology Center",
+      "path": null,
+      "indoor_generated": false,
+      "reason": "skipped at user request (indoor_mapping=False)"
+    }
+  ]
+}

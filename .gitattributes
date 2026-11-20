@@ -1,0 +1,29 @@
+# Source code and docs: normal text handling with LF line endings
+*.ts   text eol=lf
+*.tsx  text eol=lf
+*.js   text eol=lf
+*.mjs  text eol=lf
+*.py   text eol=lf
+*.css  text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+
+# Binary formats
+*.gpkg binary
+*.qgz  binary
+*.tif  binary
+*.jpg  binary
+*.png  binary
+*.pdf  binary
+
+# Keep data, audit evidence and the app's data copies byte-for-byte, so the SHA-256 hashes in docs/FILE_MANIFEST.csv,
+# entrance_review.json and the unified graph's "generated_from" stay valid on every platform.
+# (These lines come last on purpose: in .gitattributes, later matching lines win.)
+data/**               -text
+audit/**              -text
+app/public/data/**    -text
+app/tests/fixtures/** -text
+docs/FILE_MANIFEST.csv -text
+
+# No file in the repository needs Git LFS today (largest: 1.1 MB). If the KSU maps are ever added with permission,
+# track them with LFS instead:   git lfs install && git lfs track "data/reference/ksu_maps/*"

@@ -1,0 +1,3612 @@
+{
+  "schema_version": "1.0.0",
+  "building_id": "BLD001",
+  "synthetic": true,
+  "disclaimer": "SYNTHETIC / MOCK DATA. Not official KSU architectural plans. Interior elements and accessibility attributes are generated and NOT field-verified.",
+  "coordinate_system": "local-svg-units (10 units = 1 m, origin top-left, y down)",
+  "rooms": [
+    {
+      "room_id": "room_101",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Lecture Hall 101",
+      "room_type": "lecture_room",
+      "room_number": "101",
+      "x": 156.5,
+      "y": 820.0,
+      "width": 103.5,
+      "height": 187.3,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          820.0
+        ],
+        [
+          260.0,
+          1007.3
+        ],
+        [
+          193.2,
+          1005.5
+        ],
+        [
+          156.5,
+          962.1
+        ],
+        [
+          156.5,
+          924.0
+        ],
+        [
+          158.7,
+          820.0
+        ]
+      ],
+      "door_id": "door_101",
+      "entrance_node_id": "n_f1_re_101",
+      "destination_node_id": "n_f1_dest_101",
+      "notes": ""
+    },
+    {
+      "room_id": "room_102",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Classroom 102",
+      "room_type": "classroom",
+      "room_number": "102",
+      "x": 159.1,
+      "y": 680.0,
+      "width": 100.9,
+      "height": 120.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          680.0
+        ],
+        [
+          260.0,
+          800.0
+        ],
+        [
+          159.1,
+          800.0
+        ],
+        [
+          161.5,
+          688.1
+        ],
+        [
+          161.9,
+          680.0
+        ]
+      ],
+      "door_id": "door_102",
+      "entrance_node_id": "n_f1_re_102",
+      "destination_node_id": "n_f1_dest_102",
+      "notes": ""
+    },
+    {
+      "room_id": "room_103",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Classroom 103",
+      "room_type": "classroom",
+      "room_number": "103",
+      "x": 161.9,
+      "y": 560.0,
+      "width": 98.1,
+      "height": 120.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          560.0
+        ],
+        [
+          260.0,
+          680.0
+        ],
+        [
+          161.9,
+          680.0
+        ],
+        [
+          167.4,
+          560.0
+        ]
+      ],
+      "door_id": "door_103",
+      "entrance_node_id": "n_f1_re_103",
+      "destination_node_id": "n_f1_dest_103",
+      "notes": ""
+    },
+    {
+      "room_id": "room_104",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Department Office 104",
+      "room_type": "department_office",
+      "room_number": "104",
+      "x": 167.4,
+      "y": 450.0,
+      "width": 92.6,
+      "height": 110.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          450.0
+        ],
+        [
+          260.0,
+          560.0
+        ],
+        [
+          167.4,
+          560.0
+        ],
+        [
+          172.5,
+          450.0
+        ]
+      ],
+      "door_id": "door_104",
+      "entrance_node_id": "n_f1_re_104",
+      "destination_node_id": "n_f1_dest_104",
+      "notes": ""
+    },
+    {
+      "room_id": "room_105",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Elevator Lobby 105",
+      "room_type": "elevator_lobby",
+      "room_number": "105",
+      "x": 172.5,
+      "y": 380.0,
+      "width": 87.5,
+      "height": 70.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          380.0
+        ],
+        [
+          260.0,
+          450.0
+        ],
+        [
+          172.5,
+          450.0
+        ],
+        [
+          175.8,
+          380.0
+        ]
+      ],
+      "door_id": "door_105",
+      "entrance_node_id": "n_f1_re_105",
+      "destination_node_id": "n_f1_dest_105",
+      "notes": ""
+    },
+    {
+      "room_id": "room_106",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Restroom (Men) 106",
+      "room_type": "restroom",
+      "room_number": "106",
+      "x": 175.8,
+      "y": 340.0,
+      "width": 84.2,
+      "height": 40.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          340.0
+        ],
+        [
+          260.0,
+          380.0
+        ],
+        [
+          175.8,
+          380.0
+        ],
+        [
+          177.7,
+          340.0
+        ]
+      ],
+      "door_id": "door_106",
+      "entrance_node_id": "n_f1_re_106",
+      "destination_node_id": "n_f1_dest_106",
+      "notes": "Synthetic: standard restroom; accessible-stall assumption unverified."
+    },
+    {
+      "room_id": "room_107",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Restroom (Women) 107",
+      "room_type": "restroom",
+      "room_number": "107",
+      "x": 177.7,
+      "y": 300.0,
+      "width": 82.3,
+      "height": 40.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          300.0
+        ],
+        [
+          260.0,
+          340.0
+        ],
+        [
+          177.7,
+          340.0
+        ],
+        [
+          179.5,
+          300.0
+        ]
+      ],
+      "door_id": "door_107",
+      "entrance_node_id": "n_f1_re_107",
+      "destination_node_id": "n_f1_dest_107",
+      "notes": "Synthetic: standard restroom; accessible-stall assumption unverified."
+    },
+    {
+      "room_id": "room_108",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Accessible Restroom 108",
+      "room_type": "accessible_restroom",
+      "room_number": "108",
+      "x": 176.6,
+      "y": 250.0,
+      "width": 83.4,
+      "height": 50.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          250.0
+        ],
+        [
+          260.0,
+          300.0
+        ],
+        [
+          179.5,
+          300.0
+        ],
+        [
+          181.5,
+          256.2
+        ],
+        [
+          176.6,
+          250.0
+        ]
+      ],
+      "door_id": "door_108",
+      "entrance_node_id": "n_f1_re_108",
+      "destination_node_id": "n_f1_dest_108",
+      "notes": "Synthetic designated single-user accessible restroom (unverified)."
+    },
+    {
+      "room_id": "room_109",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Stairwell 1",
+      "room_type": "stairwell",
+      "room_number": "109",
+      "x": 290.0,
+      "y": 850.0,
+      "width": 50.0,
+      "height": 132.2,
+      "accessible": false,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          850.0
+        ],
+        [
+          340.0,
+          850.0
+        ],
+        [
+          340.0,
+          961.5
+        ],
+        [
+          309.9,
+          960.5
+        ],
+        [
+          290.0,
+          982.2
+        ]
+      ],
+      "door_id": "door_109",
+      "entrance_node_id": "n_f1_re_109",
+      "destination_node_id": "n_f1_stair_1",
+      "notes": ""
+    },
+    {
+      "room_id": "room_110",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Mechanical Room 110",
+      "room_type": "service",
+      "room_number": "110",
+      "x": 340.0,
+      "y": 850.0,
+      "width": 59.0,
+      "height": 113.4,
+      "accessible": false,
+      "synthetic": true,
+      "category": "service",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          340.0,
+          850.0
+        ],
+        [
+          399.0,
+          850.0
+        ],
+        [
+          398.5,
+          963.4
+        ],
+        [
+          340.0,
+          961.5
+        ]
+      ],
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": "Non-navigable service space; intentionally has no graph nodes."
+    },
+    {
+      "room_id": "room_111",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Classroom 111",
+      "room_type": "classroom",
+      "room_number": "111",
+      "x": 290.0,
+      "y": 730.0,
+      "width": 109.5,
+      "height": 120.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          850.0
+        ],
+        [
+          290.0,
+          730.0
+        ],
+        [
+          399.5,
+          730.0
+        ],
+        [
+          399.0,
+          850.0
+        ]
+      ],
+      "door_id": "door_111",
+      "entrance_node_id": "n_f1_re_111",
+      "destination_node_id": "n_f1_dest_111",
+      "notes": ""
+    },
+    {
+      "room_id": "room_112",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Computer Lab 112",
+      "room_type": "computer_lab",
+      "room_number": "112",
+      "x": 290.0,
+      "y": 610.0,
+      "width": 110.0,
+      "height": 120.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          730.0
+        ],
+        [
+          290.0,
+          610.0
+        ],
+        [
+          400.0,
+          610.0
+        ],
+        [
+          399.5,
+          730.0
+        ]
+      ],
+      "door_id": "door_112",
+      "entrance_node_id": "n_f1_re_112",
+      "destination_node_id": "n_f1_dest_112",
+      "notes": ""
+    },
+    {
+      "room_id": "room_113",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Advising Reception 113",
+      "room_type": "reception",
+      "room_number": "113",
+      "x": 290.0,
+      "y": 481.0,
+      "width": 120.0,
+      "height": 129.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          610.0
+        ],
+        [
+          290.0,
+          481.0
+        ],
+        [
+          410.0,
+          481.0
+        ],
+        [
+          410.0,
+          484.7
+        ],
+        [
+          400.5,
+          487.0
+        ],
+        [
+          400.0,
+          610.0
+        ]
+      ],
+      "door_id": "door_113",
+      "entrance_node_id": "n_f1_re_113",
+      "destination_node_id": "n_f1_dest_113",
+      "notes": ""
+    },
+    {
+      "room_id": "room_114",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Study Room 114",
+      "room_type": "study_room",
+      "room_number": "114",
+      "x": 290.0,
+      "y": 355.0,
+      "width": 65.0,
+      "height": 96.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          451.0
+        ],
+        [
+          290.0,
+          355.0
+        ],
+        [
+          355.0,
+          355.0
+        ],
+        [
+          355.0,
+          451.0
+        ]
+      ],
+      "door_id": "door_114",
+      "entrance_node_id": "n_f1_re_114",
+      "destination_node_id": "n_f1_dest_114",
+      "notes": ""
+    },
+    {
+      "room_id": "room_115",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Classroom 115",
+      "room_type": "classroom",
+      "room_number": "115",
+      "x": 375.0,
+      "y": 355.0,
+      "width": 92.0,
+      "height": 96.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          375.0,
+          451.0
+        ],
+        [
+          375.0,
+          355.0
+        ],
+        [
+          467.0,
+          355.0
+        ],
+        [
+          466.5,
+          391.3
+        ],
+        [
+          430.2,
+          451.0
+        ]
+      ],
+      "door_id": "door_115",
+      "entrance_node_id": "n_f1_re_115",
+      "destination_node_id": "n_f1_dest_115",
+      "notes": ""
+    },
+    {
+      "room_id": "room_116",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Stairwell 2",
+      "room_type": "stairwell",
+      "room_number": "116",
+      "x": 290.0,
+      "y": 250.0,
+      "width": 50.0,
+      "height": 75.0,
+      "accessible": false,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          325.0
+        ],
+        [
+          290.0,
+          250.0
+        ],
+        [
+          340.0,
+          250.0
+        ],
+        [
+          340.0,
+          325.0
+        ]
+      ],
+      "door_id": "door_116",
+      "entrance_node_id": "n_f1_re_116",
+      "destination_node_id": "n_f1_stair_2",
+      "notes": ""
+    },
+    {
+      "room_id": "room_117",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Classroom 117",
+      "room_type": "classroom",
+      "room_number": "117",
+      "x": 340.0,
+      "y": 250.0,
+      "width": 128.5,
+      "height": 75.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          340.0,
+          325.0
+        ],
+        [
+          340.0,
+          250.0
+        ],
+        [
+          462.1,
+          250.0
+        ],
+        [
+          468.5,
+          257.9
+        ],
+        [
+          467.5,
+          325.0
+        ]
+      ],
+      "door_id": "door_117",
+      "entrance_node_id": "n_f1_re_117",
+      "destination_node_id": "n_f1_dest_117",
+      "notes": ""
+    },
+    {
+      "room_id": "room_118",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Main Lobby 118",
+      "room_type": "lobby",
+      "room_number": "118",
+      "x": 152.6,
+      "y": 113.5,
+      "width": 197.4,
+      "height": 136.5,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          350.0,
+          250.0
+        ],
+        [
+          176.6,
+          250.0
+        ],
+        [
+          152.6,
+          220.2
+        ],
+        [
+          155.5,
+          191.2
+        ],
+        [
+          158.4,
+          153.2
+        ],
+        [
+          187.0,
+          126.5
+        ],
+        [
+          227.1,
+          127.5
+        ],
+        [
+          240.1,
+          113.5
+        ],
+        [
+          350.0,
+          115.4
+        ]
+      ],
+      "door_id": "door_118",
+      "entrance_node_id": "n_f1_re_118",
+      "destination_node_id": "n_f1_dest_118",
+      "notes": ""
+    },
+    {
+      "room_id": "room_119",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Student Collaboration Space 119",
+      "room_type": "collaboration_space",
+      "room_number": "119",
+      "x": 350.0,
+      "y": 115.4,
+      "width": 112.1,
+      "height": 134.6,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          350.0,
+          250.0
+        ],
+        [
+          350.0,
+          115.4
+        ],
+        [
+          353.7,
+          115.5
+        ],
+        [
+          372.7,
+          143.6
+        ],
+        [
+          420.7,
+          141.6
+        ],
+        [
+          451.4,
+          186.6
+        ],
+        [
+          446.4,
+          230.8
+        ],
+        [
+          462.1,
+          250.0
+        ]
+      ],
+      "door_id": "door_119",
+      "entrance_node_id": "n_f1_re_119",
+      "destination_node_id": "n_f1_dest_119",
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_1",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Main corridor (south)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 260.0,
+      "y": 820.0,
+      "width": 30.0,
+      "height": 187.5,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          820.0
+        ],
+        [
+          290.0,
+          820.0
+        ],
+        [
+          290.0,
+          982.2
+        ],
+        [
+          266.9,
+          1007.5
+        ],
+        [
+          260.0,
+          1007.3
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_2",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "West branch corridor",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 158.7,
+      "y": 800.0,
+      "width": 101.3,
+      "height": 20.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          800.0
+        ],
+        [
+          260.0,
+          820.0
+        ],
+        [
+          158.7,
+          820.0
+        ],
+        [
+          159.1,
+          800.0
+        ]
+      ],
+      "potentially_narrow": true,
+      "synthetic_width_m": 2.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": "SYNTHETIC potentially-narrow hallway (unverified)."
+    },
+    {
+      "room_id": "hallway_3",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Main corridor (central)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 260.0,
+      "y": 481.0,
+      "width": 30.0,
+      "height": 339.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          820.0
+        ],
+        [
+          260.0,
+          481.0
+        ],
+        [
+          290.0,
+          481.0
+        ],
+        [
+          290.0,
+          820.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_4",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "East branch corridor (ramp entrance)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 290.0,
+      "y": 451.0,
+      "width": 140.2,
+      "height": 30.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          481.0
+        ],
+        [
+          290.0,
+          451.0
+        ],
+        [
+          430.2,
+          451.0
+        ],
+        [
+          424.5,
+          460.3
+        ],
+        [
+          424.5,
+          481.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_5",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Main corridor (mid-north)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 260.0,
+      "y": 355.0,
+      "width": 30.0,
+      "height": 126.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          481.0
+        ],
+        [
+          260.0,
+          355.0
+        ],
+        [
+          290.0,
+          355.0
+        ],
+        [
+          290.0,
+          481.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_6",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "East cross corridor",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 290.0,
+      "y": 325.0,
+      "width": 177.5,
+      "height": 30.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          355.0
+        ],
+        [
+          290.0,
+          325.0
+        ],
+        [
+          467.5,
+          325.0
+        ],
+        [
+          467.0,
+          355.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_7",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "Main corridor (north)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 260.0,
+      "y": 250.0,
+      "width": 30.0,
+      "height": 105.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          355.0
+        ],
+        [
+          260.0,
+          250.0
+        ],
+        [
+          290.0,
+          250.0
+        ],
+        [
+          290.0,
+          355.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_8",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "room_name": "East link corridor",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 355.0,
+      "y": 355.0,
+      "width": 20.0,
+      "height": 96.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          355.0,
+          451.0
+        ],
+        [
+          355.0,
+          355.0
+        ],
+        [
+          375.0,
+          355.0
+        ],
+        [
+          375.0,
+          451.0
+        ]
+      ],
+      "potentially_narrow": true,
+      "synthetic_width_m": 2.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": "SYNTHETIC potentially-narrow hallway (unverified)."
+    },
+    {
+      "room_id": "room_201",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Computer Lab 201",
+      "room_type": "computer_lab",
+      "room_number": "201",
+      "x": 156.5,
+      "y": 820.0,
+      "width": 103.5,
+      "height": 187.3,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          820.0
+        ],
+        [
+          260.0,
+          1007.3
+        ],
+        [
+          193.2,
+          1005.5
+        ],
+        [
+          156.5,
+          962.1
+        ],
+        [
+          156.5,
+          924.0
+        ],
+        [
+          158.7,
+          820.0
+        ]
+      ],
+      "door_id": "door_201",
+      "entrance_node_id": "n_f2_re_201",
+      "destination_node_id": "n_f2_dest_201",
+      "notes": ""
+    },
+    {
+      "room_id": "room_202",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Research Lab 202",
+      "room_type": "research_lab",
+      "room_number": "202",
+      "x": 159.1,
+      "y": 680.0,
+      "width": 100.9,
+      "height": 120.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          680.0
+        ],
+        [
+          260.0,
+          800.0
+        ],
+        [
+          159.1,
+          800.0
+        ],
+        [
+          161.5,
+          688.1
+        ],
+        [
+          161.9,
+          680.0
+        ]
+      ],
+      "door_id": "door_202",
+      "entrance_node_id": "n_f2_re_202",
+      "destination_node_id": "n_f2_dest_202",
+      "notes": ""
+    },
+    {
+      "room_id": "room_203",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Research Lab 203",
+      "room_type": "research_lab",
+      "room_number": "203",
+      "x": 161.9,
+      "y": 620.0,
+      "width": 98.1,
+      "height": 60.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          620.0
+        ],
+        [
+          260.0,
+          680.0
+        ],
+        [
+          161.9,
+          680.0
+        ],
+        [
+          164.7,
+          620.0
+        ]
+      ],
+      "door_id": "door_203",
+      "entrance_node_id": "n_f2_re_203",
+      "destination_node_id": "n_f2_dest_203",
+      "notes": ""
+    },
+    {
+      "room_id": "room_204",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Faculty Office Suite 204",
+      "room_type": "faculty_office",
+      "room_number": "204",
+      "x": 167.4,
+      "y": 510.0,
+      "width": 92.6,
+      "height": 50.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          510.0
+        ],
+        [
+          260.0,
+          560.0
+        ],
+        [
+          167.4,
+          560.0
+        ],
+        [
+          169.8,
+          510.0
+        ]
+      ],
+      "door_id": "door_204",
+      "entrance_node_id": "n_f2_re_204",
+      "destination_node_id": "n_f2_dest_204",
+      "notes": ""
+    },
+    {
+      "room_id": "room_205",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Elevator Lobby 205",
+      "room_type": "elevator_lobby",
+      "room_number": "205",
+      "x": 172.5,
+      "y": 380.0,
+      "width": 87.5,
+      "height": 70.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          380.0
+        ],
+        [
+          260.0,
+          450.0
+        ],
+        [
+          172.5,
+          450.0
+        ],
+        [
+          175.8,
+          380.0
+        ]
+      ],
+      "door_id": "door_205",
+      "entrance_node_id": "n_f2_re_205",
+      "destination_node_id": "n_f2_dest_205",
+      "notes": ""
+    },
+    {
+      "room_id": "room_206",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Restroom (Men) 206",
+      "room_type": "restroom",
+      "room_number": "206",
+      "x": 175.8,
+      "y": 340.0,
+      "width": 84.2,
+      "height": 40.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          340.0
+        ],
+        [
+          260.0,
+          380.0
+        ],
+        [
+          175.8,
+          380.0
+        ],
+        [
+          177.7,
+          340.0
+        ]
+      ],
+      "door_id": "door_206",
+      "entrance_node_id": "n_f2_re_206",
+      "destination_node_id": "n_f2_dest_206",
+      "notes": "Synthetic: standard restroom; accessible-stall assumption unverified."
+    },
+    {
+      "room_id": "room_207",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Restroom (Women) 207",
+      "room_type": "restroom",
+      "room_number": "207",
+      "x": 177.7,
+      "y": 300.0,
+      "width": 82.3,
+      "height": 40.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          300.0
+        ],
+        [
+          260.0,
+          340.0
+        ],
+        [
+          177.7,
+          340.0
+        ],
+        [
+          179.5,
+          300.0
+        ]
+      ],
+      "door_id": "door_207",
+      "entrance_node_id": "n_f2_re_207",
+      "destination_node_id": "n_f2_dest_207",
+      "notes": "Synthetic: standard restroom; accessible-stall assumption unverified."
+    },
+    {
+      "room_id": "room_208",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Accessible Restroom 208",
+      "room_type": "accessible_restroom",
+      "room_number": "208",
+      "x": 176.6,
+      "y": 250.0,
+      "width": 83.4,
+      "height": 50.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          250.0
+        ],
+        [
+          260.0,
+          300.0
+        ],
+        [
+          179.5,
+          300.0
+        ],
+        [
+          181.5,
+          256.2
+        ],
+        [
+          176.6,
+          250.0
+        ]
+      ],
+      "door_id": "door_208",
+      "entrance_node_id": "n_f2_re_208",
+      "destination_node_id": "n_f2_dest_208",
+      "notes": "Synthetic designated single-user accessible restroom (unverified)."
+    },
+    {
+      "room_id": "room_209",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Stairwell 1",
+      "room_type": "stairwell",
+      "room_number": "209",
+      "x": 290.0,
+      "y": 850.0,
+      "width": 50.0,
+      "height": 132.2,
+      "accessible": false,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          850.0
+        ],
+        [
+          340.0,
+          850.0
+        ],
+        [
+          340.0,
+          961.5
+        ],
+        [
+          309.9,
+          960.5
+        ],
+        [
+          290.0,
+          982.2
+        ]
+      ],
+      "door_id": "door_209",
+      "entrance_node_id": "n_f2_re_209",
+      "destination_node_id": "n_f2_stair_1",
+      "notes": ""
+    },
+    {
+      "room_id": "room_210",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Mechanical Room 210",
+      "room_type": "service",
+      "room_number": "210",
+      "x": 340.0,
+      "y": 850.0,
+      "width": 59.0,
+      "height": 113.4,
+      "accessible": false,
+      "synthetic": true,
+      "category": "service",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          340.0,
+          850.0
+        ],
+        [
+          399.0,
+          850.0
+        ],
+        [
+          398.5,
+          963.4
+        ],
+        [
+          340.0,
+          961.5
+        ]
+      ],
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": "Non-navigable service space; intentionally has no graph nodes."
+    },
+    {
+      "room_id": "room_211",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Lecture Hall 211",
+      "room_type": "lecture_room",
+      "room_number": "211",
+      "x": 290.0,
+      "y": 730.0,
+      "width": 109.5,
+      "height": 120.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          850.0
+        ],
+        [
+          290.0,
+          730.0
+        ],
+        [
+          399.5,
+          730.0
+        ],
+        [
+          399.0,
+          850.0
+        ]
+      ],
+      "door_id": "door_211",
+      "entrance_node_id": "n_f2_re_211",
+      "destination_node_id": "n_f2_dest_211",
+      "notes": ""
+    },
+    {
+      "room_id": "room_212",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Classroom 212",
+      "room_type": "classroom",
+      "room_number": "212",
+      "x": 290.0,
+      "y": 610.0,
+      "width": 110.0,
+      "height": 120.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          730.0
+        ],
+        [
+          290.0,
+          610.0
+        ],
+        [
+          400.0,
+          610.0
+        ],
+        [
+          399.5,
+          730.0
+        ]
+      ],
+      "door_id": "door_212",
+      "entrance_node_id": "n_f2_re_212",
+      "destination_node_id": "n_f2_dest_212",
+      "notes": ""
+    },
+    {
+      "room_id": "room_213",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Break Room 213",
+      "room_type": "break_room",
+      "room_number": "213",
+      "x": 290.0,
+      "y": 481.0,
+      "width": 120.0,
+      "height": 129.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          610.0
+        ],
+        [
+          290.0,
+          481.0
+        ],
+        [
+          410.0,
+          481.0
+        ],
+        [
+          410.0,
+          484.7
+        ],
+        [
+          400.5,
+          487.0
+        ],
+        [
+          400.0,
+          610.0
+        ]
+      ],
+      "door_id": "door_213",
+      "entrance_node_id": "n_f2_re_213",
+      "destination_node_id": "n_f2_dest_213",
+      "notes": ""
+    },
+    {
+      "room_id": "room_214",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Conference Room 214",
+      "room_type": "conference_room",
+      "room_number": "214",
+      "x": 290.0,
+      "y": 355.0,
+      "width": 65.0,
+      "height": 96.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          451.0
+        ],
+        [
+          290.0,
+          355.0
+        ],
+        [
+          355.0,
+          355.0
+        ],
+        [
+          355.0,
+          451.0
+        ]
+      ],
+      "door_id": "door_214",
+      "entrance_node_id": "n_f2_re_214",
+      "destination_node_id": "n_f2_dest_214",
+      "notes": ""
+    },
+    {
+      "room_id": "room_215",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Computer Lab 215",
+      "room_type": "computer_lab",
+      "room_number": "215",
+      "x": 375.0,
+      "y": 355.0,
+      "width": 92.0,
+      "height": 96.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          375.0,
+          451.0
+        ],
+        [
+          375.0,
+          355.0
+        ],
+        [
+          467.0,
+          355.0
+        ],
+        [
+          466.5,
+          391.3
+        ],
+        [
+          430.2,
+          451.0
+        ]
+      ],
+      "door_id": "door_215",
+      "entrance_node_id": "n_f2_re_215",
+      "destination_node_id": "n_f2_dest_215",
+      "notes": ""
+    },
+    {
+      "room_id": "room_216",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Stairwell 2",
+      "room_type": "stairwell",
+      "room_number": "216",
+      "x": 290.0,
+      "y": 250.0,
+      "width": 50.0,
+      "height": 75.0,
+      "accessible": false,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          325.0
+        ],
+        [
+          290.0,
+          250.0
+        ],
+        [
+          340.0,
+          250.0
+        ],
+        [
+          340.0,
+          325.0
+        ]
+      ],
+      "door_id": "door_216",
+      "entrance_node_id": "n_f2_re_216",
+      "destination_node_id": "n_f2_stair_2",
+      "notes": ""
+    },
+    {
+      "room_id": "room_217",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Department Office 217",
+      "room_type": "department_office",
+      "room_number": "217",
+      "x": 340.0,
+      "y": 250.0,
+      "width": 128.5,
+      "height": 75.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          340.0,
+          325.0
+        ],
+        [
+          340.0,
+          250.0
+        ],
+        [
+          462.1,
+          250.0
+        ],
+        [
+          468.5,
+          257.9
+        ],
+        [
+          467.5,
+          325.0
+        ]
+      ],
+      "door_id": "door_217",
+      "entrance_node_id": "n_f2_re_217",
+      "destination_node_id": "n_f2_dest_217",
+      "notes": ""
+    },
+    {
+      "room_id": "room_218",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Open Study Area 218",
+      "room_type": "open_study_area",
+      "room_number": "218",
+      "x": 152.6,
+      "y": 113.5,
+      "width": 197.4,
+      "height": 136.5,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          350.0,
+          250.0
+        ],
+        [
+          176.6,
+          250.0
+        ],
+        [
+          152.6,
+          220.2
+        ],
+        [
+          155.5,
+          191.2
+        ],
+        [
+          158.4,
+          153.2
+        ],
+        [
+          187.0,
+          126.5
+        ],
+        [
+          227.1,
+          127.5
+        ],
+        [
+          240.1,
+          113.5
+        ],
+        [
+          350.0,
+          115.4
+        ]
+      ],
+      "door_id": "door_218",
+      "entrance_node_id": "n_f2_re_218",
+      "destination_node_id": "n_f2_dest_218",
+      "notes": ""
+    },
+    {
+      "room_id": "room_219",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Collaboration Lounge 219",
+      "room_type": "collaboration_space",
+      "room_number": "219",
+      "x": 350.0,
+      "y": 115.4,
+      "width": 112.1,
+      "height": 134.6,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          350.0,
+          250.0
+        ],
+        [
+          350.0,
+          115.4
+        ],
+        [
+          353.7,
+          115.5
+        ],
+        [
+          372.7,
+          143.6
+        ],
+        [
+          420.7,
+          141.6
+        ],
+        [
+          451.4,
+          186.6
+        ],
+        [
+          446.4,
+          230.8
+        ],
+        [
+          462.1,
+          250.0
+        ]
+      ],
+      "door_id": "door_219",
+      "entrance_node_id": "n_f2_re_219",
+      "destination_node_id": "n_f2_dest_219",
+      "notes": ""
+    },
+    {
+      "room_id": "room_220",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Research Lab 220",
+      "room_type": "research_lab",
+      "room_number": "220",
+      "x": 164.7,
+      "y": 560.0,
+      "width": 95.3,
+      "height": 60.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          560.0
+        ],
+        [
+          260.0,
+          620.0
+        ],
+        [
+          164.7,
+          620.0
+        ],
+        [
+          167.4,
+          560.0
+        ]
+      ],
+      "door_id": "door_220",
+      "entrance_node_id": "n_f2_re_220",
+      "destination_node_id": "n_f2_dest_220",
+      "notes": ""
+    },
+    {
+      "room_id": "room_221",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Faculty Office Suite 221",
+      "room_type": "faculty_office",
+      "room_number": "221",
+      "x": 169.8,
+      "y": 450.0,
+      "width": 90.2,
+      "height": 60.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          450.0
+        ],
+        [
+          260.0,
+          510.0
+        ],
+        [
+          169.8,
+          510.0
+        ],
+        [
+          172.5,
+          450.0
+        ]
+      ],
+      "door_id": "door_221",
+      "entrance_node_id": "n_f2_re_221",
+      "destination_node_id": "n_f2_dest_221",
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_9",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Main corridor (south)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 260.0,
+      "y": 820.0,
+      "width": 30.0,
+      "height": 187.5,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          820.0
+        ],
+        [
+          290.0,
+          820.0
+        ],
+        [
+          290.0,
+          982.2
+        ],
+        [
+          266.9,
+          1007.5
+        ],
+        [
+          260.0,
+          1007.3
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_10",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "West branch corridor",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 158.7,
+      "y": 800.0,
+      "width": 101.3,
+      "height": 20.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          800.0
+        ],
+        [
+          260.0,
+          820.0
+        ],
+        [
+          158.7,
+          820.0
+        ],
+        [
+          159.1,
+          800.0
+        ]
+      ],
+      "potentially_narrow": true,
+      "synthetic_width_m": 2.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": "SYNTHETIC potentially-narrow hallway (unverified)."
+    },
+    {
+      "room_id": "hallway_11",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Main corridor (central)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 260.0,
+      "y": 481.0,
+      "width": 30.0,
+      "height": 339.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          820.0
+        ],
+        [
+          260.0,
+          481.0
+        ],
+        [
+          290.0,
+          481.0
+        ],
+        [
+          290.0,
+          820.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_12",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "East branch corridor (ramp entrance)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 290.0,
+      "y": 451.0,
+      "width": 140.2,
+      "height": 30.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          481.0
+        ],
+        [
+          290.0,
+          451.0
+        ],
+        [
+          430.2,
+          451.0
+        ],
+        [
+          424.5,
+          460.3
+        ],
+        [
+          424.5,
+          481.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_13",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Main corridor (mid-north)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 260.0,
+      "y": 355.0,
+      "width": 30.0,
+      "height": 126.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          481.0
+        ],
+        [
+          260.0,
+          355.0
+        ],
+        [
+          290.0,
+          355.0
+        ],
+        [
+          290.0,
+          481.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_14",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "East cross corridor",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 290.0,
+      "y": 325.0,
+      "width": 177.5,
+      "height": 30.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          355.0
+        ],
+        [
+          290.0,
+          325.0
+        ],
+        [
+          467.5,
+          325.0
+        ],
+        [
+          467.0,
+          355.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_15",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "Main corridor (north)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 260.0,
+      "y": 250.0,
+      "width": 30.0,
+      "height": 105.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          355.0
+        ],
+        [
+          260.0,
+          250.0
+        ],
+        [
+          290.0,
+          250.0
+        ],
+        [
+          290.0,
+          355.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_16",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "room_name": "East link corridor",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 355.0,
+      "y": 355.0,
+      "width": 20.0,
+      "height": 96.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          355.0,
+          451.0
+        ],
+        [
+          355.0,
+          355.0
+        ],
+        [
+          375.0,
+          355.0
+        ],
+        [
+          375.0,
+          451.0
+        ]
+      ],
+      "potentially_narrow": true,
+      "synthetic_width_m": 2.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": "SYNTHETIC potentially-narrow hallway (unverified)."
+    },
+    {
+      "room_id": "room_301",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Research Lab 301",
+      "room_type": "research_lab",
+      "room_number": "301",
+      "x": 156.5,
+      "y": 820.0,
+      "width": 103.5,
+      "height": 187.3,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          820.0
+        ],
+        [
+          260.0,
+          1007.3
+        ],
+        [
+          193.2,
+          1005.5
+        ],
+        [
+          156.5,
+          962.1
+        ],
+        [
+          156.5,
+          924.0
+        ],
+        [
+          158.7,
+          820.0
+        ]
+      ],
+      "door_id": "door_301",
+      "entrance_node_id": "n_f3_re_301",
+      "destination_node_id": "n_f3_dest_301",
+      "notes": ""
+    },
+    {
+      "room_id": "room_302",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Research Lab 302",
+      "room_type": "research_lab",
+      "room_number": "302",
+      "x": 159.1,
+      "y": 680.0,
+      "width": 100.9,
+      "height": 120.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          680.0
+        ],
+        [
+          260.0,
+          800.0
+        ],
+        [
+          159.1,
+          800.0
+        ],
+        [
+          161.5,
+          688.1
+        ],
+        [
+          161.9,
+          680.0
+        ]
+      ],
+      "door_id": "door_302",
+      "entrance_node_id": "n_f3_re_302",
+      "destination_node_id": "n_f3_dest_302",
+      "notes": ""
+    },
+    {
+      "room_id": "room_303",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Computer Lab 303",
+      "room_type": "computer_lab",
+      "room_number": "303",
+      "x": 161.9,
+      "y": 560.0,
+      "width": 98.1,
+      "height": 120.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          560.0
+        ],
+        [
+          260.0,
+          680.0
+        ],
+        [
+          161.9,
+          680.0
+        ],
+        [
+          167.4,
+          560.0
+        ]
+      ],
+      "door_id": "door_303",
+      "entrance_node_id": "n_f3_re_303",
+      "destination_node_id": "n_f3_dest_303",
+      "notes": ""
+    },
+    {
+      "room_id": "room_304",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Faculty Office Suite 304",
+      "room_type": "faculty_office",
+      "room_number": "304",
+      "x": 167.4,
+      "y": 450.0,
+      "width": 92.6,
+      "height": 110.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          450.0
+        ],
+        [
+          260.0,
+          560.0
+        ],
+        [
+          167.4,
+          560.0
+        ],
+        [
+          172.5,
+          450.0
+        ]
+      ],
+      "door_id": "door_304",
+      "entrance_node_id": "n_f3_re_304",
+      "destination_node_id": "n_f3_dest_304",
+      "notes": ""
+    },
+    {
+      "room_id": "room_305",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Elevator Lobby 305",
+      "room_type": "elevator_lobby",
+      "room_number": "305",
+      "x": 172.5,
+      "y": 380.0,
+      "width": 87.5,
+      "height": 70.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          380.0
+        ],
+        [
+          260.0,
+          450.0
+        ],
+        [
+          172.5,
+          450.0
+        ],
+        [
+          175.8,
+          380.0
+        ]
+      ],
+      "door_id": "door_305",
+      "entrance_node_id": "n_f3_re_305",
+      "destination_node_id": "n_f3_dest_305",
+      "notes": ""
+    },
+    {
+      "room_id": "room_306",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Restroom (Men) 306",
+      "room_type": "restroom",
+      "room_number": "306",
+      "x": 175.8,
+      "y": 340.0,
+      "width": 84.2,
+      "height": 40.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          340.0
+        ],
+        [
+          260.0,
+          380.0
+        ],
+        [
+          175.8,
+          380.0
+        ],
+        [
+          177.7,
+          340.0
+        ]
+      ],
+      "door_id": "door_306",
+      "entrance_node_id": "n_f3_re_306",
+      "destination_node_id": "n_f3_dest_306",
+      "notes": "Synthetic: standard restroom; accessible-stall assumption unverified."
+    },
+    {
+      "room_id": "room_307",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Restroom (Women) 307",
+      "room_type": "restroom",
+      "room_number": "307",
+      "x": 177.7,
+      "y": 300.0,
+      "width": 82.3,
+      "height": 40.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          300.0
+        ],
+        [
+          260.0,
+          340.0
+        ],
+        [
+          177.7,
+          340.0
+        ],
+        [
+          179.5,
+          300.0
+        ]
+      ],
+      "door_id": "door_307",
+      "entrance_node_id": "n_f3_re_307",
+      "destination_node_id": "n_f3_dest_307",
+      "notes": "Synthetic: standard restroom; accessible-stall assumption unverified."
+    },
+    {
+      "room_id": "room_308",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Accessible Restroom 308",
+      "room_type": "accessible_restroom",
+      "room_number": "308",
+      "x": 176.6,
+      "y": 250.0,
+      "width": 83.4,
+      "height": 50.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          250.0
+        ],
+        [
+          260.0,
+          300.0
+        ],
+        [
+          179.5,
+          300.0
+        ],
+        [
+          181.5,
+          256.2
+        ],
+        [
+          176.6,
+          250.0
+        ]
+      ],
+      "door_id": "door_308",
+      "entrance_node_id": "n_f3_re_308",
+      "destination_node_id": "n_f3_dest_308",
+      "notes": "Synthetic designated single-user accessible restroom (unverified)."
+    },
+    {
+      "room_id": "room_309",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Stairwell 1",
+      "room_type": "stairwell",
+      "room_number": "309",
+      "x": 290.0,
+      "y": 850.0,
+      "width": 50.0,
+      "height": 132.2,
+      "accessible": false,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          850.0
+        ],
+        [
+          340.0,
+          850.0
+        ],
+        [
+          340.0,
+          961.5
+        ],
+        [
+          309.9,
+          960.5
+        ],
+        [
+          290.0,
+          982.2
+        ]
+      ],
+      "door_id": "door_309",
+      "entrance_node_id": "n_f3_re_309",
+      "destination_node_id": "n_f3_stair_1",
+      "notes": ""
+    },
+    {
+      "room_id": "room_310",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Mechanical Room 310",
+      "room_type": "service",
+      "room_number": "310",
+      "x": 340.0,
+      "y": 850.0,
+      "width": 59.0,
+      "height": 113.4,
+      "accessible": false,
+      "synthetic": true,
+      "category": "service",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          340.0,
+          850.0
+        ],
+        [
+          399.0,
+          850.0
+        ],
+        [
+          398.5,
+          963.4
+        ],
+        [
+          340.0,
+          961.5
+        ]
+      ],
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": "Non-navigable service space; intentionally has no graph nodes."
+    },
+    {
+      "room_id": "room_311",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Conference Room 311",
+      "room_type": "conference_room",
+      "room_number": "311",
+      "x": 290.0,
+      "y": 795.0,
+      "width": 109.2,
+      "height": 55.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          850.0
+        ],
+        [
+          290.0,
+          795.0
+        ],
+        [
+          399.2,
+          795.0
+        ],
+        [
+          399.0,
+          850.0
+        ]
+      ],
+      "door_id": "door_311",
+      "entrance_node_id": "n_f3_re_311",
+      "destination_node_id": "n_f3_dest_311",
+      "notes": ""
+    },
+    {
+      "room_id": "room_312",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Research Lab 312",
+      "room_type": "research_lab",
+      "room_number": "312",
+      "x": 290.0,
+      "y": 610.0,
+      "width": 110.0,
+      "height": 120.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          730.0
+        ],
+        [
+          290.0,
+          610.0
+        ],
+        [
+          400.0,
+          610.0
+        ],
+        [
+          399.5,
+          730.0
+        ]
+      ],
+      "door_id": "door_312",
+      "entrance_node_id": "n_f3_re_312",
+      "destination_node_id": "n_f3_dest_312",
+      "notes": ""
+    },
+    {
+      "room_id": "room_313",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Faculty Office Suite 313",
+      "room_type": "faculty_office",
+      "room_number": "313",
+      "x": 290.0,
+      "y": 545.0,
+      "width": 110.3,
+      "height": 65.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          610.0
+        ],
+        [
+          290.0,
+          545.0
+        ],
+        [
+          400.3,
+          545.0
+        ],
+        [
+          400.0,
+          610.0
+        ]
+      ],
+      "door_id": "door_313",
+      "entrance_node_id": "n_f3_re_313",
+      "destination_node_id": "n_f3_dest_313",
+      "notes": ""
+    },
+    {
+      "room_id": "room_314",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Conference Room 314",
+      "room_type": "conference_room",
+      "room_number": "314",
+      "x": 290.0,
+      "y": 355.0,
+      "width": 65.0,
+      "height": 96.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          451.0
+        ],
+        [
+          290.0,
+          355.0
+        ],
+        [
+          355.0,
+          355.0
+        ],
+        [
+          355.0,
+          451.0
+        ]
+      ],
+      "door_id": "door_314",
+      "entrance_node_id": "n_f3_re_314",
+      "destination_node_id": "n_f3_dest_314",
+      "notes": ""
+    },
+    {
+      "room_id": "room_315",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Research Lab 315",
+      "room_type": "research_lab",
+      "room_number": "315",
+      "x": 375.0,
+      "y": 355.0,
+      "width": 92.0,
+      "height": 96.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          375.0,
+          451.0
+        ],
+        [
+          375.0,
+          355.0
+        ],
+        [
+          467.0,
+          355.0
+        ],
+        [
+          466.5,
+          391.3
+        ],
+        [
+          430.2,
+          451.0
+        ]
+      ],
+      "door_id": "door_315",
+      "entrance_node_id": "n_f3_re_315",
+      "destination_node_id": "n_f3_dest_315",
+      "notes": ""
+    },
+    {
+      "room_id": "room_316",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Stairwell 2",
+      "room_type": "stairwell",
+      "room_number": "316",
+      "x": 290.0,
+      "y": 250.0,
+      "width": 50.0,
+      "height": 75.0,
+      "accessible": false,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          325.0
+        ],
+        [
+          290.0,
+          250.0
+        ],
+        [
+          340.0,
+          250.0
+        ],
+        [
+          340.0,
+          325.0
+        ]
+      ],
+      "door_id": "door_316",
+      "entrance_node_id": "n_f3_re_316",
+      "destination_node_id": "n_f3_stair_2",
+      "notes": ""
+    },
+    {
+      "room_id": "room_317",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Classroom 317",
+      "room_type": "classroom",
+      "room_number": "317",
+      "x": 340.0,
+      "y": 250.0,
+      "width": 128.5,
+      "height": 75.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          340.0,
+          325.0
+        ],
+        [
+          340.0,
+          250.0
+        ],
+        [
+          462.1,
+          250.0
+        ],
+        [
+          468.5,
+          257.9
+        ],
+        [
+          467.5,
+          325.0
+        ]
+      ],
+      "door_id": "door_317",
+      "entrance_node_id": "n_f3_re_317",
+      "destination_node_id": "n_f3_dest_317",
+      "notes": ""
+    },
+    {
+      "room_id": "room_318",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Open Study Area 318",
+      "room_type": "open_study_area",
+      "room_number": "318",
+      "x": 152.6,
+      "y": 113.5,
+      "width": 197.4,
+      "height": 136.5,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          350.0,
+          250.0
+        ],
+        [
+          176.6,
+          250.0
+        ],
+        [
+          152.6,
+          220.2
+        ],
+        [
+          155.5,
+          191.2
+        ],
+        [
+          158.4,
+          153.2
+        ],
+        [
+          187.0,
+          126.5
+        ],
+        [
+          227.1,
+          127.5
+        ],
+        [
+          240.1,
+          113.5
+        ],
+        [
+          350.0,
+          115.4
+        ]
+      ],
+      "door_id": "door_318",
+      "entrance_node_id": "n_f3_re_318",
+      "destination_node_id": "n_f3_dest_318",
+      "notes": ""
+    },
+    {
+      "room_id": "room_319",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Student Collaboration Space 319",
+      "room_type": "collaboration_space",
+      "room_number": "319",
+      "x": 350.0,
+      "y": 115.4,
+      "width": 112.1,
+      "height": 134.6,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          350.0,
+          250.0
+        ],
+        [
+          350.0,
+          115.4
+        ],
+        [
+          353.7,
+          115.5
+        ],
+        [
+          372.7,
+          143.6
+        ],
+        [
+          420.7,
+          141.6
+        ],
+        [
+          451.4,
+          186.6
+        ],
+        [
+          446.4,
+          230.8
+        ],
+        [
+          462.1,
+          250.0
+        ]
+      ],
+      "door_id": "door_319",
+      "entrance_node_id": "n_f3_re_319",
+      "destination_node_id": "n_f3_dest_319",
+      "notes": ""
+    },
+    {
+      "room_id": "room_321",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Study Room 321",
+      "room_type": "study_room",
+      "room_number": "321",
+      "x": 290.0,
+      "y": 730.0,
+      "width": 109.5,
+      "height": 65.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          795.0
+        ],
+        [
+          290.0,
+          730.0
+        ],
+        [
+          399.5,
+          730.0
+        ],
+        [
+          399.2,
+          795.0
+        ]
+      ],
+      "door_id": "door_321",
+      "entrance_node_id": "n_f3_re_321",
+      "destination_node_id": "n_f3_dest_321",
+      "notes": ""
+    },
+    {
+      "room_id": "room_322",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Faculty Office Suite 322",
+      "room_type": "faculty_office",
+      "room_number": "322",
+      "x": 290.0,
+      "y": 481.0,
+      "width": 120.0,
+      "height": 64.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "room",
+      "navigable": true,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          545.0
+        ],
+        [
+          290.0,
+          481.0
+        ],
+        [
+          410.0,
+          481.0
+        ],
+        [
+          410.0,
+          484.7
+        ],
+        [
+          400.5,
+          487.0
+        ],
+        [
+          400.3,
+          545.0
+        ]
+      ],
+      "door_id": "door_322",
+      "entrance_node_id": "n_f3_re_322",
+      "destination_node_id": "n_f3_dest_322",
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_17",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Main corridor (south)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 260.0,
+      "y": 820.0,
+      "width": 30.0,
+      "height": 187.5,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          820.0
+        ],
+        [
+          290.0,
+          820.0
+        ],
+        [
+          290.0,
+          982.2
+        ],
+        [
+          266.9,
+          1007.5
+        ],
+        [
+          260.0,
+          1007.3
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_18",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "West branch corridor",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 158.7,
+      "y": 800.0,
+      "width": 101.3,
+      "height": 20.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          800.0
+        ],
+        [
+          260.0,
+          820.0
+        ],
+        [
+          158.7,
+          820.0
+        ],
+        [
+          159.1,
+          800.0
+        ]
+      ],
+      "potentially_narrow": true,
+      "synthetic_width_m": 2.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": "SYNTHETIC potentially-narrow hallway (unverified)."
+    },
+    {
+      "room_id": "hallway_19",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Main corridor (central)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 260.0,
+      "y": 481.0,
+      "width": 30.0,
+      "height": 339.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          820.0
+        ],
+        [
+          260.0,
+          481.0
+        ],
+        [
+          290.0,
+          481.0
+        ],
+        [
+          290.0,
+          820.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_20",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "East branch corridor (ramp entrance)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 290.0,
+      "y": 451.0,
+      "width": 140.2,
+      "height": 30.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          481.0
+        ],
+        [
+          290.0,
+          451.0
+        ],
+        [
+          430.2,
+          451.0
+        ],
+        [
+          424.5,
+          460.3
+        ],
+        [
+          424.5,
+          481.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_21",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Main corridor (mid-north)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 260.0,
+      "y": 355.0,
+      "width": 30.0,
+      "height": 126.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          481.0
+        ],
+        [
+          260.0,
+          355.0
+        ],
+        [
+          290.0,
+          355.0
+        ],
+        [
+          290.0,
+          481.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_22",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "East cross corridor",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 290.0,
+      "y": 325.0,
+      "width": 177.5,
+      "height": 30.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          290.0,
+          355.0
+        ],
+        [
+          290.0,
+          325.0
+        ],
+        [
+          467.5,
+          325.0
+        ],
+        [
+          467.0,
+          355.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_23",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "Main corridor (north)",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 260.0,
+      "y": 250.0,
+      "width": 30.0,
+      "height": 105.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          260.0,
+          355.0
+        ],
+        [
+          260.0,
+          250.0
+        ],
+        [
+          290.0,
+          250.0
+        ],
+        [
+          290.0,
+          355.0
+        ]
+      ],
+      "potentially_narrow": false,
+      "synthetic_width_m": 3.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": ""
+    },
+    {
+      "room_id": "hallway_24",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F3",
+      "room_name": "East link corridor",
+      "room_type": "hallway",
+      "room_number": null,
+      "x": 355.0,
+      "y": 355.0,
+      "width": 20.0,
+      "height": 96.0,
+      "accessible": true,
+      "synthetic": true,
+      "category": "circulation",
+      "navigable": false,
+      "verified": false,
+      "polygon": [
+        [
+          355.0,
+          451.0
+        ],
+        [
+          355.0,
+          355.0
+        ],
+        [
+          375.0,
+          355.0
+        ],
+        [
+          375.0,
+          451.0
+        ]
+      ],
+      "potentially_narrow": true,
+      "synthetic_width_m": 2.0,
+      "door_id": null,
+      "entrance_node_id": null,
+      "destination_node_id": null,
+      "notes": "SYNTHETIC potentially-narrow hallway (unverified)."
+    }
+  ]
+}

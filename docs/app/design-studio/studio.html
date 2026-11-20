@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OwlAccess design studio</title>
+<style>
+:root{color-scheme:light dark;--paper:#f4f6fa;--card:#fff;--ink:#0f172a;--soft:#55607a;--line:#d5dbe5}
+@media(prefers-color-scheme:dark){:root{--paper:#0f1115;--card:#181b22;--ink:#eef1f6;--soft:#a3acbd;--line:#2c313c}}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.45 system-ui,"Segoe UI",sans-serif;padding:16px}
+h1{font-size:20px;margin:0 0 2px}.sub{color:var(--soft);margin:0 0 12px;font-size:13px}
+.areas{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
+.areas button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 14px;min-height:40px;cursor:pointer;font-weight:600}
+.areas button.on{background:var(--ink);color:var(--card);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:14px}@media(max-width:860px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:12px}
+.card h2{font-size:15px;margin:0 0 8px}
+label{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:8px 0;font-size:14px}
+input[type=range]{flex:1;max-width:200px}input[type=color]{width:46px;height:32px;border:1px solid var(--line);border-radius:8px;background:none;padding:2px}
+textarea{width:100%;min-height:80px;font:inherit;border:1px solid var(--line);border-radius:8px;padding:6px 8px;background:var(--paper);color:var(--ink)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex-wrap:wrap}.seg button{border:0;background:none;color:var(--ink);padding:6px 12px;min-height:36px;cursor:pointer}
+.seg button.on{background:var(--ink);color:var(--card)}
+.btn{border:0;border-radius:999px;min-height:44px;padding:0 18px;font:600 14px system-ui;cursor:pointer;background:var(--ink);color:var(--card)}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--line)}.btn.go{background:#15803d;color:#fff}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.presets button{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:10px;padding:8px 10px;cursor:pointer;display:flex;gap:6px;align-items:center}
+.sw{width:14px;height:14px;border-radius:4px;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+.status{padding:8px 10px;border-radius:10px;background:var(--paper);border:1px solid var(--line);font-size:14px;min-height:40px}
+.warn{color:#b45309;font-size:13px}.ok{color:#15803d;font-size:13px}.note{color:var(--soft);font-size:13px;margin:4px 0 0}
+.open a{font-weight:600}
+[hidden]{display:none!important}
+/* sketches of the real pages (light theme, like the app) */
+.mock{--m-acc:#1d4ed8;--m-route:#16a34a;--m-pend:#ea580c;--m-ver:#b91c1c;--m-r:10px;border:1px solid #d5dbe5;border-radius:var(--m-r);overflow:hidden;background:#f6f8fb;color:#0f172a;font-size:calc(11.5px * var(--m-f,1))}
+.mock .bar{background:#fff;border-bottom:1px solid #dfe4ec;display:flex;align-items:center;gap:6px;padding:6px 8px;font-weight:800}
+.mock .logo{width:14px;height:14px;border-radius:4px;background:var(--m-acc)}.mock .links{margin-left:auto;display:flex;gap:4px;font-weight:600;font-size:.9em;color:#334155}
+.mock .links span{padding:2px 6px}.mock .links span.cur{color:var(--m-acc);box-shadow:inset 0 -2px 0 var(--m-acc)}
+.mock.pills .links span.cur{background:var(--m-acc);color:#fff;box-shadow:none;border-radius:999px}
+.mock .body{padding:8px}
+.mock .hero{display:grid;grid-template-columns:1.3fr 1fr;gap:8px;align-items:center}.mock.centered .hero{grid-template-columns:1fr;text-align:center}.mock.centered .hcard{display:none}
+.mock .h1{font-weight:800;font-size:1.5em;line-height:1.1}.mock .h1 b{color:var(--m-acc)}
+.mock .cta{display:inline-block;background:var(--m-acc);color:#fff;border-radius:calc(var(--m-r)*.8);padding:4px 10px;margin-top:6px;font-weight:700}
+.mock .hcard,.mock .c{background:#fff;border:1px solid #dfe4ec;border-radius:var(--m-r);padding:6px;box-shadow:0 2px 8px rgba(15,23,42,.08)}
+.mock.outlined .hcard,.mock.outlined .c{box-shadow:none}
+.mock .feats{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:8px}.mock .feats .c{height:34px}
+.mock .plan{display:grid;grid-template-columns:1fr;gap:5px}.mock.two .plan{grid-template-columns:1fr 1fr}
+.mock .plan .c{min-height:36px}.mock .plan .c b{display:block}.mock .must{border-left:3px solid #f59e0b}
+.mock .sugg{display:grid;grid-template-columns:1fr 1.3fr;gap:6px}.mock.mapleft .sugg{grid-template-columns:1.3fr 1fr}.mock.mapleft .sugg .mapbox{order:-1}
+.mock .scard{border:2px solid #dfe4ec;margin-bottom:5px}.mock .scard.sel{border-color:var(--m-route)}
+.mock .rec{display:inline-block;background:var(--m-route);color:#fff;border-radius:999px;padding:0 5px;font-size:.8em;margin-left:4px}
+.mock .why{color:#334155;font-size:.9em}.mock.compact .why{display:none}
+.mock .chips span{display:inline-block;border:1px solid #fcd34d;background:#fffbeb;color:#92400e;border-radius:999px;padding:0 5px;font-size:.8em;margin:2px 2px 0 0}
+.mock .mapbox{background:#fff;border:1px solid #dfe4ec;border-radius:var(--m-r);position:relative;min-height:120px}
+.mock .floor{position:absolute;inset:8px;border-radius:6px;background:repeating-linear-gradient(90deg,#e2e8f0 0 20px,#cbd5e1 20px 21px)}
+.mock.hc .floor{background:repeating-linear-gradient(90deg,#cbd5e1 0 20px,#0f172a 20px 22px)}
+.mock .rt{position:absolute;left:18%;right:28%;top:55%;height:4px;background:var(--m-route);border-radius:3px}.mock .alt{position:absolute;left:18%;right:40%;top:35%;border-top:3px dashed #64748b;opacity:.6}
+.mock .dot{position:absolute;width:13px;height:13px;border-radius:50%;color:#fff;font:700 8px system-ui;display:grid;place-items:center;border:2px solid #fff}
+.mock .p{background:var(--m-pend);left:62%;top:40%}.mock .v{background:var(--m-ver);left:30%;top:48%}
+.phone{width:170px;margin:0 auto;border:6px solid #0f172a;border-radius:22px;overflow:hidden}
+.phone .mapbox{min-height:calc(260px * var(--m-mh,.55))}.phone .tabs{display:flex;border-top:1px solid #dfe4ec;background:#fff}.phone .tabs span{flex:1;text-align:center;padding:5px 0;font-weight:600;font-size:.85em}
+.phone .tabs span.on{box-shadow:inset 0 -2px 0 var(--m-acc)}
+</style></head>
+<body>
+<h1>OwlAccess design studio</h1>
+<p class="sub">Every control edits the real app's <code>src/design/design.json</code> through Claude. Press <b>Preview in the app</b>, then look at the real page (links below); <b>Approve</b> keeps it, <b>Discard</b> goes back.</p>
+<div class="areas" role="tablist" aria-label="What to design" id="areas"></div>
+<div class="grid">
+  <div>
+    <section class="card" data-area="brand"><h2>Brand and colours</h2>
+      <div class="row presets" id="presets"></div>
+      <label>Accent (buttons, links, brand)<input type="color" id="accent"></label>
+      <label>Route line<input type="color" id="routeColor"></label>
+      <label>Pending report<input type="color" id="pendingColor"></label>
+      <label>Verified obstacle<input type="color" id="verifiedColor"></label>
+      <label>Corner radius <span id="radiusV"></span><input type="range" id="radius" min="0" max="20" step="1"></label>
+      <label>Text size <span id="fontScaleV"></span><input type="range" id="fontScale" min="0.85" max="1.3" step="0.05"></label>
+      <label>Cards<span class="seg" data-key="cardStyle"><button data-v="elevated">With shadow</button><button data-v="outlined">Outlined</button></span></label>
+      <div id="contrast"></div>
+    </section>
+    <section class="card" data-area="landing"><h2>Landing page</h2>
+      <label>Hero layout<span class="seg" data-key="heroLayout"><button data-v="split">Text + route card</button><button data-v="centered">Centered text</button></span></label>
+      <p class="note">The landing page's facts are computed from the data and are not editable here, on purpose.</p>
+    </section>
+    <section class="card" data-area="nav"><h2>Site navigation</h2>
+      <label>Current page shown as<span class="seg" data-key="navStyle"><button data-v="bar">Underline</button><button data-v="pills">Filled pill</button></span></label>
+      <p class="note">On phones the links move into a Menu button whatever you choose.</p>
+    </section>
+    <section class="card" data-area="plan"><h2>Route customization (/plan)</h2>
+      <label>Form layout on wide screens<span class="seg" data-key="planLayout"><button data-v="single">One column</button><button data-v="two-column">Two columns</button></span></label>
+      <p class="note">Requirements always stay apart from optional preferences.</p>
+    </section>
+    <section class="card" data-area="sugg"><h2>Path suggestions (/suggestions)</h2>
+      <label>Option cards<span class="seg" data-key="suggestionCards"><button data-v="detailed">Detailed</button><button data-v="compact">Compact</button></span></label>
+      <label>Map on wide screens<span class="seg" data-key="suggestionsMap"><button data-v="right">Right</button><button data-v="left">Left</button></span></label>
+      <p class="note">Compact hides the "why" text; distance, time, floor changes and accessibility warnings always stay visible.</p>
+    </section>
+    <section class="card" data-area="map"><h2>Maps (navigate, report, review)</h2>
+      <label>Map contrast<span class="seg" data-key="mapContrast"><button data-v="standard">Standard</button><button data-v="high">High</button></span></label>
+      <label>Side panel<span class="seg" data-key="panelSide"><button data-v="left">Left</button><button data-v="right">Right</button></span></label>
+      <label>Panel width <span id="panelWidthV"></span><input type="range" id="panelWidth" min="300" max="520" step="10"></label>
+      <label>Density<span class="seg" data-key="density"><button data-v="comfortable">Comfortable</button><button data-v="compact">Compact</button></span></label>
+      <label>Report cards<span class="seg" data-key="reportCards"><button data-v="detailed">Detailed</button><button data-v="compact">Compact</button></span></label>
+    </section>
+    <section class="card" data-area="mobile"><h2>Phones</h2>
+      <label>Map height <span id="mobileMapHeightV"></span><input type="range" id="mobileMapHeight" min="35" max="75" step="5"></label>
+      <p class="note">To see the real phone layout, open the app on a phone on the same Wi-Fi, or make the browser window narrow.</p>
+    </section>
+    <section class="card"><h2>Feedback to Claude</h2>
+      <textarea id="fb" placeholder="Anything the controls can't do, e.g. 'make the Plan a route button bigger on phones' or 'add an icon to each route option'"></textarea>
+      <div class="row" style="margin-top:6px"><button class="btn" id="send">Send feedback</button></div>
+      <p class="note">Claude makes these changes in the React code and answers above this page.</p>
+    </section>
+  </div>
+  <div>
+    <section class="card"><h2>Sketch</h2><div id="sketch"></div><p class="note">A sketch only; the real result is in the app.</p>
+      <p class="open" id="open"></p></section>
+    <section class="card"><h2>Apply</h2>
+      <div class="row"><button class="btn" id="preview">Preview in the app</button><button class="btn go" id="approve">Approve</button><button class="btn ghost" id="discard">Discard</button></div>
+      <div class="status" style="margin-top:8px" data-it-bind="status">Ready.</div>
+    </section>
+  </div>
+</div>
+<script>
+const KEYS=["accent","routeColor","pendingColor","verifiedColor","panelSide","panelWidth","density","radius","fontScale","mapContrast","reportCards","mobileMapHeight","heroLayout","navStyle","cardStyle","planLayout","suggestionCards","suggestionsMap"];
+const AREAS=[["brand","Brand & colours","/"],["landing","Landing","/"],["nav","Navigation","/"],["plan","Plan","/plan"],["sugg","Suggestions","/suggestions"],["map","Maps","/navigate"],["mobile","Phones","/"]];
+const PRESETS={
+  "OwlAccess blue":{accent:"#1d4ed8",routeColor:"#16a34a",pendingColor:"#ea580c",verifiedColor:"#b91c1c",mapContrast:"standard",radius:10},
+  "Owl gold & black":{accent:"#111111",routeColor:"#a16207",pendingColor:"#c2410c",verifiedColor:"#b91c1c",mapContrast:"standard",radius:6},
+  "High contrast":{accent:"#000000",routeColor:"#006b2b",pendingColor:"#b34700",verifiedColor:"#a00000",mapContrast:"high",radius:4,fontScale:1.1},
+  "Calm teal":{accent:"#0f766e",routeColor:"#0e7490",pendingColor:"#c2410c",verifiedColor:"#be123c",mapContrast:"standard",radius:14},
+};
+let d={},loaded=false,lastReset=0,area="brand",appUrl="http://localhost:5173";
+const $=id=>document.getElementById(id);
+function lum(h){const c=[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)/255).map(v=>v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4));return .2126*c[0]+.7152*c[1]+.0722*c[2]}
+function ratio(a,b){const x=lum(a),y=lum(b);return(Math.max(x,y)+.05)/(Math.min(x,y)+.05)}
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function sketch(){
+  const cls=["mock",d.navStyle==="pills"?"pills":"",d.heroLayout==="centered"?"centered":"",d.cardStyle==="outlined"?"outlined":"",d.planLayout==="two-column"?"two":"",d.suggestionCards==="compact"?"compact":"",d.suggestionsMap==="left"?"mapleft":"",d.mapContrast==="high"?"hc":""].join(" ");
+  const bar=cur=>`<div class="bar"><span class="logo"></span>OwlAccess<span class="links">${["Plan","Navigate","Report","About"].map(l=>`<span class="${l===cur?"cur":""}">${l}</span>`).join("")}</span></div>`;
+  const map=`<div class="mapbox"><div class="floor"></div><div class="alt"></div><div class="rt"></div><div class="dot p">?</div><div class="dot v">✕</div></div>`;
+  let body="";
+  if(area==="brand"||area==="landing"||area==="nav") body=`${bar("")}<div class="body"><div class="hero"><div><div class="h1">Get across campus <b>your way</b></div><span class="cta">Plan a route</span></div><div class="hcard">● ENT007<br>● Elevator<br>● Lab 302</div></div><div class="feats"><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div></div></div>`;
+  if(area==="plan") body=`${bar("Plan")}<div class="body"><div class="plan"><div class="c"><b>1 Where</b>Start · Destination</div><div class="c must"><b>2 Requirements</b>Wheelchair · Step-free</div><div class="c"><b>3 Preferences</b>Fastest · Shortest</div><div class="c"><b>4 Avoid</b>Verified obstacles</div></div></div>`;
+  if(area==="sugg") body=`${bar("Plan")}<div class="body"><div class="sugg"><div><div class="c scard sel"><b>Recommended</b><span class="rec">Rec.</span><br>102 m · 2 min 10 s<div class="why">Meets wheelchair rule. Tied for quickest.</div><div class="chips"><span>Synthetic</span><span>Elevator unverified</span></div></div><div class="c scard"><b>Via Elevator 2</b><br>102 m · 2 min 10 s<div class="why">Same time, other elevator.</div><div class="chips"><span>Synthetic</span></div></div></div>${map}</div></div>`;
+  if(area==="map") body=`${bar("Navigate")}<div class="body"><div class="sugg ${d.panelSide==="right"?"":""}" style="grid-template-columns:${d.panelSide==="right"?"1.4fr 1fr":"1fr 1.4fr"}">${d.panelSide==="right"?map+'<div class="c">Directions · Report · Reviewer</div>':'<div class="c">Directions · Report · Reviewer</div>'+map}</div></div>`;
+  if(area==="mobile") body=`<div class="phone">${bar("")}<div class="body" style="--m-mh:${d.mobileMapHeight/100}">${map}</div><div class="tabs"><span class="on">Route</span><span>Report</span><span>Review</span></div></div>`;
+  $("sketch").innerHTML=`<div class="${cls}" style="--m-acc:${d.accent};--m-route:${d.routeColor};--m-pend:${d.pendingColor};--m-ver:${d.verifiedColor};--m-r:${d.radius}px;--m-f:${d.fontScale}">${body}</div>`;
+  const page=AREAS.find(a=>a[0]===area)[2];
+  $("open").innerHTML=`Open the real page: <a href="${esc(appUrl.replace(/\/$/,"")+page)}">${esc(page)}</a>`;
+}
+function render(){
+  for(const k of["accent","routeColor","pendingColor","verifiedColor","panelWidth","radius","fontScale","mobileMapHeight"])$(k).value=d[k];
+  $("panelWidthV").textContent=d.panelWidth+" px";$("radiusV").textContent=d.radius+" px";$("fontScaleV").textContent=Math.round(d.fontScale*100)+"%";$("mobileMapHeightV").textContent=d.mobileMapHeight+"% of screen";
+  document.querySelectorAll(".seg").forEach(s=>s.querySelectorAll("button").forEach(b=>b.classList.toggle("on",d[s.dataset.key]===b.dataset.v)));
+  document.querySelectorAll("[data-area]").forEach(s=>s.hidden=s.dataset.area!==area);
+  document.querySelectorAll("#areas button").forEach(b=>{b.classList.toggle("on",b.dataset.a===area);b.setAttribute("aria-selected",b.dataset.a===area)});
+  const checks=[["White text on accent",ratio("#ffffff",d.accent),4.5],["Accent links on white",ratio(d.accent,"#ffffff"),4.5],["Route on map",ratio(d.routeColor,"#f1f5f9"),3],["Pending marker",ratio(d.pendingColor,"#ffffff"),3],["Verified marker",ratio(d.verifiedColor,"#ffffff"),3]];
+  $("contrast").innerHTML=checks.map(([n,r,min])=>`<div class="${r>=min?"ok":"warn"}">${r>=min?"✓":"⚠"} ${n}: ${r.toFixed(1)}:1 (needs ${min}:1)</div>`).join("");
+  sketch(); It.store.set("draft",d); It.store.set("area",area);
+}
+const set=(k,v)=>{d={...d,[k]:v};render()};
+for(const[a,l]of AREAS){const b=document.createElement("button");b.dataset.a=a;b.setAttribute("role","tab");b.textContent=l;b.onclick=()=>{area=a;render()};$("areas").appendChild(b)}
+for(const k of["accent","routeColor","pendingColor","verifiedColor"])$(k).addEventListener("input",e=>set(k,e.target.value));
+for(const k of["panelWidth","radius","fontScale","mobileMapHeight"])$(k).addEventListener("input",e=>set(k,Number(e.target.value)));
+document.querySelectorAll(".seg").forEach(s=>s.addEventListener("click",e=>{const b=e.target.closest("button");if(b)set(s.dataset.key,b.dataset.v)}));
+for(const[name,p]of Object.entries(PRESETS)){const b=document.createElement("button");b.innerHTML=`<span class="sw" style="background:${p.accent}"></span><span class="sw" style="background:${p.routeColor}"></span>${name}`;b.onclick=()=>{d={...d,...p};render()};$("presets").appendChild(b)}
+const pick=()=>Object.fromEntries(KEYS.map(k=>[k,d[k]]));
+$("preview").onclick=()=>It.action("preview",{design:pick(),area});
+$("approve").onclick=()=>It.action("approve",{design:pick(),area});
+$("discard").onclick=()=>It.action("discard",{});
+$("send").onclick=()=>{const t=$("fb").value.trim();if(!t)return;It.action("feedback",{text:t,area,design:pick()});$("fb").value=""};
+It.onState(s=>{
+  if(!s||!s.design)return;
+  if(s.appUrl)appUrl=s.appUrl;
+  if(!loaded){const draft=It.store.get("draft");area=It.store.get("area")||area;d={...s.design,...(draft||{})};KEYS.forEach(k=>{if(d[k]===undefined)d[k]=s.design[k]});loaded=true;lastReset=s.resetN||0;render()}
+  else if((s.resetN||0)!==lastReset){lastReset=s.resetN||0;d={...s.design};render()}
+});
+</script>
+</body></html>

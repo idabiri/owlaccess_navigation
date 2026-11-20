@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "entrances_ramps",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{"type":"Feature","properties":{"fid":1,"feature_id":"ENT001","feature_type":"entrance","building_name":"Engineering Technology Center","accessible":true,"source":"KSU Accessibility Map","verified":false,"notes":"Entrance indentified on official map"},"geometry":{"type":"Point","coordinates":[-9408985.303563324734569,4020507.536091653164476]}},
+{"type":"Feature","properties":{"fid":2,"feature_id":"ENT002","feature_type":"entrance","building_name":"Design 2","accessible":true,"source":"KSU Accessiblity Map","verified":false,"notes":null},"geometry":{"type":"Point","coordinates":[-9408915.680983619764447,4020461.412419574335217]}},
+{"type":"Feature","properties":{"fid":3,"feature_id":"ENT003","feature_type":"entrance","building_name":"Design2","accessible":true,"source":"KSU Accessibility Map","verified":false,"notes":null},"geometry":{"type":"Point","coordinates":[-9408815.550856947898865,4020454.42659678356722]}},
+{"type":"Feature","properties":{"fid":4,"feature_id":"ENT004","feature_type":"entrance","building_name":"Design 2","accessible":true,"source":"KSU Accessibility Map","verified":false,"notes":null},"geometry":{"type":"Point","coordinates":[-9408838.578198740258813,4020459.601280332542956]}},
+{"type":"Feature","properties":{"fid":5,"feature_id":"ENT005","feature_type":"entrance","building_name":"Engineering Technology Center","accessible":true,"source":"KSU Accessibility Map","verified":false,"notes":null},"geometry":{"type":"Point","coordinates":[-9408953.829629294574261,4020557.954303488600999]}},
+{"type":"Feature","properties":{"fid":6,"feature_id":"ENT006","feature_type":"entrance","building_name":"Academic","accessible":true,"source":"KSU Accessibility Map","verified":false,"notes":null},"geometry":{"type":"Point","coordinates":[-9408813.090135866776109,4020577.958563703112304]}},
+{"type":"Feature","properties":{"fid":7,"feature_id":"ENT007","feature_type":"entrance","building_name":"Academic","accessible":true,"source":"KSU Accessibility Map","verified":false,"notes":null},"geometry":{"type":"Point","coordinates":[-9408758.688549961894751,4020554.325087858363986]}},
+{"type":"Feature","properties":{"fid":8,"feature_id":"RMP001","feature_type":"ramp","building_name":"Engineering Technology Center","accessible":true,"source":"KSU Accessibility Map","verified":false,"notes":null},"geometry":{"type":"Point","coordinates":[-9408958.518487291410565,4020499.705847466364503]}},
+{"type":"Feature","properties":{"fid":9,"feature_id":"RMP002","feature_type":"ramp","building_name":"Design 2","accessible":true,"source":"KSU Accessibility Map","verified":false,"notes":null},"geometry":{"type":"Point","coordinates":[-9408857.657999631017447,4020434.32392330467701]}},
+{"type":"Feature","properties":{"fid":10,"feature_id":"RMP003","feature_type":"ramp","building_name":"West Parking Deck","accessible":true,"source":"KSU Accessibility Map","verified":false,"notes":null},"geometry":{"type":"Point","coordinates":[-9408949.058585427701473,4020438.677654420491308]}},
+{"type":"Feature","properties":{"fid":11,"feature_id":"RMP004","feature_type":"ramp","building_name":"Academic","accessible":true,"source":"KSU Accessibility Map","verified":false,"notes":null},"geometry":{"type":"Point","coordinates":[-9408766.883765131235123,4020535.53576525580138]}},
+{"type":"Feature","properties":{"fid":12,"feature_id":"RMP005","feature_type":"ramp","building_name":"Science Lab Annex","accessible":true,"source":"KSU Accessibility Map","verified":false,"notes":null},"geometry":{"type":"Point","coordinates":[-9408936.686151847243309,4020607.661350470036268]}},
+{"type":"Feature","properties":{"fid":null,"feature_id":"ENT","feature_type":"008","building_name":"Engineering Technology Center","accessible":true,"source":"KSU Accessibility Map","verified":false,"notes":null},"geometry":{"type":"Point","coordinates":[-9408982.455123024061322,4020585.656772268936038]}}
+]
+}

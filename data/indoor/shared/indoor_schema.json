@@ -1,0 +1,595 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "KSU Marietta SYNTHETIC indoor mapping schema",
+  "description": "All data is SYNTHETIC / MOCK.",
+  "definitions": {
+    "Room": {
+      "type": "object",
+      "properties": {
+        "room_id": {
+          "type": "string"
+        },
+        "building_id": {
+          "type": "string"
+        },
+        "floor_id": {
+          "type": "string"
+        },
+        "room_name": {
+          "type": "string"
+        },
+        "room_type": {
+          "type": "string"
+        },
+        "room_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        },
+        "accessible": {
+          "type": "boolean"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "category": {
+          "enum": [
+            "room",
+            "service",
+            "circulation"
+          ]
+        },
+        "navigable": {
+          "type": "boolean"
+        },
+        "polygon": {
+          "type": "array"
+        }
+      },
+      "required": [
+        "room_id",
+        "building_id",
+        "floor_id",
+        "room_name",
+        "room_type",
+        "room_number",
+        "x",
+        "y",
+        "width",
+        "height",
+        "accessible",
+        "synthetic"
+      ]
+    },
+    "Node": {
+      "type": "object",
+      "properties": {
+        "node_id": {
+          "type": "string"
+        },
+        "building_id": {
+          "type": "string"
+        },
+        "floor_id": {
+          "type": "string"
+        },
+        "node_type": {
+          "enum": [
+            "entrance",
+            "hallway_intersection",
+            "hallway_waypoint",
+            "room_entrance",
+            "elevator",
+            "staircase",
+            "ramp",
+            "restroom",
+            "destination"
+          ]
+        },
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "room_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "accessible": {
+          "type": "boolean"
+        },
+        "synthetic": {
+          "const": true
+        }
+      },
+      "required": [
+        "node_id",
+        "building_id",
+        "floor_id",
+        "node_type",
+        "x",
+        "y",
+        "room_id",
+        "accessible",
+        "synthetic"
+      ]
+    },
+    "Edge": {
+      "type": "object",
+      "properties": {
+        "edge_id": {
+          "type": "string"
+        },
+        "from_node": {
+          "type": "string"
+        },
+        "to_node": {
+          "type": "string"
+        },
+        "distance": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "travel_time": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "edge_type": {
+          "enum": [
+            "hallway",
+            "door",
+            "room_interior",
+            "entrance_threshold",
+            "elevator_door",
+            "stair_landing",
+            "ramp",
+            "entrance_steps"
+          ]
+        },
+        "accessible": {
+          "type": "boolean"
+        },
+        "stairs_only": {
+          "type": "boolean"
+        },
+        "obstacle_status": {
+          "enum": [
+            "none",
+            "pending",
+            "verified",
+            "resolved"
+          ]
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "synthetic": {
+          "const": true
+        }
+      },
+      "required": [
+        "edge_id",
+        "from_node",
+        "to_node",
+        "distance",
+        "travel_time",
+        "edge_type",
+        "accessible",
+        "stairs_only",
+        "obstacle_status",
+        "verified",
+        "synthetic"
+      ]
+    },
+    "Connection": {
+      "type": "object",
+      "properties": {
+        "connection_id": {
+          "type": "string"
+        },
+        "building_id": {
+          "type": "string"
+        },
+        "from_floor": {
+          "type": "string"
+        },
+        "to_floor": {
+          "type": "string"
+        },
+        "from_node": {
+          "type": "string"
+        },
+        "to_node": {
+          "type": "string"
+        },
+        "connection_type": {
+          "enum": [
+            "elevator",
+            "staircase",
+            "ramp"
+          ]
+        },
+        "accessible": {
+          "type": "boolean"
+        },
+        "synthetic": {
+          "const": true
+        }
+      },
+      "required": [
+        "connection_id",
+        "building_id",
+        "from_floor",
+        "to_floor",
+        "from_node",
+        "to_node",
+        "connection_type",
+        "accessible",
+        "synthetic"
+      ]
+    },
+    "Obstacle": {
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "obstacle_id": {
+              "type": "string"
+            },
+            "building_id": {
+              "type": "string"
+            },
+            "floor_id": {
+              "type": "string"
+            },
+            "obstacle_type": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "status": {
+              "enum": [
+                "pending",
+                "verified",
+                "resolved"
+              ]
+            },
+            "verified": {
+              "type": "boolean"
+            },
+            "synthetic": {
+              "const": true
+            }
+          },
+          "required": [
+            "obstacle_id",
+            "building_id",
+            "floor_id",
+            "obstacle_type",
+            "description",
+            "status",
+            "verified",
+            "synthetic"
+          ]
+        },
+        {
+          "anyOf": [
+            {
+              "required": [
+                "location_node_id"
+              ]
+            },
+            {
+              "required": [
+                "affected_edge_id"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Connector": {
+      "type": "object",
+      "properties": {
+        "connector_id": {
+          "type": "string"
+        },
+        "building_id": {
+          "type": "string"
+        },
+        "indoor_node_id": {
+          "type": "string"
+        },
+        "outdoor_node_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "connection_type": {
+          "type": "string"
+        },
+        "accessible": {
+          "type": "boolean"
+        },
+        "synthetic": {
+          "const": true
+        }
+      },
+      "required": [
+        "connector_id",
+        "building_id",
+        "indoor_node_id",
+        "outdoor_node_id",
+        "connection_type",
+        "accessible",
+        "synthetic"
+      ]
+    },
+    "Building": {
+      "type": "object",
+      "properties": {
+        "building_id": {
+          "type": "string"
+        },
+        "building_name": {
+          "type": "string"
+        },
+        "campus": {
+          "type": "string"
+        },
+        "building_type": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "floors": {
+          "type": "array"
+        },
+        "exterior_footprint": {
+          "type": "object"
+        },
+        "coordinate_reference": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "building_id",
+        "building_name",
+        "campus",
+        "building_type",
+        "source",
+        "synthetic",
+        "floors",
+        "exterior_footprint",
+        "coordinate_reference"
+      ]
+    }
+  },
+  "files": {
+    "rooms.json": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "building_id": {
+          "type": "string"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "disclaimer": {
+          "type": "string"
+        },
+        "rooms": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Room"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "synthetic",
+        "disclaimer",
+        "rooms"
+      ]
+    },
+    "nodes.json": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "building_id": {
+          "type": "string"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "disclaimer": {
+          "type": "string"
+        },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Node"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "synthetic",
+        "disclaimer",
+        "nodes"
+      ]
+    },
+    "edges.json": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "building_id": {
+          "type": "string"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "disclaimer": {
+          "type": "string"
+        },
+        "edges": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Edge"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "synthetic",
+        "disclaimer",
+        "edges"
+      ]
+    },
+    "connections.json": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "building_id": {
+          "type": "string"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "disclaimer": {
+          "type": "string"
+        },
+        "connections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Connection"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "synthetic",
+        "disclaimer",
+        "connections"
+      ]
+    },
+    "obstacles.json": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "building_id": {
+          "type": "string"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "disclaimer": {
+          "type": "string"
+        },
+        "obstacles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Obstacle"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "synthetic",
+        "disclaimer",
+        "obstacles"
+      ]
+    },
+    "connectors.json": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "building_id": {
+          "type": "string"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "disclaimer": {
+          "type": "string"
+        },
+        "connectors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Connector"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "synthetic",
+        "disclaimer",
+        "connectors"
+      ]
+    },
+    "buildings.json": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "building_id": {
+          "type": "string"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "disclaimer": {
+          "type": "string"
+        },
+        "buildings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Building"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "synthetic",
+        "disclaimer",
+        "buildings"
+      ]
+    }
+  }
+}

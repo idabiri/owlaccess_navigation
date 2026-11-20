@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "building_id": "BLD001",
+  "synthetic": true,
+  "disclaimer": "SYNTHETIC / MOCK DATA. Not official KSU architectural plans. Interior elements and accessibility attributes are generated and NOT field-verified.",
+  "coordinate_system": "local-svg-units (10 units = 1 m, origin top-left, y down)",
+  "note": "outdoor_node_id is null everywhere on purpose. See documentation/generation_notes.md.",
+  "connectors": [
+    {
+      "connector_id": "conn_out_entrance_1",
+      "building_id": "BLD001",
+      "indoor_node_id": "n_f1_entrance_1",
+      "outdoor_node_id": null,
+      "connection_type": "accessible_entrance",
+      "accessible": true,
+      "synthetic": true,
+      "status": "unassigned",
+      "supported_by_reference": true,
+      "outdoor_reference_feature_id": "ENT006",
+      "verified": false,
+      "nearest_sidewalk_way_hint": {
+        "osm_way": "way/1484121410",
+        "distance_from_reference_point_m": 4.4,
+        "source": "sidewalks.geojson"
+      },
+      "notes": "outdoor_node_id intentionally null: sidewalks.geojson has no node IDs. Map this connector to your own outdoor graph node. Reference point was snapped to the building wall; position uncertainty applies."
+    },
+    {
+      "connector_id": "conn_out_entrance_2",
+      "building_id": "BLD001",
+      "indoor_node_id": "n_f1_entrance_2",
+      "outdoor_node_id": null,
+      "connection_type": "accessible_entrance",
+      "accessible": true,
+      "synthetic": true,
+      "status": "unassigned",
+      "supported_by_reference": true,
+      "outdoor_reference_feature_id": "ENT007",
+      "verified": false,
+      "nearest_sidewalk_way_hint": {
+        "osm_way": "way/225470267",
+        "distance_from_reference_point_m": 0.1,
+        "source": "sidewalks.geojson"
+      },
+      "notes": "outdoor_node_id intentionally null: sidewalks.geojson has no node IDs. Map this connector to your own outdoor graph node. Reference point was snapped to the building wall; position uncertainty applies."
+    },
+    {
+      "connector_id": "conn_out_entrance_3",
+      "building_id": "BLD001",
+      "indoor_node_id": "n_f1_entrance_3",
+      "outdoor_node_id": null,
+      "connection_type": "accessible_entrance",
+      "accessible": true,
+      "synthetic": true,
+      "status": "unassigned",
+      "supported_by_reference": true,
+      "outdoor_reference_feature_id": "RMP004",
+      "verified": false,
+      "nearest_sidewalk_way_hint": {
+        "osm_way": "way/335766008",
+        "distance_from_reference_point_m": 2.7,
+        "source": "sidewalks.geojson"
+      },
+      "notes": "outdoor_node_id intentionally null: sidewalks.geojson has no node IDs. Map this connector to your own outdoor graph node. Reference point was snapped to the building wall; position uncertainty applies."
+    },
+    {
+      "connector_id": "conn_out_entrance_4",
+      "building_id": "BLD001",
+      "indoor_node_id": "n_f1_entrance_4",
+      "outdoor_node_id": null,
+      "connection_type": "standard_entrance",
+      "accessible": false,
+      "synthetic": true,
+      "status": "unassigned",
+      "supported_by_reference": false,
+      "outdoor_reference_feature_id": null,
+      "verified": false,
+      "notes": "Synthetic entrance with no reference support; leave unassigned unless a real entrance is confirmed."
+    }
+  ]
+}

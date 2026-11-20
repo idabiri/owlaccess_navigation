@@ -1,0 +1,198 @@
+[
+ {
+  "id": "B-XML-F1",
+  "d": "F1: parses as image/svg+xml with no parsererror",
+  "ok": true,
+  "det": "",
+  "status": "PASS"
+ },
+ {
+  "id": "B-VB-F1",
+  "d": "F1: root has viewBox 0 0 680 1120",
+  "ok": true,
+  "det": "",
+  "status": "PASS"
+ },
+ {
+  "id": "B-ROOMS-F1",
+  "d": "F1: querySelectorAll('[id^=room_]') finds room paths",
+  "ok": true,
+  "det": "19 room_ elements",
+  "status": "PASS"
+ },
+ {
+  "id": "B-ROUTE-F1",
+  "d": "F1: #route_layer found",
+  "ok": true,
+  "det": "",
+  "status": "PASS"
+ },
+ {
+  "id": "B-INLINE-F1",
+  "d": "F1: inline innerHTML embedding yields an <svg> with the same ids",
+  "ok": true,
+  "det": "285 ids",
+  "status": "PASS"
+ },
+ {
+  "id": "B-HIDDEN-F1",
+  "d": "F1: debug nav layer hidden by embedded CSS",
+  "ok": false,
+  "det": "jsdom does not process <style> inside inline SVG. The same CSS rule hides the layer when hoisted into an HTML <style> (jsdom) and cairosvg honours it as shipped.",
+  "status": "INCONCLUSIVE"
+ },
+ {
+  "id": "B-DRAW-F1",
+  "d": "F1: guide's route_layer.innerHTML polyline injection creates an SVG polyline",
+  "ok": true,
+  "det": "http://www.w3.org/2000/svg",
+  "status": "PASS"
+ },
+ {
+  "id": "B-USE-F1",
+  "d": "F1: all <use> use plain href (SVG2) that resolves",
+  "ok": true,
+  "det": "7 uses",
+  "status": "PASS"
+ },
+ {
+  "id": "B-META-F1",
+  "d": "F1: <metadata> C2PA block present and ignored by the DOM tree for rendering",
+  "ok": true,
+  "det": "",
+  "status": "PASS"
+ },
+ {
+  "id": "B-XML-F2",
+  "d": "F2: parses as image/svg+xml with no parsererror",
+  "ok": true,
+  "det": "",
+  "status": "PASS"
+ },
+ {
+  "id": "B-VB-F2",
+  "d": "F2: root has viewBox 0 0 680 1120",
+  "ok": true,
+  "det": "",
+  "status": "PASS"
+ },
+ {
+  "id": "B-ROOMS-F2",
+  "d": "F2: querySelectorAll('[id^=room_]') finds room paths",
+  "ok": true,
+  "det": "21 room_ elements",
+  "status": "PASS"
+ },
+ {
+  "id": "B-ROUTE-F2",
+  "d": "F2: #route_layer found",
+  "ok": true,
+  "det": "",
+  "status": "PASS"
+ },
+ {
+  "id": "B-INLINE-F2",
+  "d": "F2: inline innerHTML embedding yields an <svg> with the same ids",
+  "ok": true,
+  "det": "284 ids",
+  "status": "PASS"
+ },
+ {
+  "id": "B-HIDDEN-F2",
+  "d": "F2: debug nav layer hidden by embedded CSS",
+  "ok": false,
+  "det": "jsdom does not process <style> inside inline SVG. The same CSS rule hides the layer when hoisted into an HTML <style> (jsdom) and cairosvg honours it as shipped.",
+  "status": "INCONCLUSIVE"
+ },
+ {
+  "id": "B-DRAW-F2",
+  "d": "F2: guide's route_layer.innerHTML polyline injection creates an SVG polyline",
+  "ok": true,
+  "det": "http://www.w3.org/2000/svg",
+  "status": "PASS"
+ },
+ {
+  "id": "B-USE-F2",
+  "d": "F2: all <use> use plain href (SVG2) that resolves",
+  "ok": true,
+  "det": "3 uses",
+  "status": "PASS"
+ },
+ {
+  "id": "B-META-F2",
+  "d": "F2: <metadata> C2PA block present and ignored by the DOM tree for rendering",
+  "ok": true,
+  "det": "",
+  "status": "PASS"
+ },
+ {
+  "id": "B-XML-F3",
+  "d": "F3: parses as image/svg+xml with no parsererror",
+  "ok": true,
+  "det": "",
+  "status": "PASS"
+ },
+ {
+  "id": "B-VB-F3",
+  "d": "F3: root has viewBox 0 0 680 1120",
+  "ok": true,
+  "det": "",
+  "status": "PASS"
+ },
+ {
+  "id": "B-ROOMS-F3",
+  "d": "F3: querySelectorAll('[id^=room_]') finds room paths",
+  "ok": true,
+  "det": "21 room_ elements",
+  "status": "PASS"
+ },
+ {
+  "id": "B-ROUTE-F3",
+  "d": "F3: #route_layer found",
+  "ok": true,
+  "det": "",
+  "status": "PASS"
+ },
+ {
+  "id": "B-INLINE-F3",
+  "d": "F3: inline innerHTML embedding yields an <svg> with the same ids",
+  "ok": true,
+  "det": "283 ids",
+  "status": "PASS"
+ },
+ {
+  "id": "B-HIDDEN-F3",
+  "d": "F3: debug nav layer hidden by embedded CSS",
+  "ok": false,
+  "det": "jsdom does not process <style> inside inline SVG. The same CSS rule hides the layer when hoisted into an HTML <style> (jsdom) and cairosvg honours it as shipped.",
+  "status": "INCONCLUSIVE"
+ },
+ {
+  "id": "B-DRAW-F3",
+  "d": "F3: guide's route_layer.innerHTML polyline injection creates an SVG polyline",
+  "ok": true,
+  "det": "http://www.w3.org/2000/svg",
+  "status": "PASS"
+ },
+ {
+  "id": "B-USE-F3",
+  "d": "F3: all <use> use plain href (SVG2) that resolves",
+  "ok": true,
+  "det": "3 uses",
+  "status": "PASS"
+ },
+ {
+  "id": "B-META-F3",
+  "d": "F3: <metadata> C2PA block present and ignored by the DOM tree for rendering",
+  "ok": true,
+  "det": "",
+  "status": "PASS"
+ },
+ {
+  "id": "B-DUP",
+  "d": "Inlining all 3 floors into one document creates duplicate ids (guide warns about this)",
+  "ok": true,
+  "det": "34 duplicate ids",
+  "status": "PASS"
+ }
+]

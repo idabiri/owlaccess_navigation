@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "building_id": "BLD001",
+  "synthetic": true,
+  "disclaimer": "SYNTHETIC / MOCK DATA. Not official KSU architectural plans. Interior elements and accessibility attributes are generated and NOT field-verified.",
+  "coordinate_system": "local-svg-units (10 units = 1 m, origin top-left, y down)",
+  "scenarios": [
+    {
+      "scenario_id": "SCN-NORMAL",
+      "description": "No obstacles applied (baseline).",
+      "obstacle_ids": []
+    },
+    {
+      "scenario_id": "SCN-BLOCKED-HALLWAY",
+      "description": "Verified blocked hallway on floor 1 forces a reroute.",
+      "obstacle_ids": [
+        "OBS-001"
+      ]
+    },
+    {
+      "scenario_id": "SCN-ELEVATOR-1-OUT",
+      "description": "Elevator 1 out of service; elevator 2 still available.",
+      "obstacle_ids": [
+        "OBS-002"
+      ]
+    },
+    {
+      "scenario_id": "SCN-NO-ELEVATOR",
+      "description": "Both elevators out of service: no wheelchair route to upper floors.",
+      "obstacle_ids": [
+        "OBS-002",
+        "OBS-003"
+      ]
+    },
+    {
+      "scenario_id": "SCN-UNVERIFIED-ONLY",
+      "description": "Only a pending/unverified obstacle: must NOT block.",
+      "obstacle_ids": [
+        "OBS-004"
+      ]
+    },
+    {
+      "scenario_id": "SCN-CONSTRUCTION",
+      "description": "Verified construction zone isolates room_119 (no route for anyone).",
+      "obstacle_ids": [
+        "OBS-005"
+      ]
+    },
+    {
+      "scenario_id": "SCN-RESOLVED-IGNORED",
+      "description": "Resolved obstacle: must NOT block.",
+      "obstacle_ids": [
+        "OBS-006"
+      ]
+    }
+  ],
+  "rule": "Apply an obstacle only if status=='verified' AND verified==true AND it belongs to the active scenario. pending/resolved/unverified never block.",
+  "obstacles": [
+    {
+      "obstacle_id": "OBS-001",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "obstacle_type": "blocked_hallway",
+      "description": "SYNTHETIC DEMO DATA - Main corridor (mid-north) blocked between the east-branch junction and the elevator lobby.",
+      "status": "verified",
+      "verified": true,
+      "synthetic": true,
+      "scenario_ids": [
+        "SCN-BLOCKED-HALLWAY"
+      ],
+      "affected_edge_id": "e_f1_051"
+    },
+    {
+      "obstacle_id": "OBS-002",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "obstacle_type": "elevator_unavailable",
+      "description": "SYNTHETIC DEMO DATA - Elevator 1 temporarily out of service.",
+      "status": "verified",
+      "verified": true,
+      "synthetic": true,
+      "scenario_ids": [
+        "SCN-ELEVATOR-1-OUT",
+        "SCN-NO-ELEVATOR"
+      ],
+      "location_node_id": "n_f1_elev_1",
+      "affected_node_ids": [
+        "n_f1_elev_1",
+        "n_f2_elev_1",
+        "n_f3_elev_1"
+      ]
+    },
+    {
+      "obstacle_id": "OBS-003",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "obstacle_type": "elevator_unavailable",
+      "description": "SYNTHETIC DEMO DATA - Elevator 2 temporarily out of service.",
+      "status": "verified",
+      "verified": true,
+      "synthetic": true,
+      "scenario_ids": [
+        "SCN-NO-ELEVATOR"
+      ],
+      "location_node_id": "n_f1_elev_2",
+      "affected_node_ids": [
+        "n_f1_elev_2",
+        "n_f2_elev_2",
+        "n_f3_elev_2"
+      ]
+    },
+    {
+      "obstacle_id": "OBS-004",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "obstacle_type": "blocked_doorway",
+      "description": "SYNTHETIC DEMO DATA - Doorway to Classroom 103 reported blocked (UNVERIFIED, must not block routing).",
+      "status": "pending",
+      "verified": false,
+      "synthetic": true,
+      "scenario_ids": [
+        "SCN-UNVERIFIED-ONLY"
+      ],
+      "affected_edge_id": "e_f1_005"
+    },
+    {
+      "obstacle_id": "OBS-005",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F1",
+      "obstacle_type": "construction_area",
+      "description": "SYNTHETIC DEMO DATA - Simulated construction zone in the lobby east side, isolating the collaboration space.",
+      "status": "verified",
+      "verified": true,
+      "synthetic": true,
+      "scenario_ids": [
+        "SCN-CONSTRUCTION"
+      ],
+      "affected_edge_id": "e_f1_067"
+    },
+    {
+      "obstacle_id": "OBS-006",
+      "building_id": "BLD001",
+      "floor_id": "BLD001_F2",
+      "obstacle_type": "blocked_hallway",
+      "description": "SYNTHETIC DEMO DATA - Earlier hallway obstruction, now RESOLVED (must not block routing).",
+      "status": "resolved",
+      "verified": true,
+      "synthetic": true,
+      "scenario_ids": [
+        "SCN-RESOLVED-IGNORED"
+      ],
+      "affected_edge_id": "e_f2_057"
+    }
+  ]
+}

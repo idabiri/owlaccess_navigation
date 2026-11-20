@@ -1,0 +1,10 @@
+# Cloudflare Pages project for the PUBLIC deployment of OwlAccess. Nothing is deployed until you run the steps in DEPLOY.md.
+name = "owlaccess"
+compatibility_date = "2026-10-01"
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "REPORTS_DB"
+database_name = "owlaccess-reports"
+database_id = "REPLACE_WITH_THE_ID_FROM_wrangler_d1_create"
+migrations_dir = "migrations"

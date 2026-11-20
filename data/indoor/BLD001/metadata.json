@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "building_id": "BLD001",
+  "building_name": "H - Academic Building",
+  "synthetic": true,
+  "disclaimer": "SYNTHETIC / MOCK DATA. Not official KSU architectural plans. Interior elements and accessibility attributes are generated and NOT field-verified.",
+  "floors": [
+    {
+      "floor_id": "BLD001_F1",
+      "floor_number": 1,
+      "name": "Ground floor",
+      "svg": "floor_1.svg"
+    },
+    {
+      "floor_id": "BLD001_F2",
+      "floor_number": 2,
+      "name": "Second floor",
+      "svg": "floor_2.svg"
+    },
+    {
+      "floor_id": "BLD001_F3",
+      "floor_number": 3,
+      "name": "Third floor",
+      "svg": "floor_3.svg"
+    }
+  ],
+  "counts": {
+    "rooms": 58,
+    "hallways": 24,
+    "nodes": 219,
+    "edges": 219,
+    "vertical_connections": 8,
+    "obstacles": 6,
+    "scenarios": 7
+  },
+  "svg": {
+    "viewBox": "0 0 680 1120",
+    "units_per_meter": 10.0,
+    "origin": "top-left",
+    "north": "up"
+  },
+  "georeference_hint": {
+    "note": "Derived from buildings.geojson for FUTURE use only; not used by indoor routing. Local meters are x east, y north from the footprint's SW bounding-box corner.",
+    "origin_lon": -84.5207115,
+    "origin_lat": 33.93795,
+    "meters_per_degree_lon": 92356.85,
+    "meters_per_degree_lat": 110574,
+    "svg_to_local_m": {
+      "x": "(svg_x - 150) / 10",
+      "y": "90 - (svg_y - 110) / 10"
+    },
+    "rotation_deg": 0
+  },
+  "source": {
+    "footprint": "buildings.geojson",
+    "osm_id": "way/225446888",
+    "osm_levels": "3",
+    "entrances": "entrances_ramps.geojson (ENT006, ENT007, RMP004; all verified=false)"
+  },
+  "footprint_geometry": "approximate (OSM-derived polygon, vertices rounded to 0.1 m, none removed)"
+}

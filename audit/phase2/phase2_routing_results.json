@@ -1,0 +1,7278 @@
+{
+ "summary": {
+  "routes_compared": 26474,
+  "problems": [
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_101",
+    "room_119",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_101",
+    "room_219",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_102",
+    "room_213",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_102",
+    "room_221",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_104",
+    "room_313",
+    "(84.2, 77.3)",
+    "(84.3, 77.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_105",
+    "room_112",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_105",
+    "room_302",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_105",
+    "room_303",
+    "(80.2, 72.5)",
+    "(80.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_106",
+    "room_113",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_108",
+    "room_109",
+    "(59.2, 70.0)",
+    "(59.3, 70)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_108",
+    "room_111",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_108",
+    "room_209",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_108",
+    "room_217",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_108",
+    "room_309",
+    "(87.2, 82.0)",
+    "(87.3, 82)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_108",
+    "room_317",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_109",
+    "room_208",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_112",
+    "room_219",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_112",
+    "room_319",
+    "(97.2, 92.8)",
+    "(97.3, 92.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_113",
+    "room_202",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_113",
+    "room_302",
+    "(85.2, 78.5)",
+    "(85.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_114",
+    "room_303",
+    "(88.2, 82.1)",
+    "(88.3, 82.1)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_117",
+    "room_208",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_117",
+    "room_308",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_117",
+    "room_321",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_117",
+    "room_322",
+    "(69.2, 59.3)",
+    "(69.3, 59.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_119",
+    "room_201",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_119",
+    "room_212",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_119",
+    "room_301",
+    "(112.2, 110.8)",
+    "(112.3, 110.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_204",
+    "room_303",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_208",
+    "room_209",
+    "(59.2, 70.0)",
+    "(59.3, 70)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_208",
+    "room_309",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_208",
+    "room_317",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_212",
+    "room_319",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_213",
+    "room_302",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_214",
+    "room_303",
+    "(74.2, 76.1)",
+    "(74.3, 76.1)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_217",
+    "room_308",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_217",
+    "room_321",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_217",
+    "room_322",
+    "(55.2, 53.3)",
+    "(55.3, 53.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_219",
+    "room_301",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_221",
+    "room_302",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_221",
+    "room_312",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "False",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "entrance_1",
+    "room_215",
+    "(94.7, 84.2)",
+    "(94.7, 84.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_101",
+    "room_119",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_102",
+    "room_208",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_102",
+    "room_308",
+    "(114.2, 83.5)",
+    "(114.3, 83.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_103",
+    "room_208",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_103",
+    "room_308",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_104",
+    "room_212",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_105",
+    "room_112",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_106",
+    "room_113",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_107",
+    "room_213",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_107",
+    "room_221",
+    "(64.2, 49.0)",
+    "(64.3, 49)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_108",
+    "room_111",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_108",
+    "room_202",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_108",
+    "room_217",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_108",
+    "room_317",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_111",
+    "room_322",
+    "(113.2, 82.3)",
+    "(113.3, 82.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_112",
+    "room_304",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_113",
+    "room_207",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_113",
+    "room_301",
+    "(129.2, 101.5)",
+    "(129.3, 101.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_113",
+    "room_307",
+    "(94.2, 59.5)",
+    "(94.3, 59.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_117",
+    "room_208",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_117",
+    "room_308",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_202",
+    "room_308",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_203",
+    "room_321",
+    "(99.2, 91.0)",
+    "(99.3, 91)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_203",
+    "room_322",
+    "(78.2, 65.8)",
+    "(78.3, 65.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_208",
+    "room_317",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_211",
+    "room_321",
+    "(109.2, 103.0)",
+    "(109.3, 103)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_211",
+    "room_322",
+    "(88.2, 77.8)",
+    "(88.3, 77.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_212",
+    "room_304",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_213",
+    "room_301",
+    "(104.2, 97.0)",
+    "(104.3, 97)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_213",
+    "room_307",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_217",
+    "room_308",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_220",
+    "room_321",
+    "(94.2, 85.0)",
+    "(94.3, 85)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_220",
+    "room_322",
+    "(73.2, 59.8)",
+    "(73.3, 59.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_221",
+    "room_301",
+    "(99.2, 91.0)",
+    "(99.3, 91)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_221",
+    "room_307",
+    "(64.2, 49.0)",
+    "(64.3, 49)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NORMAL",
+    "True",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "entrance_2",
+    "room_113",
+    "(40.2, 44.5)",
+    "(40.3, 44.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_101",
+    "room_219",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_102",
+    "room_213",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_102",
+    "room_221",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_103",
+    "room_213",
+    "(81.2, 84.5)",
+    "(81.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_105",
+    "room_302",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_105",
+    "room_303",
+    "(80.2, 72.5)",
+    "(80.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_108",
+    "room_217",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_108",
+    "room_301",
+    "(105.2, 102.5)",
+    "(105.3, 102.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_108",
+    "room_317",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_109",
+    "room_208",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_113",
+    "room_202",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_113",
+    "room_302",
+    "(85.2, 78.5)",
+    "(85.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_113",
+    "room_303",
+    "(95.2, 90.5)",
+    "(95.3, 90.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_117",
+    "room_208",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_117",
+    "room_308",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_117",
+    "room_321",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_117",
+    "room_322",
+    "(69.2, 59.3)",
+    "(69.3, 59.3)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_119",
+    "room_212",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_204",
+    "room_303",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_208",
+    "room_209",
+    "(59.2, 70.0)",
+    "(59.3, 70)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_208",
+    "room_309",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_208",
+    "room_317",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_212",
+    "room_319",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_213",
+    "room_302",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_214",
+    "room_303",
+    "(74.2, 76.1)",
+    "(74.3, 76.1)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_217",
+    "room_308",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_217",
+    "room_321",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_217",
+    "room_322",
+    "(55.2, 53.3)",
+    "(55.3, 53.3)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_219",
+    "room_301",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_221",
+    "room_302",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_221",
+    "room_312",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "False",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "entrance_1",
+    "room_215",
+    "(94.7, 84.2)",
+    "(94.7, 84.3)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "entrance_2",
+    "room_113",
+    "(40.2, 44.5)",
+    "(40.3, 44.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_107",
+    "room_213",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_107",
+    "room_221",
+    "(64.2, 49.0)",
+    "(64.3, 49)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_108",
+    "room_202",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_108",
+    "room_217",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_108",
+    "room_317",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_117",
+    "room_208",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_117",
+    "room_308",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_202",
+    "room_308",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_203",
+    "room_321",
+    "(99.2, 91.0)",
+    "(99.3, 91)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_203",
+    "room_322",
+    "(78.2, 65.8)",
+    "(78.3, 65.8)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_208",
+    "room_317",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_211",
+    "room_321",
+    "(109.2, 103.0)",
+    "(109.3, 103)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_211",
+    "room_322",
+    "(88.2, 77.8)",
+    "(88.3, 77.8)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_212",
+    "room_304",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_213",
+    "room_301",
+    "(104.2, 97.0)",
+    "(104.3, 97)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_213",
+    "room_307",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_217",
+    "room_308",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_220",
+    "room_321",
+    "(94.2, 85.0)",
+    "(94.3, 85)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_220",
+    "room_322",
+    "(73.2, 59.8)",
+    "(73.3, 59.8)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_221",
+    "room_301",
+    "(99.2, 91.0)",
+    "(99.3, 91)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_221",
+    "room_307",
+    "(64.2, 49.0)",
+    "(64.3, 49)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-BLOCKED-HALLWAY",
+    "True",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_101",
+    "room_119",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_101",
+    "room_219",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_102",
+    "room_213",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_102",
+    "room_221",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_104",
+    "room_313",
+    "(84.2, 77.3)",
+    "(84.3, 77.3)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_105",
+    "room_112",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_105",
+    "room_302",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_105",
+    "room_303",
+    "(80.2, 72.5)",
+    "(80.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_106",
+    "room_113",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_108",
+    "room_109",
+    "(59.2, 70.0)",
+    "(59.3, 70)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_108",
+    "room_111",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_108",
+    "room_209",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_108",
+    "room_217",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_108",
+    "room_309",
+    "(87.2, 82.0)",
+    "(87.3, 82)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_108",
+    "room_317",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_109",
+    "room_208",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_112",
+    "room_219",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_112",
+    "room_319",
+    "(97.2, 92.8)",
+    "(97.3, 92.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_113",
+    "room_202",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_113",
+    "room_302",
+    "(85.2, 78.5)",
+    "(85.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_114",
+    "room_303",
+    "(88.2, 82.1)",
+    "(88.3, 82.1)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_117",
+    "room_208",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_117",
+    "room_308",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_117",
+    "room_321",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_117",
+    "room_322",
+    "(69.2, 59.3)",
+    "(69.3, 59.3)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_119",
+    "room_201",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_119",
+    "room_212",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_119",
+    "room_301",
+    "(112.2, 110.8)",
+    "(112.3, 110.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_204",
+    "room_303",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_208",
+    "room_209",
+    "(59.2, 70.0)",
+    "(59.3, 70)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_208",
+    "room_309",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_208",
+    "room_317",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_212",
+    "room_319",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_213",
+    "room_302",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_214",
+    "room_303",
+    "(74.2, 76.1)",
+    "(74.3, 76.1)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_217",
+    "room_308",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_217",
+    "room_321",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_217",
+    "room_322",
+    "(55.2, 53.3)",
+    "(55.3, 53.3)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_219",
+    "room_301",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_221",
+    "room_302",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_221",
+    "room_312",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "False",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "entrance_1",
+    "room_215",
+    "(94.7, 84.2)",
+    "(94.7, 84.3)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_101",
+    "room_119",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_102",
+    "room_208",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_102",
+    "room_308",
+    "(114.2, 83.5)",
+    "(114.3, 83.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_103",
+    "room_208",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_103",
+    "room_308",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_104",
+    "room_212",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_105",
+    "room_112",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_106",
+    "room_113",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_107",
+    "room_213",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_107",
+    "room_221",
+    "(64.2, 49.0)",
+    "(64.3, 49)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_108",
+    "room_111",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_108",
+    "room_202",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_108",
+    "room_217",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_108",
+    "room_317",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_111",
+    "room_322",
+    "(113.2, 82.3)",
+    "(113.3, 82.3)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_112",
+    "room_304",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_113",
+    "room_207",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_113",
+    "room_301",
+    "(129.2, 101.5)",
+    "(129.3, 101.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_113",
+    "room_307",
+    "(94.2, 59.5)",
+    "(94.3, 59.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_117",
+    "room_208",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_117",
+    "room_308",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_202",
+    "room_308",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_203",
+    "room_321",
+    "(99.2, 91.0)",
+    "(99.3, 91)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_203",
+    "room_322",
+    "(78.2, 65.8)",
+    "(78.3, 65.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_208",
+    "room_317",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_211",
+    "room_321",
+    "(109.2, 103.0)",
+    "(109.3, 103)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_211",
+    "room_322",
+    "(88.2, 77.8)",
+    "(88.3, 77.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_212",
+    "room_304",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_213",
+    "room_301",
+    "(104.2, 97.0)",
+    "(104.3, 97)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_213",
+    "room_307",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_217",
+    "room_308",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_220",
+    "room_321",
+    "(94.2, 85.0)",
+    "(94.3, 85)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_220",
+    "room_322",
+    "(73.2, 59.8)",
+    "(73.3, 59.8)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_221",
+    "room_301",
+    "(99.2, 91.0)",
+    "(99.3, 91)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_221",
+    "room_307",
+    "(64.2, 49.0)",
+    "(64.3, 49)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-ELEVATOR-1-OUT",
+    "True",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_101",
+    "room_119",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_101",
+    "room_219",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_102",
+    "room_213",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_102",
+    "room_221",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_104",
+    "room_313",
+    "(84.2, 77.3)",
+    "(84.3, 77.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_105",
+    "room_112",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_105",
+    "room_302",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_105",
+    "room_303",
+    "(80.2, 72.5)",
+    "(80.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_106",
+    "room_113",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_108",
+    "room_109",
+    "(59.2, 70.0)",
+    "(59.3, 70)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_108",
+    "room_111",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_108",
+    "room_209",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_108",
+    "room_217",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_108",
+    "room_309",
+    "(87.2, 82.0)",
+    "(87.3, 82)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_108",
+    "room_317",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_109",
+    "room_208",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_112",
+    "room_219",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_112",
+    "room_319",
+    "(97.2, 92.8)",
+    "(97.3, 92.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_113",
+    "room_202",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_113",
+    "room_302",
+    "(85.2, 78.5)",
+    "(85.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_114",
+    "room_303",
+    "(88.2, 82.1)",
+    "(88.3, 82.1)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_117",
+    "room_208",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_117",
+    "room_308",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_117",
+    "room_321",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_117",
+    "room_322",
+    "(69.2, 59.3)",
+    "(69.3, 59.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_119",
+    "room_201",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_119",
+    "room_212",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_119",
+    "room_301",
+    "(112.2, 110.8)",
+    "(112.3, 110.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_204",
+    "room_303",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_205",
+    "room_302",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_205",
+    "room_303",
+    "(66.2, 66.5)",
+    "(66.3, 66.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_208",
+    "room_209",
+    "(59.2, 70.0)",
+    "(59.3, 70)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_208",
+    "room_309",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_208",
+    "room_317",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_212",
+    "room_319",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_213",
+    "room_302",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_214",
+    "room_303",
+    "(74.2, 76.1)",
+    "(74.3, 76.1)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_217",
+    "room_308",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_217",
+    "room_321",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_217",
+    "room_322",
+    "(55.2, 53.3)",
+    "(55.3, 53.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_219",
+    "room_301",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_221",
+    "room_302",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_221",
+    "room_312",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "False",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_101",
+    "room_119",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_105",
+    "room_112",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_106",
+    "room_113",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_108",
+    "room_111",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-NO-ELEVATOR",
+    "True",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_101",
+    "room_119",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_101",
+    "room_219",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_102",
+    "room_213",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_102",
+    "room_221",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_104",
+    "room_313",
+    "(84.2, 77.3)",
+    "(84.3, 77.3)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_105",
+    "room_112",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_105",
+    "room_302",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_105",
+    "room_303",
+    "(80.2, 72.5)",
+    "(80.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_106",
+    "room_113",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_108",
+    "room_109",
+    "(59.2, 70.0)",
+    "(59.3, 70)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_108",
+    "room_111",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_108",
+    "room_209",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_108",
+    "room_217",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_108",
+    "room_309",
+    "(87.2, 82.0)",
+    "(87.3, 82)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_108",
+    "room_317",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_109",
+    "room_208",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_112",
+    "room_219",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_112",
+    "room_319",
+    "(97.2, 92.8)",
+    "(97.3, 92.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_113",
+    "room_202",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_113",
+    "room_302",
+    "(85.2, 78.5)",
+    "(85.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_114",
+    "room_303",
+    "(88.2, 82.1)",
+    "(88.3, 82.1)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_117",
+    "room_208",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_117",
+    "room_308",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_117",
+    "room_321",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_117",
+    "room_322",
+    "(69.2, 59.3)",
+    "(69.3, 59.3)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_119",
+    "room_201",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_119",
+    "room_212",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_119",
+    "room_301",
+    "(112.2, 110.8)",
+    "(112.3, 110.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_204",
+    "room_303",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_208",
+    "room_209",
+    "(59.2, 70.0)",
+    "(59.3, 70)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_208",
+    "room_309",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_208",
+    "room_317",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_212",
+    "room_319",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_213",
+    "room_302",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_214",
+    "room_303",
+    "(74.2, 76.1)",
+    "(74.3, 76.1)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_217",
+    "room_308",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_217",
+    "room_321",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_217",
+    "room_322",
+    "(55.2, 53.3)",
+    "(55.3, 53.3)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_219",
+    "room_301",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_221",
+    "room_302",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_221",
+    "room_312",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "False",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "entrance_1",
+    "room_215",
+    "(94.7, 84.2)",
+    "(94.7, 84.3)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_101",
+    "room_119",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_102",
+    "room_208",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_102",
+    "room_308",
+    "(114.2, 83.5)",
+    "(114.3, 83.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_103",
+    "room_208",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_103",
+    "room_308",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_104",
+    "room_212",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_105",
+    "room_112",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_106",
+    "room_113",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_107",
+    "room_213",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_107",
+    "room_221",
+    "(64.2, 49.0)",
+    "(64.3, 49)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_108",
+    "room_111",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_108",
+    "room_202",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_108",
+    "room_217",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_108",
+    "room_317",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_111",
+    "room_322",
+    "(113.2, 82.3)",
+    "(113.3, 82.3)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_112",
+    "room_304",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_113",
+    "room_207",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_113",
+    "room_301",
+    "(129.2, 101.5)",
+    "(129.3, 101.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_113",
+    "room_307",
+    "(94.2, 59.5)",
+    "(94.3, 59.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_117",
+    "room_208",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_117",
+    "room_308",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_202",
+    "room_308",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_203",
+    "room_321",
+    "(99.2, 91.0)",
+    "(99.3, 91)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_203",
+    "room_322",
+    "(78.2, 65.8)",
+    "(78.3, 65.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_208",
+    "room_317",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_211",
+    "room_321",
+    "(109.2, 103.0)",
+    "(109.3, 103)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_211",
+    "room_322",
+    "(88.2, 77.8)",
+    "(88.3, 77.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_212",
+    "room_304",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_213",
+    "room_301",
+    "(104.2, 97.0)",
+    "(104.3, 97)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_213",
+    "room_307",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_217",
+    "room_308",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_220",
+    "room_321",
+    "(94.2, 85.0)",
+    "(94.3, 85)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_220",
+    "room_322",
+    "(73.2, 59.8)",
+    "(73.3, 59.8)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_221",
+    "room_301",
+    "(99.2, 91.0)",
+    "(99.3, 91)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_221",
+    "room_307",
+    "(64.2, 49.0)",
+    "(64.3, 49)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-UNVERIFIED-ONLY",
+    "True",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_101",
+    "room_219",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_102",
+    "room_213",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_102",
+    "room_221",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_104",
+    "room_313",
+    "(84.2, 77.3)",
+    "(84.3, 77.3)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_105",
+    "room_112",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_105",
+    "room_302",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_105",
+    "room_303",
+    "(80.2, 72.5)",
+    "(80.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_106",
+    "room_113",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_108",
+    "room_109",
+    "(59.2, 70.0)",
+    "(59.3, 70)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_108",
+    "room_111",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_108",
+    "room_209",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_108",
+    "room_217",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_108",
+    "room_309",
+    "(87.2, 82.0)",
+    "(87.3, 82)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_108",
+    "room_317",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_109",
+    "room_208",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_112",
+    "room_219",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_112",
+    "room_319",
+    "(97.2, 92.8)",
+    "(97.3, 92.8)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_113",
+    "room_202",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_113",
+    "room_302",
+    "(85.2, 78.5)",
+    "(85.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_114",
+    "room_303",
+    "(88.2, 82.1)",
+    "(88.3, 82.1)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_117",
+    "room_208",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_117",
+    "room_308",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_117",
+    "room_321",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_117",
+    "room_322",
+    "(69.2, 59.3)",
+    "(69.3, 59.3)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_204",
+    "room_303",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_208",
+    "room_209",
+    "(59.2, 70.0)",
+    "(59.3, 70)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_208",
+    "room_309",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_208",
+    "room_317",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_212",
+    "room_319",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_213",
+    "room_302",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_214",
+    "room_303",
+    "(74.2, 76.1)",
+    "(74.3, 76.1)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_217",
+    "room_308",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_217",
+    "room_321",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_217",
+    "room_322",
+    "(55.2, 53.3)",
+    "(55.3, 53.3)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_219",
+    "room_301",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_221",
+    "room_302",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_221",
+    "room_312",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "False",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "entrance_1",
+    "room_215",
+    "(94.7, 84.2)",
+    "(94.7, 84.3)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_102",
+    "room_208",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_102",
+    "room_308",
+    "(114.2, 83.5)",
+    "(114.3, 83.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_103",
+    "room_208",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_103",
+    "room_308",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_104",
+    "room_212",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_105",
+    "room_112",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_106",
+    "room_113",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_107",
+    "room_213",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_107",
+    "room_221",
+    "(64.2, 49.0)",
+    "(64.3, 49)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_108",
+    "room_111",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_108",
+    "room_202",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_108",
+    "room_217",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_108",
+    "room_317",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_111",
+    "room_322",
+    "(113.2, 82.3)",
+    "(113.3, 82.3)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_112",
+    "room_304",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_113",
+    "room_207",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_113",
+    "room_301",
+    "(129.2, 101.5)",
+    "(129.3, 101.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_113",
+    "room_307",
+    "(94.2, 59.5)",
+    "(94.3, 59.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_117",
+    "room_208",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_117",
+    "room_308",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_202",
+    "room_308",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_203",
+    "room_321",
+    "(99.2, 91.0)",
+    "(99.3, 91)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_203",
+    "room_322",
+    "(78.2, 65.8)",
+    "(78.3, 65.8)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_208",
+    "room_317",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_211",
+    "room_321",
+    "(109.2, 103.0)",
+    "(109.3, 103)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_211",
+    "room_322",
+    "(88.2, 77.8)",
+    "(88.3, 77.8)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_212",
+    "room_304",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_213",
+    "room_301",
+    "(104.2, 97.0)",
+    "(104.3, 97)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_213",
+    "room_307",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_217",
+    "room_308",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_220",
+    "room_321",
+    "(94.2, 85.0)",
+    "(94.3, 85)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_220",
+    "room_322",
+    "(73.2, 59.8)",
+    "(73.3, 59.8)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_221",
+    "room_301",
+    "(99.2, 91.0)",
+    "(99.3, 91)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_221",
+    "room_307",
+    "(64.2, 49.0)",
+    "(64.3, 49)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-CONSTRUCTION",
+    "True",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_101",
+    "room_119",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_101",
+    "room_219",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_102",
+    "room_213",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_102",
+    "room_221",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_104",
+    "room_313",
+    "(84.2, 77.3)",
+    "(84.3, 77.3)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_105",
+    "room_112",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_105",
+    "room_302",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_105",
+    "room_303",
+    "(80.2, 72.5)",
+    "(80.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_106",
+    "room_113",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_108",
+    "room_109",
+    "(59.2, 70.0)",
+    "(59.3, 70)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_108",
+    "room_111",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_108",
+    "room_209",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_108",
+    "room_217",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_108",
+    "room_309",
+    "(87.2, 82.0)",
+    "(87.3, 82)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_108",
+    "room_317",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_109",
+    "room_208",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_112",
+    "room_219",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_112",
+    "room_319",
+    "(97.2, 92.8)",
+    "(97.3, 92.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_113",
+    "room_202",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_113",
+    "room_302",
+    "(85.2, 78.5)",
+    "(85.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_114",
+    "room_303",
+    "(88.2, 82.1)",
+    "(88.3, 82.1)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_117",
+    "room_208",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_117",
+    "room_308",
+    "(60.2, 48.5)",
+    "(60.3, 48.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_117",
+    "room_321",
+    "(90.2, 84.5)",
+    "(90.3, 84.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_117",
+    "room_322",
+    "(69.2, 59.3)",
+    "(69.3, 59.3)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_119",
+    "room_201",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_119",
+    "room_212",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_119",
+    "room_301",
+    "(112.2, 110.8)",
+    "(112.3, 110.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_204",
+    "room_303",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_208",
+    "room_209",
+    "(59.2, 70.0)",
+    "(59.3, 70)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_208",
+    "room_309",
+    "(73.2, 76.0)",
+    "(73.3, 76)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_208",
+    "room_317",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_212",
+    "room_319",
+    "(83.2, 86.8)",
+    "(83.3, 86.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_213",
+    "room_302",
+    "(71.2, 72.5)",
+    "(71.3, 72.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_214",
+    "room_303",
+    "(74.2, 76.1)",
+    "(74.3, 76.1)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_217",
+    "room_308",
+    "(46.2, 42.5)",
+    "(46.3, 42.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_217",
+    "room_321",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_217",
+    "room_322",
+    "(55.2, 53.3)",
+    "(55.3, 53.3)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_219",
+    "room_301",
+    "(98.2, 104.8)",
+    "(98.3, 104.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_221",
+    "room_302",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_221",
+    "room_312",
+    "(76.2, 78.5)",
+    "(76.3, 78.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "False",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "entrance_1",
+    "room_215",
+    "(94.7, 84.2)",
+    "(94.7, 84.3)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_101",
+    "room_119",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_102",
+    "room_113",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_102",
+    "room_208",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_102",
+    "room_308",
+    "(114.2, 83.5)",
+    "(114.3, 83.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_103",
+    "room_113",
+    "(14.2, 16.5)",
+    "(14.3, 16.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_103",
+    "room_208",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_103",
+    "room_308",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_104",
+    "room_212",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_105",
+    "room_112",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_106",
+    "room_108",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_106",
+    "room_113",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_107",
+    "room_213",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_107",
+    "room_221",
+    "(64.2, 49.0)",
+    "(64.3, 49)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_108",
+    "room_111",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_108",
+    "room_117",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_108",
+    "room_202",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_108",
+    "room_217",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_108",
+    "room_317",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_111",
+    "room_322",
+    "(113.2, 82.3)",
+    "(113.3, 82.3)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_112",
+    "room_304",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_113",
+    "room_207",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_113",
+    "room_301",
+    "(129.2, 101.5)",
+    "(129.3, 101.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_113",
+    "room_307",
+    "(94.2, 59.5)",
+    "(94.3, 59.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_117",
+    "room_208",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_117",
+    "room_308",
+    "(104.2, 71.5)",
+    "(104.3, 71.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_201",
+    "room_219",
+    "(76.2, 90.8)",
+    "(76.3, 90.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_202",
+    "room_213",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_202",
+    "room_221",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_202",
+    "room_308",
+    "(89.2, 79.0)",
+    "(89.3, 79)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_203",
+    "room_208",
+    "(39.2, 46.5)",
+    "(39.3, 46.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_203",
+    "room_321",
+    "(99.2, 91.0)",
+    "(99.3, 91)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_203",
+    "room_322",
+    "(78.2, 65.8)",
+    "(78.3, 65.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_204",
+    "room_212",
+    "(19.2, 22.5)",
+    "(19.3, 22.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_205",
+    "room_212",
+    "(29.2, 34.5)",
+    "(29.3, 34.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_206",
+    "room_208",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_206",
+    "room_213",
+    "(23.2, 27.3)",
+    "(23.3, 27.3)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_206",
+    "room_221",
+    "(18.2, 21.3)",
+    "(18.3, 21.3)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_208",
+    "room_211",
+    "(49.2, 58.5)",
+    "(49.3, 58.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_208",
+    "room_217",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_208",
+    "room_220",
+    "(34.2, 40.5)",
+    "(34.3, 40.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_208",
+    "room_317",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_211",
+    "room_321",
+    "(109.2, 103.0)",
+    "(109.3, 103)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_211",
+    "room_322",
+    "(88.2, 77.8)",
+    "(88.3, 77.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_212",
+    "room_304",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_213",
+    "room_301",
+    "(104.2, 97.0)",
+    "(104.3, 97)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_213",
+    "room_307",
+    "(69.2, 55.0)",
+    "(69.3, 55)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_217",
+    "room_308",
+    "(79.2, 67.0)",
+    "(79.3, 67)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_220",
+    "room_321",
+    "(94.2, 85.0)",
+    "(94.3, 85)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_220",
+    "room_322",
+    "(73.2, 59.8)",
+    "(73.3, 59.8)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_221",
+    "room_301",
+    "(99.2, 91.0)",
+    "(99.3, 91)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_221",
+    "room_307",
+    "(64.2, 49.0)",
+    "(64.3, 49)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_306",
+    "room_308",
+    "(15.2, 17.7)",
+    "(15.3, 17.7)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_308",
+    "room_317",
+    "(24.2, 28.5)",
+    "(24.3, 28.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_317",
+    "room_321",
+    "(54.2, 64.5)",
+    "(54.3, 64.5)"
+   ],
+   [
+    "metrics",
+    "SCN-RESOLVED-IGNORED",
+    "True",
+    "room_317",
+    "room_322",
+    "(33.2, 39.3)",
+    "(33.3, 39.3)"
+   ]
+  ],
+  "equal_cost_path_differences": 0,
+  "unverified_or_resolved_changed_routes": 0,
+  "asymmetric": 0
+ },
+ "named": [
+  {
+   "id": "A-01",
+   "description": "room-to-room, same floor: room_104 -> room_113",
+   "start": "room_104",
+   "start_node": "n_f1_dest_104",
+   "goal": "room_113",
+   "goal_node": "n_f1_dest_113",
+   "mode": "walking",
+   "scenario": "none",
+   "result": "FOUND",
+   "time_s": 11.3,
+   "distance_m": 13.0,
+   "floors": [
+    "BLD001_F1"
+   ],
+   "uses_stairs": false,
+   "uses_elevator": false,
+   "passed": true,
+   "applied": []
+  },
+  {
+   "id": "A-02",
+   "description": "room-to-room, same floor F3: room_303 -> room_317",
+   "start": "room_303",
+   "start_node": "n_f3_dest_303",
+   "goal": "room_317",
+   "goal_node": "n_f3_dest_317",
+   "mode": "wheelchair",
+   "scenario": "none",
+   "result": "FOUND",
+   "time_s": 42.2,
+   "distance_m": 50.0,
+   "floors": [
+    "BLD001_F3"
+   ],
+   "uses_stairs": false,
+   "uses_elevator": false,
+   "passed": true,
+   "applied": []
+  },
+  {
+   "id": "A-03",
+   "description": "entrance-to-room: entrance_2 -> room_115 (walking)",
+   "start": "entrance_2",
+   "start_node": "n_f1_entrance_2",
+   "goal": "room_115",
+   "goal_node": "n_f1_dest_115",
+   "mode": "walking",
+   "scenario": "none",
+   "result": "FOUND",
+   "time_s": 19.5,
+   "distance_m": 20.8,
+   "floors": [
+    "BLD001_F1"
+   ],
+   "uses_stairs": false,
+   "uses_elevator": false,
+   "passed": true,
+   "applied": []
+  },
+  {
+   "id": "A-04",
+   "description": "entrance-to-room: entrance_3 (ramp) -> room_113 (wheelchair)",
+   "start": "entrance_3",
+   "start_node": "n_f1_entrance_3",
+   "goal": "room_113",
+   "goal_node": "n_f1_dest_113",
+   "mode": "wheelchair",
+   "scenario": "none",
+   "result": "FOUND",
+   "time_s": 24.4,
+   "distance_m": 27.6,
+   "floors": [
+    "BLD001_F1"
+   ],
+   "uses_stairs": false,
+   "uses_elevator": false,
+   "passed": true,
+   "applied": []
+  },
+  {
+   "id": "A-05",
+   "description": "floor-to-floor: room_103 -> room_212 (walking)",
+   "start": "room_103",
+   "start_node": "n_f1_dest_103",
+   "goal": "room_212",
+   "goal_node": "n_f2_dest_212",
+   "mode": "walking",
+   "scenario": "none",
+   "result": "FOUND",
+   "time_s": 70.8,
+   "distance_m": 72.0,
+   "floors": [
+    "BLD001_F1",
+    "BLD001_F2"
+   ],
+   "uses_stairs": true,
+   "uses_elevator": false,
+   "passed": true,
+   "applied": []
+  },
+  {
+   "id": "A-06",
+   "description": "floor-to-floor via elevator: room_103 -> room_212 (wheelchair)",
+   "start": "room_103",
+   "start_node": "n_f1_dest_103",
+   "goal": "room_212",
+   "goal_node": "n_f2_dest_212",
+   "mode": "wheelchair",
+   "scenario": "none",
+   "result": "FOUND",
+   "time_s": 88.8,
+   "distance_m": 78.5,
+   "floors": [
+    "BLD001_F1",
+    "BLD001_F2"
+   ],
+   "uses_stairs": false,
+   "uses_elevator": true,
+   "passed": true,
+   "applied": []
+  },
+  {
+   "id": "A-07",
+   "description": "F2 -> F3 via elevator: room_219 -> room_315 (wheelchair)",
+   "start": "room_219",
+   "start_node": "n_f2_dest_219",
+   "goal": "room_315",
+   "goal_node": "n_f3_dest_315",
+   "mode": "wheelchair",
+   "scenario": "none",
+   "result": "FOUND",
+   "time_s": 93.3,
+   "distance_m": 82.7,
+   "floors": [
+    "BLD001_F2",
+    "BLD001_F3"
+   ],
+   "uses_stairs": false,
+   "uses_elevator": true,
+   "passed": true,
+   "applied": []
+  },
+  {
+   "id": "A-08",
+   "description": "F1 -> F3 two hops: entrance_1 -> room_301 (wheelchair)",
+   "start": "entrance_1",
+   "start_node": "n_f1_entrance_1",
+   "goal": "room_301",
+   "goal_node": "n_f3_dest_301",
+   "mode": "wheelchair",
+   "scenario": "none",
+   "result": "FOUND",
+   "time_s": 145.2,
+   "distance_m": 120.3,
+   "floors": [
+    "BLD001_F1",
+    "BLD001_F2",
+    "BLD001_F3"
+   ],
+   "uses_stairs": false,
+   "uses_elevator": true,
+   "passed": true,
+   "applied": []
+  },
+  {
+   "id": "A-09",
+   "description": "blocked hallway reroute (walking): room_111 -> room_117 under OBS-001",
+   "start": "room_111",
+   "start_node": "n_f1_dest_111",
+   "goal": "room_117",
+   "goal_node": "n_f1_dest_117",
+   "mode": "walking",
+   "scenario": "SCN-BLOCKED-HALLWAY",
+   "result": "FOUND",
+   "time_s": 56.5,
+   "distance_m": 65.0,
+   "floors": [
+    "BLD001_F1"
+   ],
+   "uses_stairs": false,
+   "uses_elevator": false,
+   "passed": true,
+   "applied": [
+    "OBS-001"
+   ]
+  },
+  {
+   "id": "A-10",
+   "description": "blocked hallway reroute (wheelchair): room_111 -> room_117",
+   "start": "room_111",
+   "start_node": "n_f1_dest_111",
+   "goal": "room_117",
+   "goal_node": "n_f1_dest_117",
+   "mode": "wheelchair",
+   "scenario": "SCN-BLOCKED-HALLWAY",
+   "result": "FOUND",
+   "time_s": 56.5,
+   "distance_m": 65.0,
+   "floors": [
+    "BLD001_F1"
+   ],
+   "uses_stairs": false,
+   "uses_elevator": false,
+   "passed": true,
+   "applied": [
+    "OBS-001"
+   ]
+  },
+  {
+   "id": "A-11",
+   "description": "one elevator unavailable: room_105 -> room_305 (wheelchair)",
+   "start": "room_105",
+   "start_node": "n_f1_dest_105",
+   "goal": "room_305",
+   "goal_node": "n_f3_dest_305",
+   "mode": "wheelchair",
+   "scenario": "SCN-ELEVATOR-1-OUT",
+   "result": "FOUND",
+   "time_s": 59.5,
+   "distance_m": 19.0,
+   "floors": [
+    "BLD001_F1",
+    "BLD001_F2",
+    "BLD001_F3"
+   ],
+   "uses_stairs": false,
+   "uses_elevator": true,
+   "passed": true,
+   "applied": [
+    "OBS-002"
+   ]
+  },
+  {
+   "id": "A-12",
+   "description": "both elevators unavailable: entrance_2 -> room_301 (wheelchair) -> NO_ACCESSIBLE_ROUTE",
+   "start": "entrance_2",
+   "start_node": "n_f1_entrance_2",
+   "goal": "room_301",
+   "goal_node": "n_f3_dest_301",
+   "mode": "wheelchair",
+   "scenario": "SCN-NO-ELEVATOR",
+   "result": "NO_ACCESSIBLE_ROUTE",
+   "time_s": null,
+   "distance_m": null,
+   "floors": null,
+   "uses_stairs": null,
+   "uses_elevator": null,
+   "passed": true,
+   "applied": [
+    "OBS-002",
+    "OBS-003"
+   ]
+  },
+  {
+   "id": "A-13",
+   "description": "both elevators unavailable, walking uses stairs: entrance_2 -> room_301",
+   "start": "entrance_2",
+   "start_node": "n_f1_entrance_2",
+   "goal": "room_301",
+   "goal_node": "n_f3_dest_301",
+   "mode": "walking",
+   "scenario": "SCN-NO-ELEVATOR",
+   "result": "FOUND",
+   "time_s": 106.5,
+   "distance_m": 103.0,
+   "floors": [
+    "BLD001_F1",
+    "BLD001_F2",
+    "BLD001_F3"
+   ],
+   "uses_stairs": true,
+   "uses_elevator": false,
+   "passed": true,
+   "applied": [
+    "OBS-002",
+    "OBS-003"
+   ]
+  },
+  {
+   "id": "A-14",
+   "description": "no accessible route from the steps entrance: entrance_4 -> room_119 (wheelchair)",
+   "start": "entrance_4",
+   "start_node": "n_f1_entrance_4",
+   "goal": "room_119",
+   "goal_node": "n_f1_dest_119",
+   "mode": "wheelchair",
+   "scenario": "none",
+   "result": "NO_ACCESSIBLE_ROUTE",
+   "time_s": null,
+   "distance_m": null,
+   "floors": null,
+   "uses_stairs": null,
+   "uses_elevator": null,
+   "passed": true,
+   "applied": []
+  },
+  {
+   "id": "A-15",
+   "description": "unverified blocked doorway must not block: room_104 -> room_103",
+   "start": "room_104",
+   "start_node": "n_f1_dest_104",
+   "goal": "room_103",
+   "goal_node": "n_f1_dest_103",
+   "mode": "wheelchair",
+   "scenario": "SCN-UNVERIFIED-ONLY",
+   "result": "FOUND",
+   "time_s": 17.6,
+   "distance_m": 20.5,
+   "floors": [
+    "BLD001_F1"
+   ],
+   "uses_stairs": false,
+   "uses_elevator": false,
+   "passed": true,
+   "applied": []
+  },
+  {
+   "id": "A-16",
+   "description": "verified construction isolates room_119 (walking) -> NO_ROUTE",
+   "start": "entrance_1",
+   "start_node": "n_f1_entrance_1",
+   "goal": "room_119",
+   "goal_node": "n_f1_dest_119",
+   "mode": "walking",
+   "scenario": "SCN-CONSTRUCTION",
+   "result": "NO_ROUTE",
+   "time_s": null,
+   "distance_m": null,
+   "floors": null,
+   "uses_stairs": null,
+   "uses_elevator": null,
+   "passed": true,
+   "applied": [
+    "OBS-005"
+   ]
+  },
+  {
+   "id": "A-17",
+   "description": "stairwell destination is not reachable in wheelchair mode",
+   "start": "entrance_1",
+   "start_node": "n_f1_entrance_1",
+   "goal": "room_109",
+   "goal_node": "n_f1_stair_1",
+   "mode": "wheelchair",
+   "scenario": "none",
+   "result": "NO_ACCESSIBLE_ROUTE",
+   "time_s": null,
+   "distance_m": null,
+   "floors": null,
+   "uses_stairs": null,
+   "uses_elevator": null,
+   "passed": true,
+   "applied": []
+  }
+ ],
+ "per_scenario": {
+  "SCN-NORMAL|walking": {
+   "found": 1891
+  },
+  "SCN-NORMAL|wheelchair": {
+   "found": 1485,
+   "no_route": 406
+  },
+  "SCN-BLOCKED-HALLWAY|walking": {
+   "found": 1891
+  },
+  "SCN-BLOCKED-HALLWAY|wheelchair": {
+   "found": 1485,
+   "no_route": 406
+  },
+  "SCN-ELEVATOR-1-OUT|walking": {
+   "found": 1891
+  },
+  "SCN-ELEVATOR-1-OUT|wheelchair": {
+   "found": 1485,
+   "no_route": 406
+  },
+  "SCN-NO-ELEVATOR|walking": {
+   "found": 1891
+  },
+  "SCN-NO-ELEVATOR|wheelchair": {
+   "found": 477,
+   "no_route": 1414
+  },
+  "SCN-UNVERIFIED-ONLY|walking": {
+   "found": 1891
+  },
+  "SCN-UNVERIFIED-ONLY|wheelchair": {
+   "found": 1485,
+   "no_route": 406
+  },
+  "SCN-CONSTRUCTION|walking": {
+   "found": 1830,
+   "no_route": 61
+  },
+  "SCN-CONSTRUCTION|wheelchair": {
+   "found": 1431,
+   "no_route": 460
+  },
+  "SCN-RESOLVED-IGNORED|walking": {
+   "found": 1891
+  },
+  "SCN-RESOLVED-IGNORED|wheelchair": {
+   "found": 1485,
+   "no_route": 406
+  }
+ },
+ "tie_examples": []
+}

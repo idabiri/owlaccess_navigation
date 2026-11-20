@@ -1,0 +1,688 @@
+[
+ {
+  "section": "Provenance",
+  "id": "P-01",
+  "description": "Original GeoJSON files unchanged since first inspection (SHA-256)",
+  "status": "PASS",
+  "detail": "True"
+ },
+ {
+  "section": "SVG",
+  "id": "S-XML-F1",
+  "description": "floor_1.svg is well-formed XML (xmllint)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-SAFE-F1",
+  "description": "floor_1.svg has no <script>, <image>, external URLs or event handlers",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-XML-F2",
+  "description": "floor_2.svg is well-formed XML (xmllint)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-SAFE-F2",
+  "description": "floor_2.svg has no <script>, <image>, external URLs or event handlers",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-XML-F3",
+  "description": "floor_3.svg is well-formed XML (xmllint)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-SAFE-F3",
+  "description": "floor_3.svg has no <script>, <image>, external URLs or event handlers",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-VB",
+  "description": "All floors share the same viewBox / width / height",
+  "status": "PASS",
+  "detail": "{1: '0 0 680 1120', 2: '0 0 680 1120', 3: '0 0 680 1120'}"
+ },
+ {
+  "section": "SVG",
+  "id": "S-UNITS",
+  "description": "data-units-per-meter = 10 and data-origin = top-left on every floor",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-DUPID",
+  "description": "No duplicate ids inside any single SVG file",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-ROUTE",
+  "description": "Exactly one empty <g id=route_layer> per floor",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-FP-SAME",
+  "description": "Identical exterior footprint path on all 3 floors",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-FP-RAW",
+  "description": "SVG footprint vertices match raw buildings.geojson polygon (independent ENU transform) within 0.25 m",
+  "status": "WARN",
+  "detail": "25 vs 25 vertices; max deviation 0.324 m"
+ },
+ {
+  "section": "SVG",
+  "id": "S-FP-SCALE",
+  "description": "Deviation is explained by the generator's metres-per-degree constants (110574 m/deg lat is the equatorial value; ~110921 at this latitude)",
+  "status": "PASS",
+  "detail": "after rescaling by x1.00102, y1.00314: max deviation 0.065 m (was 0.324 m)"
+ },
+ {
+  "section": "SVG",
+  "id": "S-FP-EXT",
+  "description": "Exterior wall path equals footprint path",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-ROOMS-F1",
+  "description": "F1: SVG room_/hallway_ ids == JSON room ids (both directions)",
+  "status": "PASS",
+  "detail": "json-only [] svg-only []"
+ },
+ {
+  "section": "SVG",
+  "id": "S-LABEL-F1",
+  "description": "F1: every non-hallway room has a label group",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-WALL-F1",
+  "description": "F1: every room has an interior wall outline",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-DOOR-F1",
+  "description": "F1: SVG door_* ids == features.json doors",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-ENT-F1",
+  "description": "F1: SVG entrance_* ids == features.json entrances",
+  "status": "PASS",
+  "detail": "['entrance_1', 'entrance_2', 'entrance_3', 'entrance_4'] vs ['entrance_1', 'entrance_2', 'entrance_3', 'entrance_4']"
+ },
+ {
+  "section": "SVG",
+  "id": "S-OBS-F1",
+  "description": "F1: SVG obstacle_* ids == obstacles.json for that floor",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-NODE-F1",
+  "description": "F1: hidden nav-graph layer has one circle per node, at the node's x/y",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-EDGE-F1",
+  "description": "F1: hidden nav-graph layer has one line per edge",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-FOUN-F1",
+  "description": "F1: fountain ids match",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-USE-F1",
+  "description": "F1: every <use> references an existing symbol",
+  "status": "PASS",
+  "detail": "7 <use>"
+ },
+ {
+  "section": "SVG",
+  "id": "S-POLY-F1",
+  "description": "F1: SVG path geometry == rooms.json polygon",
+  "status": "PASS",
+  "detail": "[]"
+ },
+ {
+  "section": "SVG",
+  "id": "S-ROOMS-F2",
+  "description": "F2: SVG room_/hallway_ ids == JSON room ids (both directions)",
+  "status": "PASS",
+  "detail": "json-only [] svg-only []"
+ },
+ {
+  "section": "SVG",
+  "id": "S-LABEL-F2",
+  "description": "F2: every non-hallway room has a label group",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-WALL-F2",
+  "description": "F2: every room has an interior wall outline",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-DOOR-F2",
+  "description": "F2: SVG door_* ids == features.json doors",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-ENT-F2",
+  "description": "F2: SVG entrance_* ids == features.json entrances",
+  "status": "PASS",
+  "detail": "[] vs []"
+ },
+ {
+  "section": "SVG",
+  "id": "S-OBS-F2",
+  "description": "F2: SVG obstacle_* ids == obstacles.json for that floor",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-NODE-F2",
+  "description": "F2: hidden nav-graph layer has one circle per node, at the node's x/y",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-EDGE-F2",
+  "description": "F2: hidden nav-graph layer has one line per edge",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-FOUN-F2",
+  "description": "F2: fountain ids match",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-USE-F2",
+  "description": "F2: every <use> references an existing symbol",
+  "status": "PASS",
+  "detail": "3 <use>"
+ },
+ {
+  "section": "SVG",
+  "id": "S-POLY-F2",
+  "description": "F2: SVG path geometry == rooms.json polygon",
+  "status": "PASS",
+  "detail": "[]"
+ },
+ {
+  "section": "SVG",
+  "id": "S-ROOMS-F3",
+  "description": "F3: SVG room_/hallway_ ids == JSON room ids (both directions)",
+  "status": "PASS",
+  "detail": "json-only [] svg-only []"
+ },
+ {
+  "section": "SVG",
+  "id": "S-LABEL-F3",
+  "description": "F3: every non-hallway room has a label group",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-WALL-F3",
+  "description": "F3: every room has an interior wall outline",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-DOOR-F3",
+  "description": "F3: SVG door_* ids == features.json doors",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-ENT-F3",
+  "description": "F3: SVG entrance_* ids == features.json entrances",
+  "status": "PASS",
+  "detail": "[] vs []"
+ },
+ {
+  "section": "SVG",
+  "id": "S-OBS-F3",
+  "description": "F3: SVG obstacle_* ids == obstacles.json for that floor",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-NODE-F3",
+  "description": "F3: hidden nav-graph layer has one circle per node, at the node's x/y",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-EDGE-F3",
+  "description": "F3: hidden nav-graph layer has one line per edge",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-FOUN-F3",
+  "description": "F3: fountain ids match",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-USE-F3",
+  "description": "F3: every <use> references an existing symbol",
+  "status": "PASS",
+  "detail": "3 <use>"
+ },
+ {
+  "section": "SVG",
+  "id": "S-POLY-F3",
+  "description": "F3: SVG path geometry == rooms.json polygon",
+  "status": "PASS",
+  "detail": "[]"
+ },
+ {
+  "section": "SVG",
+  "id": "S-ALIGN-elevator_1",
+  "description": "elevator_1 rect identical on floors 1-3",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-ALIGN-elevator_2",
+  "description": "elevator_2 rect identical on floors 1-3",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "SVG",
+  "id": "S-INLINE",
+  "description": "Ids duplicated if all three floors were inlined in one HTML document",
+  "status": "INFO",
+  "detail": "34 duplicate ids (e.g. ['hatch_gray', 'hatch_red', 'hatch_ramp', 'sym_wheelchair', 'sym_steps']) -> guide's 'one floor at a time' warning is correct"
+ },
+ {
+  "section": "Provenance",
+  "id": "P-C2PA",
+  "description": "SVG files carry an embedded C2PA Content Credentials manifest (<metadata>), ~7.7 KB each; not written by generate_indoor.py",
+  "status": "INFO",
+  "detail": "svg floors: {1: True, 2: True, 3: True}; non-SVG files containing 'c2pa': []"
+ },
+ {
+  "section": "Provenance",
+  "id": "P-REGEN-RUN",
+  "description": "generate_indoor.py runs from the package into a TEMP folder (package untouched)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "Provenance",
+  "id": "P-REGEN-DIFF",
+  "description": "Delivered JSON and SVG files are byte-identical to a fresh generator run (SVGs compared after removing the C2PA block)",
+  "status": "PASS",
+  "detail": "[]"
+ },
+ {
+  "section": "JSON",
+  "id": "J-UNIQ-rooms",
+  "description": "rooms: ids unique",
+  "status": "PASS",
+  "detail": "85"
+ },
+ {
+  "section": "JSON",
+  "id": "J-UNIQ-nodes",
+  "description": "nodes: ids unique",
+  "status": "PASS",
+  "detail": "219"
+ },
+ {
+  "section": "JSON",
+  "id": "J-UNIQ-edges",
+  "description": "edges: ids unique",
+  "status": "PASS",
+  "detail": "219"
+ },
+ {
+  "section": "JSON",
+  "id": "J-UNIQ-connections",
+  "description": "connections: ids unique",
+  "status": "PASS",
+  "detail": "8"
+ },
+ {
+  "section": "JSON",
+  "id": "J-UNIQ-obstacles",
+  "description": "obstacles: ids unique",
+  "status": "PASS",
+  "detail": "6"
+ },
+ {
+  "section": "JSON",
+  "id": "J-UNIQ-doors",
+  "description": "doors: ids unique",
+  "status": "PASS",
+  "detail": "64"
+ },
+ {
+  "section": "JSON",
+  "id": "J-UNIQ-connectors",
+  "description": "connectors: ids unique",
+  "status": "PASS",
+  "detail": "4"
+ },
+ {
+  "section": "JSON",
+  "id": "J-UNIQ-feat",
+  "description": "features.json: ids unique per collection",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-EDGE-REF",
+  "description": "Every edge references existing nodes",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-EDGE-SELF",
+  "description": "No self-loop or zero-length edges",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-EDGE-DUP",
+  "description": "No duplicate edges between the same node pair",
+  "status": "PASS",
+  "detail": "[]"
+ },
+ {
+  "section": "JSON",
+  "id": "J-EDGE-FLOOR",
+  "description": "Edges stay within one floor and match floor_id",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-EDGE-DIST",
+  "description": "Edge distance == Euclidean node distance / 10 (+-0.01 m)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-EDGE-TIME",
+  "description": "travel_time == distance / documented speed (x0.85 if narrow)",
+  "status": "PASS",
+  "detail": "[]"
+ },
+ {
+  "section": "JSON",
+  "id": "J-EDGE-FLAGS",
+  "description": "Flag consistency: stairs_only edges are inaccessible; entrance_steps/stair_landing are stairs_only; ramp edges accessible",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-NODE-FLOOR",
+  "description": "Node floor_id exists in metadata",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-NODE-IN",
+  "description": "Every node inside (or <=0.3 m from) the footprint built from the RAW geojson",
+  "status": "PASS",
+  "detail": "[]"
+ },
+ {
+  "section": "JSON",
+  "id": "J-ENT-ONWALL",
+  "description": "Entrance nodes: distance to raw footprint wall (m)",
+  "status": "INFO",
+  "detail": "{'n_f1_entrance_1': 0.04, 'n_f1_entrance_2': 0.03, 'n_f1_entrance_3': 0.0, 'n_f1_entrance_4': 0.03}"
+ },
+ {
+  "section": "JSON",
+  "id": "J-DEST-IN",
+  "description": "Destination / restroom / staircase nodes lie inside their own room polygon",
+  "status": "PASS",
+  "detail": "[]"
+ },
+ {
+  "section": "JSON",
+  "id": "J-ENTR-WALL",
+  "description": "room_entrance nodes lie on their room's boundary",
+  "status": "PASS",
+  "detail": "[]"
+ },
+ {
+  "section": "JSON",
+  "id": "J-ROOM-ENTR",
+  "description": "Every navigable room: entrance_node_id & destination_node_id exist, entrance node belongs to the room, entrance has a door edge to a hallway/circulation node",
+  "status": "PASS",
+  "detail": "58 navigable rooms"
+ },
+ {
+  "section": "JSON",
+  "id": "J-SERVICE",
+  "description": "Non-navigable service rooms have no nodes (documented exception)",
+  "status": "PASS",
+  "detail": "['room_110', 'room_210', 'room_310']"
+ },
+ {
+  "section": "JSON",
+  "id": "J-CONN",
+  "description": "Vertical connections: valid nodes, adjacent floors, same type, same x/y",
+  "status": "PASS",
+  "detail": "[]"
+ },
+ {
+  "section": "JSON",
+  "id": "J-CONN-COUNT",
+  "description": "4 elevator + 4 stair connections (2 shafts x 2 floor hops each)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-CONN-FLAGS",
+  "description": "Elevator: accessible, not stairs_only. Staircase: inaccessible, stairs_only",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-CONN-ALLFLOORS",
+  "description": "Every elevator/stair node on floors 1-3 is covered by a connection",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-OBS-REF",
+  "description": "Every obstacle references an existing node/edge on its own floor",
+  "status": "PASS",
+  "detail": "[]"
+ },
+ {
+  "section": "JSON",
+  "id": "J-OBS-SCEN",
+  "description": "Scenario<->obstacle references are consistent in both directions",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-OBS-SYNTH",
+  "description": "All obstacles synthetic and prefixed as demo data",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-SYNTH",
+  "description": "Every record: synthetic=true and verified=false (except obstacles that are explicitly verified demo data)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-META-COUNT",
+  "description": "metadata.json counts equal actual counts",
+  "status": "PASS",
+  "detail": "metadata.rooms=58 but rooms.json has 85 records (rooms+service+hallways)"
+ },
+ {
+  "section": "JSON",
+  "id": "J-META-NOTE",
+  "description": "'rooms' count semantics",
+  "status": "INFO",
+  "detail": "metadata.rooms counts category=='room' only (58); rooms.json holds 85 records incl. 3 service and 24 hallways"
+ },
+ {
+  "section": "JSON",
+  "id": "J-META-OSM",
+  "description": "metadata.source.osm_id equals the raw feature's id",
+  "status": "PASS",
+  "detail": "way/225446888"
+ },
+ {
+  "section": "JSON",
+  "id": "J-INDEX",
+  "description": "building_index lists BLD001 generated, BLD002/BLD003 not generated",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "JSON",
+  "id": "J-GEOREF",
+  "description": "georeference_hint round-trips the footprint back to the raw lon/lat (<=0.25 m)",
+  "status": "PASS",
+  "detail": "max error 0.065 m"
+ },
+ {
+  "section": "JSON",
+  "id": "J-GRAPH-CONN",
+  "description": "Full indoor graph is one connected component",
+  "status": "PASS",
+  "detail": "219 nodes / 227 links"
+ },
+ {
+  "section": "JSON",
+  "id": "J-GRAPH-WC",
+  "description": "Wheelchair-accessible subgraph components",
+  "status": "INFO",
+  "detail": "1 comps; main=206 nodes; others=[]"
+ },
+ {
+  "section": "JSON",
+  "id": "J-SPOF",
+  "description": "Wheelchair graph single points of failure (articulation points / bridges)",
+  "status": "INFO",
+  "detail": "129 articulation nodes, 167 bridge edges (many are expected leaf rooms/doors)"
+ },
+ {
+  "section": "Docs-vs-files",
+  "id": "C-ENT-connector-parity",
+  "description": "Doc claim holds: ENT/connector parity",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "Docs-vs-files",
+  "id": "C-fountains-2-per-floor",
+  "description": "Doc claim holds: fountains 2 per floor",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "Docs-vs-files",
+  "id": "C-narrow-edges-are-hallway_2-8-f",
+  "description": "Doc claim holds: narrow edges are hallway_2/8 families only",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "Docs-vs-files",
+  "id": "C-doors-1-2-m-lobby-elev-lobby-3",
+  "description": "Doc claim holds: doors 1.2 m / lobby+elev lobby 3.0 m",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "Docs-vs-files",
+  "id": "C-connectors-all-outdoor_node_id",
+  "description": "Doc claim holds: connectors: all outdoor_node_id null",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "section": "Docs-vs-files",
+  "id": "C-accessible-entrances-1-3-entra",
+  "description": "Doc claim holds: accessible entrances 1-3, entrance_4 steps",
+  "status": "PASS",
+  "detail": ""
+ }
+]

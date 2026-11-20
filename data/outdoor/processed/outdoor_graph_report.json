@@ -1,0 +1,1319 @@
+{
+ "summary": {
+  "source_ways": 700,
+  "source_highway": {
+   "footway": 671,
+   "steps": 29
+  },
+  "nodes": 1062,
+  "edges": 1319,
+  "entrance_nodes": 3,
+  "node_types": {
+   "junction": 630,
+   "waypoint": 194,
+   "endpoint": 232,
+   "entrance_attach": 3,
+   "entrance": 2,
+   "ramp_entrance": 1
+  },
+  "edge_types": {
+   "footway": 1230,
+   "steps": 29,
+   "crossing": 57,
+   "entrance_link": 3
+  },
+  "components": 26,
+  "total_length_m": 33120,
+  "steps_edges": 29,
+  "wheelchair_components_excluding_steps": 39,
+  "wheelchair_largest_component_nodes": 540,
+  "ways_crossing_building_interiors": 22
+ },
+ "campus_radius_m": 2000.0,
+ "components": [
+  {
+   "component_id": "C01",
+   "nodes": 589,
+   "edges": 750,
+   "length_m": 16950,
+   "bbox": [
+    -84.586463,
+    34.031534,
+    -84.5794112,
+    34.044292
+   ],
+   "steps_edges": 17,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 11854,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C02",
+   "nodes": 314,
+   "edges": 424,
+   "length_m": 12166,
+   "bbox": [
+    -84.5236489,
+    33.9358539,
+    -84.51625,
+    33.9421909
+   ],
+   "steps_edges": 3,
+   "entrance_nodes": [
+    "oe_ENT007",
+    "oe_RMP004",
+    "oe_ENT008"
+   ],
+   "min_distance_to_marietta_campus_centre_m": 14,
+   "on_marietta_campus": true
+  },
+  {
+   "component_id": "C03",
+   "nodes": 46,
+   "edges": 49,
+   "length_m": 771,
+   "bbox": [
+    -84.5845728,
+    34.0326673,
+    -84.5820487,
+    34.0341979
+   ],
+   "steps_edges": 5,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 11924,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C04",
+   "nodes": 28,
+   "edges": 31,
+   "length_m": 1455,
+   "bbox": [
+    -84.5278153,
+    33.9349148,
+    -84.5223552,
+    33.9376385
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 214,
+   "on_marietta_campus": true
+  },
+  {
+   "component_id": "C05",
+   "nodes": 20,
+   "edges": 20,
+   "length_m": 307,
+   "bbox": [
+    -84.5840953,
+    34.033386,
+    -84.5826725,
+    34.0343273
+   ],
+   "steps_edges": 3,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 12038,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C06",
+   "nodes": 13,
+   "edges": 13,
+   "length_m": 501,
+   "bbox": [
+    -84.5206846,
+    33.9353385,
+    -84.5186005,
+    33.936128
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 250,
+   "on_marietta_campus": true
+  },
+  {
+   "component_id": "C07",
+   "nodes": 10,
+   "edges": 9,
+   "length_m": 96,
+   "bbox": [
+    -84.582948,
+    34.0337758,
+    -84.5826374,
+    34.034086
+   ],
+   "steps_edges": 1,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 12040,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C08",
+   "nodes": 4,
+   "edges": 3,
+   "length_m": 33,
+   "bbox": [
+    -84.5209475,
+    33.9348713,
+    -84.520706,
+    33.9350283
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 373,
+   "on_marietta_campus": true
+  },
+  {
+   "component_id": "C09",
+   "nodes": 3,
+   "edges": 2,
+   "length_m": 19,
+   "bbox": [
+    -84.5829108,
+    34.0331756,
+    -84.5827176,
+    34.0332372
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 11982,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C10",
+   "nodes": 3,
+   "edges": 2,
+   "length_m": 17,
+   "bbox": [
+    -84.5796252,
+    34.0362545,
+    -84.5794719,
+    34.0363325
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 12151,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C11",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 33,
+   "bbox": [
+    -84.5196732,
+    33.9414582,
+    -84.5193902,
+    33.9415984
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 351,
+   "on_marietta_campus": true
+  },
+  {
+   "component_id": "C12",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 58,
+   "bbox": [
+    -84.5813864,
+    34.031986,
+    -84.5809861,
+    34.0320671
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 11789,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C13",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 11,
+   "bbox": [
+    -84.5826739,
+    34.0343816,
+    -84.5826709,
+    34.0344802
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 12097,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C14",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 229,
+   "bbox": [
+    -84.5849337,
+    34.0446784,
+    -84.5837814,
+    34.0462764
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 13159,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C15",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 19,
+   "bbox": [
+    -84.582562,
+    34.033142,
+    -84.5823696,
+    34.0331574
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 11964,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C16",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 296,
+   "bbox": [
+    -84.5851236,
+    34.0297375,
+    -84.5842177,
+    34.0315574
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 11760,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C17",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 9,
+   "bbox": [
+    -84.5826126,
+    34.0337166,
+    -84.5825911,
+    34.0337939
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 12029,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C18",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 33,
+   "bbox": [
+    -84.5857751,
+    34.0333358,
+    -84.5856348,
+    34.0336122
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 12129,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C19",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 10,
+   "bbox": [
+    -84.5833388,
+    34.0330588,
+    -84.58331,
+    34.0331466
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 11998,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C20",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 13,
+   "bbox": [
+    -84.5827047,
+    34.0354284,
+    -84.5826995,
+    34.0355475
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 12201,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C21",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 15,
+   "bbox": [
+    -84.5832549,
+    34.0329877,
+    -84.5832052,
+    34.0331195
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 11987,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C22",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 20,
+   "bbox": [
+    -84.5830726,
+    34.0329349,
+    -84.5830544,
+    34.0331154
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 11973,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C23",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 3,
+   "bbox": [
+    -84.5826969,
+    34.0347625,
+    -84.5826695,
+    34.0347638
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 12134,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C24",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 19,
+   "bbox": [
+    -84.5832202,
+    34.0335214,
+    -84.5832043,
+    34.0336859
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 12037,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C25",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 15,
+   "bbox": [
+    -84.5829135,
+    34.0333345,
+    -84.5827581,
+    34.0333618
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 12002,
+   "on_marietta_campus": false
+  },
+  {
+   "component_id": "C26",
+   "nodes": 2,
+   "edges": 1,
+   "length_m": 21,
+   "bbox": [
+    -84.5834124,
+    34.0327774,
+    -84.5832201,
+    34.0328621
+   ],
+   "steps_edges": 0,
+   "entrance_nodes": [],
+   "min_distance_to_marietta_campus_centre_m": 11965,
+   "on_marietta_campus": false
+  }
+ ],
+ "entrance_attachment": [
+  {
+   "feature_id": "ENT001",
+   "review_status": "source_supported",
+   "original_offset_m": 2.69,
+   "outdoor_node": null,
+   "reason": "nearest walkable footway is 20.5 m from the wall point (> 10.0 m)"
+  },
+  {
+   "feature_id": "ENT002",
+   "review_status": "corrected_pending_review",
+   "original_offset_m": 7.53,
+   "outdoor_node": null,
+   "reason": "original source point is 7.53 m from the footprint (> 5.0 m): too uncertain for an outdoor node"
+  },
+  {
+   "feature_id": "ENT003",
+   "review_status": "corrected_pending_review",
+   "original_offset_m": 3.77,
+   "outdoor_node": null,
+   "reason": "link would cross building(s): ['unnamed [way/589314482]']"
+  },
+  {
+   "feature_id": "ENT004",
+   "review_status": "corrected_pending_review",
+   "original_offset_m": 6.38,
+   "outdoor_node": null,
+   "reason": "original source point is 6.38 m from the footprint (> 5.0 m): too uncertain for an outdoor node"
+  },
+  {
+   "feature_id": "ENT005",
+   "review_status": "corrected_pending_review",
+   "original_offset_m": 8.7,
+   "outdoor_node": null,
+   "reason": "original source point is 8.7 m from the footprint (> 5.0 m): too uncertain for an outdoor node"
+  },
+  {
+   "feature_id": "ENT006",
+   "review_status": "corrected_pending_review",
+   "original_offset_m": 9.36,
+   "outdoor_node": null,
+   "reason": "original source point is 9.36 m from the footprint (> 5.0 m): too uncertain for an outdoor node"
+  },
+  {
+   "feature_id": "ENT007",
+   "review_status": "corrected_pending_review",
+   "original_offset_m": 4.43,
+   "outdoor_node": "oe_ENT007",
+   "reason": null,
+   "attached_way": "way/225470267",
+   "link_length_m": 4.5,
+   "ambiguous_alternatives": [],
+   "attachment_node": "on_7519eeabed"
+  },
+  {
+   "feature_id": "RMP001",
+   "review_status": "corrected_pending_review",
+   "original_offset_m": 8.35,
+   "outdoor_node": null,
+   "reason": "original source point is 8.35 m from the footprint (> 5.0 m): too uncertain for an outdoor node"
+  },
+  {
+   "feature_id": "RMP002",
+   "review_status": "corrected_pending_review",
+   "original_offset_m": 6.43,
+   "outdoor_node": null,
+   "reason": "original source point is 6.43 m from the footprint (> 5.0 m): too uncertain for an outdoor node"
+  },
+  {
+   "feature_id": "RMP003",
+   "review_status": "needs_verification",
+   "original_offset_m": null,
+   "outdoor_node": null,
+   "reason": "no proposed snap (needs_verification)"
+  },
+  {
+   "feature_id": "RMP004",
+   "review_status": "source_supported",
+   "original_offset_m": 2.36,
+   "outdoor_node": "oe_RMP004",
+   "reason": null,
+   "attached_way": "way/1134398595",
+   "link_length_m": 3.32,
+   "ambiguous_alternatives": [
+    [
+     3.3,
+     "way/335766008"
+    ]
+   ],
+   "attachment_node": "on_436f91c4cf"
+  },
+  {
+   "feature_id": "RMP005",
+   "review_status": "needs_verification",
+   "original_offset_m": 21.12,
+   "outdoor_node": null,
+   "reason": "no proposed snap (needs_verification)"
+  },
+  {
+   "feature_id": "ENT",
+   "review_status": "corrected_pending_review",
+   "original_offset_m": 0.04,
+   "outdoor_node": "oe_ENT008",
+   "reason": null,
+   "attached_way": "way/225485333",
+   "link_length_m": 0.05,
+   "ambiguous_alternatives": [],
+   "attachment_node": "on_296fc043c9"
+  }
+ ],
+ "candidate_gaps": [
+  {
+   "endpoint_node": "on_213cb95510",
+   "endpoint_component": "C02",
+   "near_way": "way/225485336",
+   "distance_m": 0.21,
+   "near_way_component": "C02",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_41a2a9d76f",
+   "endpoint_component": "C03",
+   "near_way": "way/891316508",
+   "distance_m": 0.33,
+   "near_way_component": "C03",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_d47932971d",
+   "endpoint_component": "C02",
+   "near_way": "way/225485336",
+   "distance_m": 0.63,
+   "near_way_component": "C02",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_6481309052",
+   "endpoint_component": "C01",
+   "near_way": "way/778633586",
+   "distance_m": 1.47,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_2d6f69d388",
+   "endpoint_component": "C01",
+   "near_way": "way/778633601",
+   "distance_m": 1.59,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_2d6f69d388",
+   "endpoint_component": "C01",
+   "near_way": "way/1284245455",
+   "distance_m": 1.59,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_81e8e7469e",
+   "endpoint_component": "C02",
+   "near_way": "way/225466087",
+   "distance_m": 1.72,
+   "near_way_component": "C02",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_81e8e7469e",
+   "endpoint_component": "C02",
+   "near_way": "way/225466125",
+   "distance_m": 1.72,
+   "near_way_component": "C02",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_81e8e7469e",
+   "endpoint_component": "C02",
+   "near_way": "way/225466112",
+   "distance_m": 1.72,
+   "near_way_component": "C02",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_504ab9cc90",
+   "endpoint_component": "C01",
+   "near_way": "way/777891705",
+   "distance_m": 1.73,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_a627a86d72",
+   "endpoint_component": "C02",
+   "near_way": "way/1484121396",
+   "distance_m": 1.81,
+   "near_way_component": "C02",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_807921582b",
+   "endpoint_component": "C01",
+   "near_way": "way/778435702",
+   "distance_m": 1.82,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_807921582b",
+   "endpoint_component": "C01",
+   "near_way": "way/778435711",
+   "distance_m": 1.82,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_2d6f69d388",
+   "endpoint_component": "C01",
+   "near_way": "way/1284245454",
+   "distance_m": 2.16,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_099365bbda",
+   "endpoint_component": "C01",
+   "near_way": "way/1284245449",
+   "distance_m": 2.22,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_b5d2cd875e",
+   "endpoint_component": "C01",
+   "near_way": "way/1284245449",
+   "distance_m": 2.25,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_2d6f69d388",
+   "endpoint_component": "C01",
+   "near_way": "way/778435732",
+   "distance_m": 2.26,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_0efdebfe12",
+   "endpoint_component": "C01",
+   "near_way": "way/1284245449",
+   "distance_m": 2.27,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_2029762183",
+   "endpoint_component": "C01",
+   "near_way": "way/1284245449",
+   "distance_m": 2.3,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_617d2377da",
+   "endpoint_component": "C01",
+   "near_way": "way/778711630",
+   "distance_m": 2.3,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_807921582b",
+   "endpoint_component": "C01",
+   "near_way": "way/778435712",
+   "distance_m": 2.32,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_aae33c97a4",
+   "endpoint_component": "C01",
+   "near_way": "way/778435721",
+   "distance_m": 2.48,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_aae33c97a4",
+   "endpoint_component": "C01",
+   "near_way": "way/778435725",
+   "distance_m": 2.48,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_4342e2b1e3",
+   "endpoint_component": "C02",
+   "near_way": "way/225466081",
+   "distance_m": 2.66,
+   "near_way_component": "C02",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_b461ce3882",
+   "endpoint_component": "C01",
+   "near_way": "way/246685649",
+   "distance_m": 2.71,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_7b1bebe130",
+   "endpoint_component": "C01",
+   "near_way": "way/778435739",
+   "distance_m": 2.77,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_099365bbda",
+   "endpoint_component": "C01",
+   "near_way": "way/1284245450",
+   "distance_m": 2.82,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_111153b597",
+   "endpoint_component": "C08",
+   "near_way": "way/225476496",
+   "distance_m": 2.88,
+   "near_way_component": "C08",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_64963199e6",
+   "endpoint_component": "C01",
+   "near_way": "way/891305050",
+   "distance_m": 2.98,
+   "near_way_component": "C15",
+   "would_join_components": true,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_4b00268f9f",
+   "endpoint_component": "C15",
+   "near_way": "way/928750324",
+   "distance_m": 2.98,
+   "near_way_component": "C01",
+   "would_join_components": true,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_d106da540c",
+   "endpoint_component": "C01",
+   "near_way": "way/778435735",
+   "distance_m": 2.99,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  },
+  {
+   "endpoint_node": "on_d106da540c",
+   "endpoint_component": "C01",
+   "near_way": "way/778435737",
+   "distance_m": 2.99,
+   "near_way_component": "C01",
+   "would_join_components": false,
+   "action": "REPORTED ONLY - not joined; needs human review"
+  }
+ ],
+ "closest_approach_between_top_components": [
+  {
+   "component_a": "C02",
+   "component_b": "C06",
+   "closest_distance_m": 9.9,
+   "point_a": [
+    -84.5194825,
+    33.9358493
+   ],
+   "point_b": [
+    -84.5194897,
+    33.9357605
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C03",
+   "component_b": "C05",
+   "closest_distance_m": 10.0,
+   "point_a": [
+    -84.5836255,
+    34.0333354
+   ],
+   "point_b": [
+    -84.5835361,
+    34.033386
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C01",
+   "component_b": "C05",
+   "closest_distance_m": 11.4,
+   "point_a": [
+    -84.5825495,
+    34.0343335
+   ],
+   "point_b": [
+    -84.5826725,
+    34.0343222
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C01",
+   "component_b": "C07",
+   "closest_distance_m": 13.0,
+   "point_a": [
+    -84.5825183,
+    34.0340989
+   ],
+   "point_b": [
+    -84.5826585,
+    34.034086
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C05",
+   "component_b": "C07",
+   "closest_distance_m": 14.0,
+   "point_a": [
+    -84.5830881,
+    34.0338624
+   ],
+   "point_b": [
+    -84.582948,
+    34.0338139
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C01",
+   "component_b": "C03",
+   "closest_distance_m": 15.1,
+   "point_a": [
+    -84.584051,
+    34.0329161
+   ],
+   "point_b": [
+    -84.5839254,
+    34.0330032
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C02",
+   "component_b": "C04",
+   "closest_distance_m": 42.8,
+   "point_a": [
+    -84.5218918,
+    33.9371538
+   ],
+   "point_b": [
+    -84.5223552,
+    33.9371578
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C06",
+   "component_b": "C08",
+   "closest_distance_m": 74.9,
+   "point_a": [
+    -84.5203842,
+    33.9355783
+   ],
+   "point_b": [
+    -84.5208548,
+    33.9350283
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C03",
+   "component_b": "C07",
+   "closest_distance_m": 78.2,
+   "point_a": [
+    -84.5837512,
+    34.0335909
+   ],
+   "point_b": [
+    -84.582948,
+    34.0338139
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C02",
+   "component_b": "C08",
+   "closest_distance_m": 127.6,
+   "point_a": [
+    -84.5213064,
+    33.9361149
+   ],
+   "point_b": [
+    -84.5208548,
+    33.9350283
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C04",
+   "component_b": "C06",
+   "closest_distance_m": 208.3,
+   "point_a": [
+    -84.5223552,
+    33.9371578
+   ],
+   "point_b": [
+    -84.5204593,
+    33.9361436
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C04",
+   "component_b": "C08",
+   "closest_distance_m": 273.9,
+   "point_a": [
+    -84.5223552,
+    33.9371578
+   ],
+   "point_b": [
+    -84.5208548,
+    33.9350283
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C01",
+   "component_b": "C02",
+   "closest_distance_m": 11464.3,
+   "point_a": [
+    -84.5831952,
+    34.0316411
+   ],
+   "point_b": [
+    -84.5220958,
+    33.9416867
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C02",
+   "component_b": "C03",
+   "closest_distance_m": 11534.0,
+   "point_a": [
+    -84.5220958,
+    33.9416867
+   ],
+   "point_b": [
+    -84.5821992,
+    34.032823
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C01",
+   "component_b": "C04",
+   "closest_distance_m": 11615.0,
+   "point_a": [
+    -84.5831952,
+    34.0316411
+   ],
+   "point_b": [
+    -84.5278153,
+    33.9376385
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C02",
+   "component_b": "C05",
+   "closest_distance_m": 11648.5,
+   "point_a": [
+    -84.5220958,
+    33.9416867
+   ],
+   "point_b": [
+    -84.5835361,
+    34.033386
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C02",
+   "component_b": "C07",
+   "closest_distance_m": 11649.2,
+   "point_a": [
+    -84.5220958,
+    33.9416867
+   ],
+   "point_b": [
+    -84.5827067,
+    34.0337758
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C03",
+   "component_b": "C04",
+   "closest_distance_m": 11692.9,
+   "point_a": [
+    -84.5821992,
+    34.032823
+   ],
+   "point_b": [
+    -84.5278153,
+    33.9376385
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C04",
+   "component_b": "C05",
+   "closest_distance_m": 11802.7,
+   "point_a": [
+    -84.5278153,
+    33.9376385
+   ],
+   "point_b": [
+    -84.5835361,
+    34.033386
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C04",
+   "component_b": "C07",
+   "closest_distance_m": 11808.5,
+   "point_a": [
+    -84.5278153,
+    33.9376385
+   ],
+   "point_b": [
+    -84.5827067,
+    34.0337758
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C01",
+   "component_b": "C06",
+   "closest_distance_m": 12075.2,
+   "point_a": [
+    -84.5831952,
+    34.0316411
+   ],
+   "point_b": [
+    -84.5204593,
+    33.9361436
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C03",
+   "component_b": "C06",
+   "closest_distance_m": 12146.9,
+   "point_a": [
+    -84.5821992,
+    34.032823
+   ],
+   "point_b": [
+    -84.5204244,
+    33.9361592
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C01",
+   "component_b": "C08",
+   "closest_distance_m": 12166.6,
+   "point_a": [
+    -84.5831952,
+    34.0316411
+   ],
+   "point_b": [
+    -84.5208548,
+    33.9350283
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C03",
+   "component_b": "C08",
+   "closest_distance_m": 12239.3,
+   "point_a": [
+    -84.5821992,
+    34.032823
+   ],
+   "point_b": [
+    -84.5208548,
+    33.9350283
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C05",
+   "component_b": "C06",
+   "closest_distance_m": 12260.3,
+   "point_a": [
+    -84.5835361,
+    34.033386
+   ],
+   "point_b": [
+    -84.5204593,
+    33.9361436
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C06",
+   "component_b": "C07",
+   "closest_distance_m": 12262.2,
+   "point_a": [
+    -84.5204244,
+    33.9361592
+   ],
+   "point_b": [
+    -84.5827067,
+    34.0337758
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C05",
+   "component_b": "C08",
+   "closest_distance_m": 12352.1,
+   "point_a": [
+    -84.5835361,
+    34.033386
+   ],
+   "point_b": [
+    -84.5208548,
+    33.9350283
+   ],
+   "action": "REPORTED ONLY - not joined"
+  },
+  {
+   "component_a": "C07",
+   "component_b": "C08",
+   "closest_distance_m": 12354.7,
+   "point_a": [
+    -84.5827067,
+    34.0337758
+   ],
+   "point_b": [
+    -84.5208548,
+    33.9350283
+   ],
+   "action": "REPORTED ONLY - not joined"
+  }
+ ],
+ "crossings_without_shared_vertex": [
+  {
+   "way_a": "way/246685626",
+   "way_b": "way/777891710",
+   "layer_a": "1",
+   "layer_b": null,
+   "bridge_a": "yes",
+   "bridge_b": null,
+   "tunnel_a": null,
+   "tunnel_b": null,
+   "highway_a": "footway",
+   "highway_b": "footway",
+   "explained_by_grade_separation": true,
+   "action": "NOT joined"
+  },
+  {
+   "way_a": "way/246685626",
+   "way_b": "way/777891712",
+   "layer_a": "1",
+   "layer_b": null,
+   "bridge_a": "yes",
+   "bridge_b": null,
+   "tunnel_a": null,
+   "tunnel_b": null,
+   "highway_a": "footway",
+   "highway_b": "footway",
+   "explained_by_grade_separation": true,
+   "action": "NOT joined"
+  },
+  {
+   "way_a": "way/246685633",
+   "way_b": "way/777891705",
+   "layer_a": "1",
+   "layer_b": null,
+   "bridge_a": "yes",
+   "bridge_b": null,
+   "tunnel_a": null,
+   "tunnel_b": null,
+   "highway_a": "footway",
+   "highway_b": "footway",
+   "explained_by_grade_separation": true,
+   "action": "NOT joined"
+  }
+ ],
+ "thresholds": {
+  "offset_max_m": 5.0,
+  "link_max_m": 10.0,
+  "gap_report_m": 3.0
+ },
+ "marietta_summary": {
+  "components": 5,
+  "component_ids": [
+   "C02",
+   "C04",
+   "C06",
+   "C08",
+   "C11"
+  ],
+  "nodes": 361,
+  "length_m": 14188,
+  "largest": "C02",
+  "largest_share_of_length": 0.857,
+  "entrance_nodes_by_component": {
+   "C02": [
+    "oe_ENT007",
+    "oe_RMP004",
+    "oe_ENT008"
+   ]
+  }
+ }
+}
