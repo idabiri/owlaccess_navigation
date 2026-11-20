@@ -313,7 +313,8 @@ export function NavigationApp({ data, initial, reportStore, initialPanel = "dire
                 onSelectRoom={!planningUi ? undefined : id => patch(nav.pick === "start" ? { start: id } : { goal: id })}
                 reportMode={reportMode} onToggleReportMode={toggleReportMode} onReportPoint={reportPoint} reports={reports} draft={draft} segmentOf={segmentOf} focusReportId={focusReportId}
                 activeStepNodeIds={curStep?.nodeIds} positionNodeId={curStep?.positionNodeId ?? null}
-                endpointNodeIds={found ? { start: found.nodes[0], goal: found.nodes[found.nodes.length - 1] } : undefined} />}
+                endpointNodeIds={found ? { start: found.nodes[0], goal: found.nodes[found.nodes.length - 1] } : undefined}
+                floorCount={Object.keys(data.svgs).length} />}
         </main>
       </div>
       {dock && curStep && (

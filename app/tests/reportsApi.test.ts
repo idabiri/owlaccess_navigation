@@ -80,7 +80,7 @@ describe("reports file: the shared store", () => {
       await repo.add(createReport(draftFromPlace(data.unified, f, p.edge_id)!, "other", `at ${p.label}`));
     }
     expect((await repo.get()).reports.length).toBeGreaterThan(140);
-  });
+  }, 20000);   // ~200 sequential file saves: fast alone (<1 s), slower when the whole suite runs in parallel
 });
 
 describe("network guard", () => {

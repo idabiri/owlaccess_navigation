@@ -34,6 +34,7 @@ This repository contains the whole project, not just the app: the original GIS d
 - **Accessible route planning** (`/plan`). One choice, walking, step-free or wheelchair, sets requirements that are hard rules: a route that breaks them is never offered. Preferences (fastest, shortest, fewest turns, avoid narrow corridors) only rank routes. Demo obstacle scenarios are folded into "Demo options". If no route qualifies, the app says so (`NO_ACCESSIBLE_ROUTE`).
 - **Real route alternatives** (`/suggestions`). Every alternative (fastest, shortest, the other elevator or stairwell, avoid narrow corridors, step-free) is computed by the same routing engine. Nothing is invented. Each option shows distance, time, floor changes, turns, elevators or stairs, and warnings. The recommended route leads; each alternative says how it differs (for example "Same time and distance · uses Elevator 2 instead"), caveats shared by every route are shown once, and verified reports are named in words, never by id.
 - **Indoor and outdoor in one route.** Outdoor map, then Floors 1 to 3 of the Academic Building (BLD001), switching automatically at the entrance and at elevators.
+- **3D (isometric) indoor map** with a 2D plan switch. Built only from the existing floor drawings: walls raised with the drawn door openings, elevators and stairwells as shafts, floors below as slabs. Room numbers and names stay upright and readable at any zoom and never overlap; the route shows done / current step / still to go, floor changes and the simulated position. Zoom, pan, reset and keyboard controls. Walls 3 m high and floors 4 m apart are labelled visual assumptions; routes and coordinates are unchanged.
 - **Step-by-step navigation** (`/navigate`). Turn-by-turn steps synced with the map, Previous and Next controls, and a **simulated** position marker. On phones, the map appears only after a route is confirmed, and a step panel sits above the bottom tab bar.
 - **Obstacle reporting** (`/report`). Report a blocked hallway, broken elevator, etc. by tapping the floor plan or choosing a place from a list, with full keyboard support. An offline, rule-based helper suggests a category (it is labelled as rules, not AI). Reporting is a guided flow: Where (floor, then the spot), What's wrong, Send.
 - **Human review** (`/review`). Reports stay `pending` until a reviewer marks them `verified` or `rejected`, and later `resolved`. **Only verified reports affect routing.** Pending and rejected reports never block a route. The reviewer screen is a queue: counts of waiting, route-changing and closed reports, and one readable card per report.
@@ -59,7 +60,7 @@ This repository contains the whole project, not just the app: the original GIS d
 │   ├── functions/, migrations/, wrangler.toml   prepared Cloudflare Pages deployment (NOT deployed)
 │   ├── scripts/reset-demo.mjs   empties the shared demo reports (keeps a backup)
 │   ├── data/                    runtime reports file lives here (git-ignored)
-│   └── tests/                   161 automated tests (Vitest + Testing Library, jsdom)
+│   └── tests/                   168 automated tests (Vitest + Testing Library, jsdom)
 ├── data/
 │   ├── outdoor/
 │   │   ├── source/              ORIGINAL GIS data + QGIS project (read-only; never edited)
@@ -168,7 +169,7 @@ Details: [docs/integration/integration_guide_unified.md](docs/integration/integr
 ## Running the tests
 
 ```bash
-# app: 161 tests in 17 files (routing, alternatives, steps, reports, review, shared sync, API, deployment logic, keyboard, phone layout, pages, SOS, public demo)
+# app: 168 tests in 18 files (routing, alternatives, steps, reports, review, shared sync, API, deployment logic, keyboard, phone layout, pages, SOS, public demo, 3D map)
 cd app
 npm test
 npm run build          # type-check + production build

@@ -410,3 +410,111 @@ button.primary.big:disabled{box-shadow:none}
 .local-note{background:#fdf3d8;border-left:4px solid var(--pending,#7a3c67);border-radius:8px;padding:8px 10px}
 .demo-obstacles{margin:16px 12px 0}
 .demo-obstacles h2{font-size:20px;margin:0 0 6px}
+
+/* indoor map: 3D (isometric) view / 2D plan switch */
+.view-switch{display:inline-flex;border:2px solid var(--ink);border-radius:999px;overflow:hidden;flex:none}
+.view-switch button{border:0;border-radius:0;background:#fffdf8;color:var(--ink);font:700 13.5px var(--text);padding:0 12px;min-height:36px;cursor:pointer}
+.view-switch button+button{border-left:2px solid var(--ink)}
+.view-switch button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.view-switch button:focus-visible{outline:3px solid var(--route);outline-offset:-3px}
+.map-note.iso-assume{display:block;border-left:4px solid var(--route);padding-left:8px;line-height:1.45}
+.map-tools .view-switch button{box-shadow:none;border:0;border-radius:0;min-height:36px;padding:0 12px}
+.map-tools .view-switch button+button{border-left:2px solid var(--ink)}
+.map-tools .view-switch button:active{transform:none}
+
+/* ---------- 3D (isometric) indoor map ---------- */
+.iso-map{--iso-route:var(--route,#f17300);--iso-route-dark:#b94a00;--iso-me:var(--acc,#1152d4);--iso-ink:#1d1b16}
+.iso-stage{position:relative;border-radius:14px;overflow:hidden;border:1.5px solid var(--rule);
+  background:radial-gradient(ellipse at 50% 38%,#fbf8f1 0%,#f3ecdd 62%,#ece3d0 100%)}
+.iso-canvas{width:100%;cursor:grab;outline:none;animation:iso-in .22s ease-out}
+.iso-canvas:active{cursor:grabbing}.iso-canvas.reporting{cursor:crosshair}
+.iso-canvas:focus-visible{box-shadow:inset 0 0 0 3px var(--iso-me)}
+.iso-canvas svg{display:block;width:100%;height:100%;max-height:none;user-select:none;-webkit-user-select:none}
+@keyframes iso-in{from{opacity:.25;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* route: the strongest element on the map, always above walls */
+.iso-canvas .r-casing{fill:none;stroke:#fff;stroke-width:11px;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;stroke-opacity:.95}
+.iso-canvas .r-next{fill:none;stroke:var(--iso-route);stroke-width:5.5px;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.iso-canvas .r-done{fill:none;stroke:#a39a88;stroke-width:4px;stroke-dasharray:2 7;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.iso-canvas .r-cur-casing{fill:none;stroke:#fff;stroke-width:15px;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.iso-canvas .r-cur{fill:none;stroke:var(--iso-route-dark);stroke-width:8.5px;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.iso-canvas .r-alt{fill:none;stroke:#6b7280;stroke-opacity:.55;stroke-width:3px;stroke-dasharray:6 5;vector-effect:non-scaling-stroke}
+.iso-canvas .r-arrow path{fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+
+/* chips: upright, constant size, readable over any surface */
+.iso-canvas .chip rect{fill:#fffdf8;stroke:rgba(29,27,22,.18);stroke-width:1}
+.iso-canvas .chip text{font:700 12px var(--text,system-ui);fill:var(--iso-ink)}
+.iso-canvas .chip.start rect{fill:#1d1b16;stroke:none}.iso-canvas .chip.start text{fill:#fff}
+.iso-canvas .chip.goal rect{fill:var(--iso-route-dark);stroke:none}.iso-canvas .chip.goal text{fill:#fff}
+.iso-canvas .chip.me rect{fill:var(--iso-me);stroke:none}.iso-canvas .chip.me text{fill:#fff}
+.iso-canvas .chip.transition rect{fill:#312e81;stroke:none}.iso-canvas .chip.transition text{fill:#fff}
+.iso-canvas .chip.transition.stairs rect{fill:#0f5f57}.iso-canvas .chip.transition.door rect{fill:#3d3a33}
+.iso-canvas .chip.obstacle rect{fill:#b91c1c;stroke:none}.iso-canvas .chip.obstacle text{fill:#fff;font-size:11px}
+.iso-canvas .chip.obstacle.pending rect{fill:#fff;stroke:#b91c1c;stroke-dasharray:3 2}.iso-canvas .chip.obstacle.pending text{fill:#b91c1c}
+.iso-canvas .iso-pin .stem{stroke:var(--iso-ink);stroke-width:2}.iso-canvas .iso-pin .foot{fill:var(--iso-ink)}
+.iso-canvas .iso-pin.goal .stem{stroke:var(--iso-route-dark)}.iso-canvas .iso-pin.goal .foot{fill:var(--iso-route-dark)}
+.iso-canvas .iso-transition line{stroke:#312e81;stroke-width:2}.iso-canvas .iso-transition circle{fill:#312e81;stroke:#fff;stroke-width:2}
+.iso-canvas .me-dot{fill:var(--iso-me);stroke:#fff;stroke-width:3}.iso-canvas .me-ring{fill:#fff;stroke:var(--iso-me);stroke-width:1.5}
+.iso-canvas .me-halo{fill:var(--iso-me);fill-opacity:.18;transform-origin:0 0;animation:iso-pulse 2.2s ease-out infinite}
+@keyframes iso-pulse{0%{transform:scale(.55);opacity:1}100%{transform:scale(1.35);opacity:0}}
+.iso-canvas .report-dot{stroke:#fff;stroke-width:2}.iso-canvas .report-q{font:800 12px var(--text,system-ui);fill:#fff}
+
+/* labels: room number first (pill), name second; features as coloured chips with an icon */
+.iso-canvas .iso-room-lbl{cursor:pointer}
+.iso-canvas .iso-room-lbl .num-bg{fill:#fffdf8;stroke:#3d3a33;stroke-width:1.2}
+.iso-canvas .iso-room-lbl .num{font:800 11.5px var(--text,system-ui);fill:var(--iso-ink);text-anchor:middle;letter-spacing:.02em}
+.iso-canvas .iso-room-lbl .nm{font:600 10.5px var(--text,system-ui);fill:#4a4438;text-anchor:middle;paint-order:stroke;stroke:#fffcf5;stroke-width:3.2px;stroke-linejoin:round}
+.iso-canvas .iso-room-lbl:hover .num-bg{fill:#fff1cf}
+.iso-canvas .iso-room-lbl.goal .num-bg{fill:var(--iso-route-dark);stroke:none}.iso-canvas .iso-room-lbl.goal .num{fill:#fff}
+.iso-canvas .iso-room-lbl.start .num-bg{fill:var(--iso-ink);stroke:none}.iso-canvas .iso-room-lbl.start .num{fill:#fff}
+.iso-canvas .iso-feature rect{stroke:#fff;stroke-width:1.5}
+.iso-canvas .iso-feature text{font:700 11px var(--text,system-ui);fill:#fff}
+.iso-canvas .iso-feature .ic{fill:none;stroke:#fff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.iso-canvas .iso-feature.elevator rect{fill:#4338ca}.iso-canvas .iso-feature.stairs rect{fill:#0f766e}
+.iso-canvas .iso-feature.entrance rect{fill:#3d3a33}.iso-canvas .iso-feature.ramp rect{fill:#15803d}
+
+/* on-map controls and badges: few, grouped in the corners */
+.iso-hud{position:absolute;pointer-events:none}
+.iso-hud.tl{top:10px;left:10px;display:flex;align-items:flex-start;gap:8px;flex-wrap:wrap}
+.iso-hud.tr{top:10px;right:12px;display:flex;flex-direction:column;align-items:center;color:var(--iso-ink)}
+.iso-hud.br{right:10px;bottom:10px;pointer-events:auto}
+.iso-floorbadge{display:flex;align-items:baseline;gap:4px;background:var(--iso-ink);color:#fffdf8;border-radius:12px;padding:5px 10px}
+.iso-floorbadge .lbl{font:700 11px var(--text);letter-spacing:.06em;text-transform:uppercase;opacity:.8}
+.iso-floorbadge .n{font:800 22px/1 var(--display,Georgia)}.iso-floorbadge .of{font:600 11px var(--text);opacity:.75}
+.iso-stack{background:rgba(255,253,248,.88);border-radius:10px;padding:2px}
+.iso-stack path{fill:#efe6d3;stroke:#9c8f76;stroke-width:1}.iso-stack text{font:700 9px var(--text);fill:#6b6252}
+.iso-stack g.route path{fill:#ffd9b8;stroke:var(--iso-route-dark)}
+.iso-stack g.on path{fill:var(--iso-ink);stroke:var(--iso-ink)}.iso-stack g.on text{fill:var(--iso-ink)}
+.iso-stack .shaft{stroke:#4338ca;stroke-width:1.5;stroke-dasharray:2 2}
+.iso-synth{background:#fffdf8;border:1.5px dashed #b45309;color:#92400e;font:700 11px var(--text);border-radius:999px;padding:3px 9px;align-self:center}
+.iso-compass{display:block;font-size:15px;line-height:1;color:var(--iso-ink)}.iso-n{font:800 11px var(--text)}
+.iso-controls{display:flex;flex-direction:column;background:#fffdf8;border:1.5px solid var(--iso-ink);border-radius:12px;overflow:hidden;box-shadow:2px 2px 0 rgba(29,27,22,.25)}
+.iso-controls button{width:40px;height:40px;border:0;background:none;font:700 18px/1 var(--text);color:var(--iso-ink);cursor:pointer;padding:0}
+.iso-controls button+button{border-top:1px solid var(--rule)}
+.iso-controls button:hover:not(:disabled){background:var(--paper-2)}.iso-controls button:disabled{opacity:.35;cursor:default}
+.iso-controls button:focus-visible{outline:3px solid var(--iso-me);outline-offset:-3px}
+.iso-info{min-height:22px;margin:8px 2px 0;font-size:14px;color:var(--ink-soft);font-weight:600}
+.iso-legend{list-style:none;display:flex;flex-wrap:wrap;gap:4px 14px;margin:6px 2px 0;padding:0;font-size:12.5px;color:var(--pencil)}
+.iso-legend li{display:flex;align-items:center;gap:6px}
+.iso-legend .k{display:inline-block;width:22px;height:8px;border-radius:4px}
+.iso-legend .k-route{background:var(--iso-route);box-shadow:0 0 0 2px #fff,0 0 0 3px rgba(0,0,0,.08)}
+.iso-legend .k-cur{background:var(--iso-route-dark);height:10px}
+.iso-legend .k-done{background:repeating-linear-gradient(90deg,#a39a88 0 3px,transparent 3px 8px);height:5px}
+.iso-legend .k-me{width:12px;height:12px;border-radius:50%;background:var(--iso-me);box-shadow:0 0 0 3px #fff,0 0 0 6px rgba(17,82,212,.25)}
+.iso-legend .k-elev{width:14px;height:14px;border-radius:3px;background:#4338ca}
+.iso-legend .k-stairs{width:14px;height:14px;border-radius:3px;background:repeating-linear-gradient(0deg,#0f766e 0 2px,#bfe3da 2px 4px)}
+.iso-legend .k-door{width:16px;height:5px;background:#c9a46a}
+.iso-legend .k-obs{width:14px;height:14px;border-radius:3px;background:repeating-linear-gradient(45deg,#b91c1c 0 3px,#fde2e2 3px 6px)}
+@media(max-width:600px){.iso-hud.tl{top:8px;left:8px}.iso-stack{display:none}.iso-floorbadge .n{font-size:18px}.iso-synth{font-size:10px}.iso-legend{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.iso-canvas{animation:none}.iso-canvas .me-halo{animation:none;opacity:.6}}
+.iso-canvas .iso-feature .lead{stroke:#3d3a33;stroke-width:1.2;stroke-dasharray:2 2}
+.iso-canvas .chip text,.iso-canvas .iso-feature text{stroke:none;paint-order:normal}   /* the flat map's halo rules (.entrance text, .nav-me text) must not reach the 3D chips */
+@media(max-width:600px){
+  .iso-stage{display:flex;flex-direction:column}
+  .iso-hud.tl{position:static;order:-1;padding:8px 8px 2px;align-items:center}     /* above the drawing, not over it */
+  .iso-hud.tr{top:52px}
+  .iso-controls{flex-direction:row;right:8px;bottom:8px}
+  .iso-controls button{width:38px;height:38px;font-size:17px}
+  .iso-controls button+button{border-top:0;border-left:1px solid var(--rule)}
+}
+.iso-canvas .iso-obstacle .lead{stroke:#b91c1c;stroke-width:1.4;stroke-dasharray:2 2}

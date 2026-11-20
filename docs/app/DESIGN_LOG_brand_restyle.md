@@ -26,3 +26,10 @@
 - It opens an Emergency help screen: "In an immediate emergency, call 911.", Call 911 (tel:911) listed first, Call KSU Campus Police 470-578-6666 (tel:+14705786666), a one-line note ("Tapping a button opens your phone's dialer."), and Close / Back to OwlAccess / Escape back to the same page.
 - Keyboard: focus starts on the heading (a stray Enter cannot dial), Tab stays inside, focus returns to SOS. No GPS, forms, backend or APIs.
 - Tests: 157 pass (10 added in tests/sos.test.tsx; the tel: links are inspected, never clicked).
+
+## 2026-11-20 · 3D (isometric) indoor map, polished
+- Materials with one light source: warm room floors, sand hallways (circulation reads first), cool restrooms, light wall panels with crisp tops, door thresholds in tan, elevators as indigo shafts and stairwells as teal shafts, a slab edge and a soft shadow. Floors below shown as slabs 4 m down, joined by the shafts.
+- Labels drawn upright at a constant on-screen size: room number in a pill, name underneath; placed by priority (selected rooms, then larger rooms) and never on top of each other, the route or the markers; more names appear as you zoom in. Elevators, stairs, entrances and the ramp have named chips with icons (text, not colour alone).
+- Route is the top layer: white casing, done part dashed grey, current step darker and thicker with direction arrows, still-to-go in the route colour. Floor changes get a chip ("Elevator up to Floor 2", "Arrived from Floor 2"); destination and start pins on stems; "You (simulated)" dot with a halo (no pulse with reduced motion).
+- Camera: same angle, scale and frame on every floor. Zoom +/−, reset, centre on you; drag to pan, pinch on touch, Ctrl/Cmd + scroll; keyboard arrows, + / −, 0. Floor badge and stack, compass, synthetic-plan chip. Phones: badge row above the drawing, controls in a row.
+- Hover or tap a room or feature: one line says what it is. 2D plan kept. No new libraries; routing data and engine unchanged. Tests: 168 pass.
