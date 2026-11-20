@@ -6,7 +6,7 @@ We built it for a hackathon. It is not an official Kennesaw State University ser
 
 ## What's real
 
-The building outlines and footpaths come from OpenStreetMap. The entrance locations were traced from KSU's accessibility map and haven't been checked in person. Everything inside the Academic Building (rooms, hallways, elevators, stairs) is made up for the demo, and it's the only building with an inside map. The "You" marker just follows the directions; the app doesn't use GPS or track anyone.
+The building outlines, entrances and footpaths come from OpenStreetMap. In QGIA, campus Geographic Information System (GIS) data was collected, organized, and processed. GeoJSON was used to export spatial features into formats the application could read. Connected mapped pathways and building entrances to the navigation network. The entrance locations were traced from KSU's accessibility map and haven't been checked in person. Everything inside the Academic Building (rooms, hallways, elevators, stairs) is made up for the demo, and it's the only building with an inside map. The "You" marker just follows the directions; the app doesn't use GPS or track anyone.
 
 ## Running it
 
