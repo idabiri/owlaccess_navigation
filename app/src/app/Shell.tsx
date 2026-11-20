@@ -3,6 +3,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { Link, useRouter } from "./router";
 import { design, designStyle } from "../design/design";
 import logoUrl from "../assets/owl-logo.svg";
+import { SosButton } from "./Sos";
 
 export const NAV_LINKS: { to: string; label: string }[] = [
   { to: "/plan", label: "Plan a route" }, { to: "/navigate", label: "Navigate" }, { to: "/report", label: "Report an issue" },
@@ -25,6 +26,7 @@ export function Shell({ children, wide = false }: { children: ReactNode; wide?: 
           <nav id="site-nav" aria-label="Main" className={open ? "site-nav open" : "site-nav"}>
             <ul>{NAV_LINKS.map(l => <li key={l.to}><Link to={l.to}>{l.label}</Link></li>)}</ul>
           </nav>
+          <SosButton />
         </div>
       </header>
       <main id="main" className={wide ? "site-main wide" : "site-main"}>{children}</main>

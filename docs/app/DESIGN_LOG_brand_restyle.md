@@ -20,3 +20,9 @@
 - Report: guided steps (Where, What's wrong, Send); "Which floor is it on?" with large floor buttons; a "Where" card with Change; description first, then problem and severity side by side; one promise line (pending until verified). Route planning and the building picker stay out of the way.
 - Review: summary (waiting / changing routes / closed); readable report cards (problem, severity, place, the reporter's words, how long ago; ref id small); one primary Review action per card; verified cards say who is rerouted, with an "Obstacle cleared" action. All control names used by assistive tech and tests unchanged.
 - Tests: 147 pass (1 assertion moved: the rule-based suggestion note now shows in the reviewer queue, where it informs the decision).
+
+## 2026-11-20 · SOS emergency button (studio feedback)
+- A red SOS button in the sticky site header on every page, so it never covers the map, the step panel or the Start bar.
+- It opens an Emergency help screen: "In an immediate emergency, call 911.", Call 911 (tel:911) listed first, Call KSU Campus Police 470-578-6666 (tel:+14705786666), a note that nothing is sent unless the person places the call and no location is shared, and Close / Back to OwlAccess / Escape back to the same page.
+- Keyboard: focus starts on the heading (a stray Enter cannot dial), Tab stays inside, focus returns to SOS. No GPS, forms, backend or APIs.
+- Tests: 157 pass (10 added in tests/sos.test.tsx; the tel: links are inspected, never clicked).

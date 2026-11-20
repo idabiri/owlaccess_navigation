@@ -38,6 +38,7 @@ This repository contains the whole project, not just the app: the original GIS d
 - **Obstacle reporting** (`/report`). Report a blocked hallway, broken elevator, etc. by tapping the floor plan or choosing a place from a list, with full keyboard support. An offline, rule-based helper suggests a category (it is labelled as rules, not AI). Reporting is a guided flow: Where (floor, then the spot), What's wrong, Send.
 - **Human review** (`/review`). Reports stay `pending` until a reviewer marks them `verified` or `rejected`, and later `resolved`. **Only verified reports affect routing.** Pending and rejected reports never block a route. The reviewer screen is a queue: counts of waiting, route-changing and closed reports, and one readable card per report.
 - **Shared reports on a local network.** During a demo, the laptop's dev server stores reports in one JSON file, and phones on the same Wi-Fi can open `/review`. It answers only private-network addresses.
+- **SOS emergency button.** A red SOS button in the header of every page opens an Emergency help screen with one-tap `tel:` buttons for 911 and KSU Campus Police (470-578-6666). It only opens the phone's dialer: no location is shared, nothing is sent, and the app never claims anyone has been notified.
 - **Data transparency** (`/about`). Every number on the site is computed from the loaded data, and each dataset is labelled real, synthetic, provisional or unknown.
 
 ---
@@ -57,7 +58,7 @@ This repository contains the whole project, not just the app: the original GIS d
 │   ├── functions/, migrations/, wrangler.toml   prepared Cloudflare Pages deployment (NOT deployed)
 │   ├── scripts/reset-demo.mjs   empties the shared demo reports (keeps a backup)
 │   ├── data/                    runtime reports file lives here (git-ignored)
-│   └── tests/                   147 automated tests (Vitest + Testing Library, jsdom)
+│   └── tests/                   157 automated tests (Vitest + Testing Library, jsdom)
 ├── data/
 │   ├── outdoor/
 │   │   ├── source/              ORIGINAL GIS data + QGIS project (read-only; never edited)
@@ -165,7 +166,7 @@ Details: [docs/integration/integration_guide_unified.md](docs/integration/integr
 ## Running the tests
 
 ```bash
-# app: 147 tests in 15 files (routing, alternatives, steps, reports, review, shared sync, API, deployment logic, keyboard, phone layout, pages)
+# app: 157 tests in 16 files (routing, alternatives, steps, reports, review, shared sync, API, deployment logic, keyboard, phone layout, pages, SOS)
 cd app
 npm test
 npm run build          # type-check + production build
