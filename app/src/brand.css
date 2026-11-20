@@ -405,3 +405,8 @@ button.primary.big:disabled{box-shadow:none}
 .sos-back{width:100%;min-height:48px;border-radius:999px;border:2px solid var(--ink);background:#fffdf8;color:var(--ink);font:700 16px var(--text);cursor:pointer}
 .sos-back:hover{background:var(--paper-2)}
 @media(prefers-reduced-motion:reduce){.sos-btn:active,.sos-call:active{transform:none}}
+
+/* public demo: reports kept in this browser only; the preloaded demo obstacles shared by everyone */
+.local-note{background:#fdf3d8;border-left:4px solid var(--pending,#7a3c67);border-radius:8px;padding:8px 10px}
+.demo-obstacles{margin:16px 12px 0}
+.demo-obstacles h2{font-size:20px;margin:0 0 6px}

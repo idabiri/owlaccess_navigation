@@ -142,6 +142,7 @@ export function ReportPanel({ reports, draft, reportMode, snapError, storageOk, 
       </dl>
       <p className="panel-note">Check a report before you <strong>verify</strong> it: the severity you confirm decides who is rerouted. <strong>Reject</strong> it if nothing is there. <span className="muted">Demo: no sign-in.</span></p>
       {shared && reviewerUrls.length > 0 && <p className="muted" data-testid="reviewer-urls">Review on a phone on the same Wi-Fi: {reviewerUrls.map(u => <code key={u}> {u}</code>)}</p>}
+      {!shared && <p className="panel-note local-note" data-testid="local-only-note"><strong>Saved in this browser only.</strong> On this public demo, reports and review decisions stay on this device: other visitors don't see them, and they change routes only in this browser. The preloaded demo obstacles are the same for everyone.</p>}
       {routeNotice && <p className="route-notice" role="status">{routeNotice}</p>}
       {syncEl}
       {needsPasscode && onPasscode && (
@@ -230,7 +231,7 @@ export function ReportPanel({ reports, draft, reportMode, snapError, storageOk, 
             <button type="button" onClick={() => { reset(); onCancelDraft(); }}>Cancel</button></div>
         </form>
       )}
-      <p className="report-promise">Every report starts as <strong>pending</strong>: it shows on the map but <strong>changes no route</strong> until a reviewer verifies it.{shared && " Reviewers on other devices see it within seconds."}</p>
+      <p className="report-promise">Every report starts as <strong>pending</strong>: it shows on the map but <strong>changes no route</strong> until a reviewer verifies it.{shared ? " Reviewers on other devices see it within seconds." : " On this public demo it is saved in this browser only: other visitors won't see it."}</p>
       <h3>Waiting for review ({pending.length})</h3>
       {pending.length === 0 ? <p className="empty-note">No reports waiting for review.</p> : (
         <ul className="report-list" aria-label="Pending obstacle reports">{[...pending].reverse().map(r => pendingItem(r, false))}</ul>)}

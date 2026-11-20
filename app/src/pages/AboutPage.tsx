@@ -23,6 +23,7 @@ export function AboutPage() {
           <li><b>{f.outdoorKm} km</b> of walkable campus paths in <b>{f.outdoorSegments}</b> segments, from OpenStreetMap footways and crossings, cleaned in QGIS for the Marietta campus.</li>
           <li><b>{f.buildings}</b> building outlines ({f.namedBuildings} named) from OpenStreetMap.</li>
           <li><b>{f.outdoorSteps}</b> path segments are marked as <b>steps</b>; wheelchair and step-free routes never use them.</li>
+          <li>Map data <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">&copy; OpenStreetMap contributors</a>, available under the Open Database License (ODbL).</li>
         </ul></section>
 
       <section className="card about" aria-labelledby="a-in"><h2 id="a-in"><span className="dl synth">Synthetic</span> Indoor floor plans</h2>

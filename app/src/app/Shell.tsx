@@ -33,7 +33,7 @@ export function Shell({ children, wide = false }: { children: ReactNode; wide?: 
       <footer className="site-footer">
         <div className="site-footer-inner">
           <p><strong>OwlAccess</strong> is a student hackathon prototype for the KSU Marietta campus. It is <strong>not an official Kennesaw State University service</strong>.</p>
-          <p>Outdoor paths: OpenStreetMap data prepared in QGIS. Indoor floor plans: <strong>synthetic</strong>. Accessibility information is <strong>not field-verified</strong>. <Link to="/about">How the data works</Link></p>
+          <p>Outdoor paths and building outlines: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">&copy; OpenStreetMap contributors</a> (ODbL), prepared in QGIS. Indoor floor plans: <strong>synthetic</strong>. Accessibility information is <strong>not field-verified</strong>. <Link to="/about">How the data works</Link></p>
         </div>
       </footer>
     </div>

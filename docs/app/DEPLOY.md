@@ -1,9 +1,38 @@
-# Publishing OwlAccess for judges (Cloudflare, free plan)
+# Publishing OwlAccess
+
+## Option A: Vercel, static demo (chosen for the hackathon)
+
+**Status: prepared, not deployed.** Connect Vercel to the private GitHub repo; only pushes you make to `main` go live.
+
+| Vercel setting | Value |
+|---|---|
+| Root Directory | `app` |
+| Framework | Vite (from `app/vercel.json`) |
+| Install / Build | `npm ci` / `npm run build` |
+| Output | `dist` |
+| Node.js | 22.x |
+| Environment variables | none |
+
+- One static site: no Python, no server, no database. `scripts/` is the offline data pipeline and is not deployed.
+- `app/vercel.json` sends every page address (`/plan`, `/navigate`, `/review` ...) to `index.html`, keeps `/api/*` a plain 404,
+  and makes browsers re-check `/data/*.json` after an update.
+- **Reports on the public site are kept in each visitor's browser only** (built without `VITE_SHARED_REPORTS`): anyone can submit,
+  verify, reject and resolve, but other visitors never see those changes, and the app does not call `/api` or poll.
+- **The preloaded demo obstacles (OBS-001 to OBS-006) ship with the routing data**, so every visitor sees the same ones. They
+  block routes only when verified and only while their demo scenario is on.
+- Visitors get the built site only: no source code, no source maps, no dev server, no editing access. Keep the GitHub repo private.
+- Local development is unchanged: `npm run dev` still shares reports through the laptop with phones on the same Wi-Fi.
+
+## Option B: Cloudflare, with shared reports (prepared earlier, not used)
+
+When building for this option, set **`VITE_SHARED_REPORTS=true`** in the Cloudflare Pages build settings so the site uses the
+shared `/api/reports` service below instead of browser-only reports.
+
 
 **Status: prepared, not deployed.** Nothing below has been run. Every step that creates an account, a database or a public site
 needs your go-ahead; signing in and choosing the passcode are yours to do.
 
-## What gets published
+### What gets published
 
 | Part | Where | What it is |
 |---|---|---|

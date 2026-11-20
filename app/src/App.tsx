@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { loadAppData, type AppData } from "./data";
 import { httpReportStore, type ReportStore } from "./reports/reportStore";
+import { sharedReportsEnabled } from "./reports/reportMode";
 import { Router, useRouter } from "./app/router";
 import { AppStateProvider, type TripPlan } from "./app/AppState";
 import { Shell } from "./app/Shell";
@@ -11,9 +12,10 @@ import { NavigatePage, ReportPage, ReviewPage } from "./pages/MapPages";
 import { AboutPage, NotFoundPage } from "./pages/AboutPage";
 import "./pages.css";
 
-/** OwlAccess: one app, one data load, one shared report store, many pages. */
+/** OwlAccess: one app, one data load, one report store, many pages.
+ *  Local dev: reports are shared through the dev server. Public static site: no store, so reports stay in this browser. */
 export function App() {
-  const store = useMemo(() => httpReportStore(), []);
+  const store = useMemo(() => (sharedReportsEnabled(import.meta.env) ? httpReportStore() : undefined), []);
   const [data, setData] = useState<AppData | null>(null), [err, setErr] = useState<string | null>(null);
   useEffect(() => { loadAppData().then(setData).catch(e => setErr(String(e))); }, []);
   return (

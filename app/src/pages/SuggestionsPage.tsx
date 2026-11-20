@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useAppState } from "../app/AppState";
 import { Link, useRouter } from "../app/router";
 import { suggestRoutes, type RouteSuggestion } from "../routing/alternatives";
-import { blockingObstacles, REPORT_CATEGORIES, type ObstacleReport } from "../reports/obstacleReports";
+import { blockingObstacles, loadReports, REPORT_CATEGORIES, type ObstacleReport } from "../reports/obstacleReports";
 import { TripSteps } from "../app/TripSteps";
 import { OutdoorMap } from "../components/OutdoorMap";
 import { IndoorMap } from "../components/IndoorMap";
@@ -31,7 +31,8 @@ export function SuggestionsPage() {
   const { data, store, trip, setTrip } = useAppState();
   const { navigate } = useRouter();
   const phone = useIsPhone();   // phones: no map before a route is confirmed; it appears on /navigate after "Start navigation"
-  const [reports, setReports] = useState<ObstacleReport[] | null>(store ? null : []);
+  // shared store (local dev): loaded from the server. Public site: the reports saved in this browser, so this visitor's verified reports count here too
+  const [reports, setReports] = useState<ObstacleReport[] | null>(store ? null : () => loadReports());
   useEffect(() => { if (store) store.load().then(s => setReports(s.reports)).catch(() => setReports([])); }, [store]);
   const label = (id: string) => data.unified.endpoints_meta.find(m => m.id === id)?.label ?? id;
   const wheelchair = trip.requirements.wheelchair, avoidStairs = trip.requirements.stepFree || trip.requirements.elevatorsOnly;

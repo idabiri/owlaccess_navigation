@@ -15,9 +15,9 @@ app/scripts/reset-demo.mjs,ksu_marietta_integration/app/scripts/reset-demo.mjs,1
 app/server/d1Storage.ts,ksu_marietta_integration/app/server/d1Storage.ts,2331,b7927770b90388d00fdce11b826d3ff60530d12fc5cb60d7193c30b047e41cb1,app
 app/server/reportsApi.ts,ksu_marietta_integration/app/server/reportsApi.ts,8548,64e7c35d4492ee9b02cb01540f37accf91165eeea7c1fa6c3fe9a4464579e4a2,app
 app/server/reportsCore.ts,ksu_marietta_integration/app/server/reportsCore.ts,10411,076d08dda5196b03f5439a4012f3f7448694dd92d3dab7ce681a1efc52b914d6,app
-app/src/App.tsx,ksu_marietta_integration/app/src/App.tsx,2362,f4a863fdcdf9b183e00e53311401418f84ab53b33dc9c935496854768f6549e1,app
+app/src/App.tsx,ksu_marietta_integration/app/src/App.tsx,2551,7550d15a41d879c08b81ae5b80819065941f8bf5c9fec9cc416df0a19c1e02fb,app
 app/src/app/AppState.tsx,ksu_marietta_integration/app/src/app/AppState.tsx,2260,ea271cd82f62da095e67e48b12b72dde97991eed598e4602f434c18206b239be,app
-app/src/app/Shell.tsx,ksu_marietta_integration/app/src/app/Shell.tsx,2540,d728b658519eb75e7cca2b1d28ff440789020512006fb71e30f5d9575dbc40bd,app
+app/src/app/Shell.tsx,ksu_marietta_integration/app/src/app/Shell.tsx,2681,a7ea7d0dd0985c921f8abb869c97d202d793545d1c3909a768c037a6f2127916,app
 app/src/app/Sos.tsx,ksu_marietta_integration/app/src/app/Sos.tsx,4017,a1067e1bd729288d68b2bc23c5eca86f8c3c5f8529b24cd509318fe42691c51a,app
 app/src/app/TripFields.tsx,ksu_marietta_integration/app/src/app/TripFields.tsx,4204,47e3cc5f2968dcbe26a1347358429e7bd0af3874df4d68a8845c8462459b26d0,app
 app/src/app/TripSteps.tsx,ksu_marietta_integration/app/src/app/TripSteps.tsx,886,f3fbbaf13dcec52c06a5c439710192b29fe9ad12f4ab8ffa5f90f0cf3ac57d8c,app
@@ -25,27 +25,28 @@ app/src/app/dataFacts.ts,ksu_marietta_integration/app/src/app/dataFacts.ts,1716,
 app/src/app/router.tsx,ksu_marietta_integration/app/src/app/router.tsx,2693,f5aa3a8b9987e3ac602c1c2236f2af4497a24d79099d0e78da7dcda2800b9299,app
 app/src/app/useMedia.ts,ksu_marietta_integration/app/src/app/useMedia.ts,1022,44b3fde6646028a05011b4c45f89cc4f65708cf25c69cc5413c03e98e9aabcb1,app
 app/src/assets/owl-logo.svg,ksu_marietta_integration/app/src/assets/owl-logo.svg,3404,26ed15a236ed977baa35d6e212d5c885daea2eb980daae3f4f2a40774c3f6fd0,app
-app/src/brand.css,ksu_marietta_integration/app/src/brand.css,32596,ea332a4ee504f8ae08a3700dd4f14b796c7f4779eab768d5fcf8b3405a7191c1,app
+app/src/brand.css,ksu_marietta_integration/app/src/brand.css,32897,d527aa8bfb54ed31a991a6f5a2ed994037f865f0bc2cde9263be3ea29e28a86c,app
 app/src/buildings.ts,ksu_marietta_integration/app/src/buildings.ts,1049,c682638203acab6dd81a425df5b9def43d3a1093a41cf19f18b2bfb1a9e80c8a,app
 app/src/components/IndoorMap.tsx,ksu_marietta_integration/app/src/components/IndoorMap.tsx,10926,1fd663b551d32bb83961b57e1d83f8804d305f8e53aeb3437cb204483790e9a9,app
 app/src/components/NavigationApp.tsx,ksu_marietta_integration/app/src/components/NavigationApp.tsx,27664,ceba46b4f65a431f746afa2ceffafeab7b6c1da7d1032c50c9698a506d7d9068,app
 app/src/components/NavigationPanel.tsx,ksu_marietta_integration/app/src/components/NavigationPanel.tsx,3695,5b0c749d8e9db99699491ca7221c423b107e686151251e47604386646abbc56d,app
-app/src/components/OutdoorMap.tsx,ksu_marietta_integration/app/src/components/OutdoorMap.tsx,11542,ac750d9f9b639885ec174cb5e83389cfbe7c2c7e9067b535a0ae03c3ac59766b,app
-app/src/components/ReportPanel.tsx,ksu_marietta_integration/app/src/components/ReportPanel.tsx,18990,cb7a460792070ea13ba745491865a1affd0cdf3a2201b4c5bfa116e51b98c73e,app
+app/src/components/OutdoorMap.tsx,ksu_marietta_integration/app/src/components/OutdoorMap.tsx,11550,cedffa9cf44ee6be9d7d4634769afbc58a175d5c21511593821a1a5802c927e2,app
+app/src/components/ReportPanel.tsx,ksu_marietta_integration/app/src/components/ReportPanel.tsx,19415,026e2bf4081a7c7a3cddeeffb38e29e552f0ea253771115e466768dfa7290270,app
 app/src/components/RouteResults.tsx,ksu_marietta_integration/app/src/components/RouteResults.tsx,9091,f479f14a1031fecd86e50ef5e81d83ee218baba411ef4b56ad2b1790fc7221a5,app
 app/src/data.ts,ksu_marietta_integration/app/src/data.ts,3090,03ca9f60de79f394cc99f617d7dba7f786c13392c6d6033a736f554790598388,app
 app/src/design/design.json,ksu_marietta_integration/app/src/design/design.json,464,818ff602f96f8a2d8d96f2e83692849d81e67b9f21946adde3346c12129b05b4,app
 app/src/design/design.ts,ksu_marietta_integration/app/src/design/design.ts,3480,56a27d3b3af22b57c412de4e7f5e0cb62d6f0599843ea599817f5fc8640910e6,app
 app/src/main.tsx,ksu_marietta_integration/app/src/main.tsx,531,514cd31552fd75ffdb8fb9644167f254a2050bbb493fe8b189064ce6376fe773,app
 app/src/pages.css,ksu_marietta_integration/app/src/pages.css,15459,5e63e5f1a0076e1457e1a9de7bb0f31fa129aa72101c37b1b3dda5b6043aee11,app
-app/src/pages/AboutPage.tsx,ksu_marietta_integration/app/src/pages/AboutPage.tsx,6303,a9bc16e19fb2ac0edd56325903a7e757db5385a05ef4709771ef65f776ea310e,app
+app/src/pages/AboutPage.tsx,ksu_marietta_integration/app/src/pages/AboutPage.tsx,6512,64cec929847cde56be73ee9eef8727a8bc7a7e3f5d3cde1ca742b98d74028b19,app
 app/src/pages/HeroSketch.tsx,ksu_marietta_integration/app/src/pages/HeroSketch.tsx,4501,d582d8821be3727006b901581d428e6fe5a2ace7d9c54848a3def340fdde178c,app
 app/src/pages/LandingPage.tsx,ksu_marietta_integration/app/src/pages/LandingPage.tsx,4898,88c200d5cfcb746560bbf010ec55398ff913c07898c535cc57dd7379e6aa1365,app
-app/src/pages/MapPages.tsx,ksu_marietta_integration/app/src/pages/MapPages.tsx,3768,99e9df35100e602ea09a15c9fb108176eaf09c20fd04a4f0058c888e59873567,app
+app/src/pages/MapPages.tsx,ksu_marietta_integration/app/src/pages/MapPages.tsx,5681,f7d54eb01744e91d2b83e67a42c393f436a612fe62ebda11affd261b1bad58a0,app
 app/src/pages/PlanPage.tsx,ksu_marietta_integration/app/src/pages/PlanPage.tsx,5593,e784f26d8f2f3e968ddba0c4d4093489ef61500bb84141d3cbcab8fc5bb9ab9d,app
-app/src/pages/SuggestionsPage.tsx,ksu_marietta_integration/app/src/pages/SuggestionsPage.tsx,14087,512bff31da0f2a597f386450ba3b46f4d13c108df14b02e3879961f8a57d2cb0,app
+app/src/pages/SuggestionsPage.tsx,ksu_marietta_integration/app/src/pages/SuggestionsPage.tsx,14112,7b069088a7cfd3a93a6c36e9395ed05e8275dbb716c4637a0d596a16e862751f,app
 app/src/reports/classify.ts,ksu_marietta_integration/app/src/reports/classify.ts,4953,4535629f616d960dbdd81df6d01554a6307c75774fbc526baf30ce7e11ab9345,app
 app/src/reports/obstacleReports.ts,ksu_marietta_integration/app/src/reports/obstacleReports.ts,15066,edb44c53a0fc7aa73d78861917c0295cc773aa86d860c6bea88355a846574182,app
+app/src/reports/reportMode.ts,ksu_marietta_integration/app/src/reports/reportMode.ts,939,b0d37e66bfb31a5b2b44a85454453cf4ab50e0dd935063f7662c7ed7e0ec28e4,app
 app/src/reports/reportStore.ts,ksu_marietta_integration/app/src/reports/reportStore.ts,5214,64006be53ecf368d5f4a6a5742acf881ccf88725dbf439fb65254a0c1b22fa91,app
 app/src/routing/alternatives.ts,ksu_marietta_integration/app/src/routing/alternatives.ts,10953,0e220fcf4ef66d41f29ea9fa216d00d9dbb6a9dd6fbafa93e67494e8fe75dda7,app
 app/src/routing/instructions.ts,ksu_marietta_integration/app/src/routing/instructions.ts,6459,6e3a16a4c8d95bd950f91f63b9d4626c045cc372c8b0b5dbf16969879e5ac861,app
@@ -64,6 +65,7 @@ app/tests/helpers.ts,ksu_marietta_integration/app/tests/helpers.ts,721,dc3b7ad7b
 app/tests/keyboard.test.tsx,ksu_marietta_integration/app/tests/keyboard.test.tsx,5730,21523e29c7624e1aa255261b2840cd47d30a7b3e3fc8b5beb26a18f2c6d5ccc6,app
 app/tests/mobile.test.tsx,ksu_marietta_integration/app/tests/mobile.test.tsx,7538,df75b3573a1646cbde260ef9d0e749859f9b053b0c394696d786dd5829b6f6be,app
 app/tests/pages.test.tsx,ksu_marietta_integration/app/tests/pages.test.tsx,10095,5537bb71104ab83b5616578a76f7a9dd50fd1f12c0bc99b476dd0448e0021961,app
+app/tests/publicDemo.test.tsx,ksu_marietta_integration/app/tests/publicDemo.test.tsx,4632,2aadf583ba1a889b984978217ac8ee9083542e84cdd2bb398a9e5c16709d3e77,app
 app/tests/reports.test.tsx,ksu_marietta_integration/app/tests/reports.test.tsx,8366,d275fbec45e6b85e46e53e91830fef97390b4964fc65004a91de9bb85bf78b60,app
 app/tests/reportsApi.test.ts,ksu_marietta_integration/app/tests/reportsApi.test.ts,9307,91c51085f55e9a99edbcf0f94d783aa892d1157ea1cac8f0f6048399de97b18c,app
 app/tests/review.test.tsx,ksu_marietta_integration/app/tests/review.test.tsx,9895,94aa36ea617b755ecdeb539ad25b1966835ef59854f5390d44134371eee3617c,app
@@ -73,6 +75,7 @@ app/tests/steps.test.tsx,ksu_marietta_integration/app/tests/steps.test.tsx,6470,
 app/tests/sync.test.tsx,ksu_marietta_integration/app/tests/sync.test.tsx,10131,c7d29e066983d8d00e943e18fd273425120b6fe5b470d7c3bcfcdd5ab7218b09,app
 app/tests/ui.test.tsx,ksu_marietta_integration/app/tests/ui.test.tsx,5844,1eb79f3464e652b43041a0e5fe1faaab7777e5ee39c9304596438fbf85e91d30,app
 app/tsconfig.json,ksu_marietta_integration/app/tsconfig.json,572,c441158417452f88d9dbaaaf96e213d0cb0136549c33b6d74b8d0e093c3350e8,app
+app/vercel.json,ksu_marietta_integration/app/vercel.json,414,30996d70f8bacad987bedccdec2e4a737e760ff9ad932375d4553c6768623ecd,app
 app/vite.config.ts,ksu_marietta_integration/app/vite.config.ts,1015,7b38ee8ffc299643ece7da411281027015cd2340d518d1ce8bf6ebb84b65c4fb,app
 app/wrangler.toml,ksu_marietta_integration/app/wrangler.toml,377,c24d2c0df03bb0ca2d39bf40cf31efb4b378c0a908795f01963cbc9817246328,app
 audit/indoor_validation/examples/floor_1_route_blocked_hallway_reroute.svg,indoor-mapping/documentation/examples/floor_1_route_blocked_hallway_reroute.svg,45854,134120463c6ab354117f6352738e2e5ece3b0977929aa12d8a6877f139141000,audit
@@ -138,7 +141,7 @@ data/reference/ksu_maps/KSU Marietta Campus_Accessibility Map_modified.tif,maps/
 data/reference/ksu_maps/kennesaw-parking-map.pdf,maps/kennesaw-parking-map.pdf,1212799,284efce2601be73be8d9f8ee91227c12cd8c5439074e25fe5c9c3baadb7a851a,third-party (git-ignored)
 data/reference/ksu_maps/marietta-parking-map.pdf,maps/marietta-parking-map.pdf,959802,712f7b894a4e7139b7fab007cc746be78422f6a6c992f3bb7965ea990c0608b6,third-party (git-ignored)
 docs/app/DEMO.md,ksu_marietta_integration/DEMO.md,8154,4d8f3fbbec096d72b8cb76102103f6a4736777c4b9de274c16c5e88809d20db5,doc
-docs/app/DEPLOY.md,ksu_marietta_integration/DEPLOY.md,3702,84a654df4579e26f2aa08669f80cc52c7f707443302c3d653aaf139b98d2e967,doc
+docs/app/DEPLOY.md,ksu_marietta_integration/DEPLOY.md,5359,ee7c27bce25ee090eb6237f4c6315b91f3380ae960249dc7e4ab74a34d882144,doc
 docs/app/DESIGN_LOG.md,ksu_marietta_integration/DESIGN_LOG.md,1462,2598c9f49437c8937e26b05acd5ceac3179d022dccbfad5b4ff01fc4a6148c71,doc
 docs/app/DESIGN_LOG_brand_restyle.md,DESIGN_LOG.md,3849,84adc7e5efa1f881401d42225a3a8f16e0bd0ce160b280f5a014bc9c1e0f4039,doc
 docs/app/design-studio/studio.html,ksu_marietta_integration/design-studio/studio.html,18951,3f5615075693531af3290f53b776904b8175e1fc421326de57f2c5f3279aec30,doc

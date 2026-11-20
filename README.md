@@ -38,6 +38,7 @@ This repository contains the whole project, not just the app: the original GIS d
 - **Obstacle reporting** (`/report`). Report a blocked hallway, broken elevator, etc. by tapping the floor plan or choosing a place from a list, with full keyboard support. An offline, rule-based helper suggests a category (it is labelled as rules, not AI). Reporting is a guided flow: Where (floor, then the spot), What's wrong, Send.
 - **Human review** (`/review`). Reports stay `pending` until a reviewer marks them `verified` or `rejected`, and later `resolved`. **Only verified reports affect routing.** Pending and rejected reports never block a route. The reviewer screen is a queue: counts of waiting, route-changing and closed reports, and one readable card per report.
 - **Shared reports on a local network.** During a demo, the laptop's dev server stores reports in one JSON file, and phones on the same Wi-Fi can open `/review`. It answers only private-network addresses.
+- **Public static demo (Vercel).** The public build has no server: everyone sees the same preloaded demo obstacles (OBS-001 to OBS-006, shipped with the routing data), while reports and review decisions are saved in each visitor's browser only and are labelled that way. It makes no `/api` calls and does not poll.
 - **SOS emergency button.** A red SOS button in the header of every page opens an Emergency help screen with one-tap `tel:` buttons for 911 and KSU Campus Police (470-578-6666). It only opens the phone's dialer: no location is shared, nothing is sent, and the app never claims anyone has been notified.
 - **Data transparency** (`/about`). Every number on the site is computed from the loaded data, and each dataset is labelled real, synthetic, provisional or unknown.
 
@@ -58,7 +59,7 @@ This repository contains the whole project, not just the app: the original GIS d
 │   ├── functions/, migrations/, wrangler.toml   prepared Cloudflare Pages deployment (NOT deployed)
 │   ├── scripts/reset-demo.mjs   empties the shared demo reports (keeps a backup)
 │   ├── data/                    runtime reports file lives here (git-ignored)
-│   └── tests/                   157 automated tests (Vitest + Testing Library, jsdom)
+│   └── tests/                   161 automated tests (Vitest + Testing Library, jsdom)
 ├── data/
 │   ├── outdoor/
 │   │   ├── source/              ORIGINAL GIS data + QGIS project (read-only; never edited)
@@ -130,7 +131,8 @@ Open http://localhost:5173. Main pages: `/` landing page, `/plan`, `/suggestions
 - **Phone reviewer during a demo:** the dev server also listens on your local network, so a phone on the same Wi-Fi can open `http://<laptop-ip>:5173/review`. Use a trusted network or a phone hotspot. Do not port-forward or tunnel this server: it is a local demo, not a production deployment.
 - **Reset the demo reports:** `npm run demo:reset` empties `app/data/obstacle_reports.json` and saves a backup copy next to it first.
 - **Production build:** `npm run build` (type-checks, then writes `app/dist/`). `npm run preview` serves the build on port 4173.
-- **Public deployment** (Cloudflare Pages + D1, with a reviewer passcode stored as a Cloudflare secret) is prepared in `functions/`, `migrations/` and `wrangler.toml`, and described in [docs/app/DEPLOY.md](docs/app/DEPLOY.md). **It has not been deployed.** `wrangler.toml` contains a placeholder database id.
+- **Public deployment on Vercel** (chosen, not yet deployed): a static Vite site with Root Directory `app`, settings in `app/vercel.json`, no environment variables. See [docs/app/DEPLOY.md](docs/app/DEPLOY.md).
+- **Alternative public deployment** (Cloudflare Pages + D1, with a reviewer passcode stored as a Cloudflare secret) is prepared in `functions/`, `migrations/` and `wrangler.toml`, and described in [docs/app/DEPLOY.md](docs/app/DEPLOY.md). **It has not been deployed**; it needs `VITE_SHARED_REPORTS=true` at build time. `wrangler.toml` contains a placeholder database id.
 
 A step-by-step demo script is in [docs/app/DEMO.md](docs/app/DEMO.md).
 
@@ -166,7 +168,7 @@ Details: [docs/integration/integration_guide_unified.md](docs/integration/integr
 ## Running the tests
 
 ```bash
-# app: 157 tests in 16 files (routing, alternatives, steps, reports, review, shared sync, API, deployment logic, keyboard, phone layout, pages, SOS)
+# app: 161 tests in 17 files (routing, alternatives, steps, reports, review, shared sync, API, deployment logic, keyboard, phone layout, pages, SOS, public demo)
 cd app
 npm test
 npm run build          # type-check + production build
@@ -269,5 +271,6 @@ The full reports and their raw results are in [`audit/`](audit/). This section s
 - Walking speeds are assumptions, and wheelchair travel time is an estimate.
 - The position marker is simulated. There is no indoor positioning and no GPS.
 - Shared reports work only on the local network during a demo. There is no sign-in: reviewers are trusted on the local network, and a passcode is required only in the prepared (not deployed) public version.
+- On the public static site, reports and review decisions stay in the visitor's browser: other visitors do not see them.
 - Automated tests run in jsdom. Real-browser checks were manual, with no screen-reader or physical-device testing.
 - The pipeline scripts were not re-run while preparing this repository (see [Running the tests](#running-the-tests)).

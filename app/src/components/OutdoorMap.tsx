@@ -102,7 +102,7 @@ export function OutdoorMap({ data, route, activeNodeIds, startNode, goalNode, pi
             <title>{`${c.pending} pending, ${c.verified} verified obstacle report(s) inside`}</title><circle cx={x} cy={y} r={11 * u} style={{ strokeWidth: `${2 * u}px` }} /><text x={x} y={y + 4 * u} textAnchor="middle" style={{ fontSize: `${12 * u}px` }}>{open}</text></g>;
         })}</g>
       </svg>
-      <p className="map-note"><span className="key key-route" /> route <span className="key key-steps" /> steps <span className="key key-door" /> building entrance (location not yet field-checked) &middot; Paths: OpenStreetMap. Surfaces and slopes are not mapped.</p>
+      <p className="map-note"><span className="key key-route" /> route <span className="key key-steps" /> steps <span className="key key-door" /> building entrance (location not yet field-checked) &middot; Paths: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">&copy; OpenStreetMap contributors</a>. Surfaces and slopes are not mapped.</p>
     </div>
   );
 }
